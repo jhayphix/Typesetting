@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2024.1.31)  2 MAR 2024 18:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2024.1.31)  2 MAR 2024 19:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -878,7 +878,7 @@ Overfull \hbox (140.49231pt too wide) in paragraph at lines 25--25
  [][][][]  
  []
 
-<images/logo.png, id=38, 331.99031pt x 490.83376pt>
+<images/logo.png, id=42, 331.99031pt x 490.83376pt>
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
 Package pdftex.def Info: images/logo.png  used on input line 25.
@@ -1045,23 +1045,23 @@ Overfull \hbox (140.49231pt too wide) has occurred while \output is active
 [7
 
 ]
-Overfull \hbox (69.13286pt too wide) in paragraph at lines 76--76
+Overfull \hbox (69.13286pt too wide) in paragraph at lines 78--78
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (140.49231pt too wide) in paragraph at lines 76--76
+Overfull \hbox (140.49231pt too wide) in paragraph at lines 78--78
  [][][][]  
  []
 
 
-Overfull \hbox (4.35306pt too wide) in paragraph at lines 76--76
+Overfull \hbox (4.35306pt too wide) in paragraph at lines 78--78
  [] 
  []
 
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 76.
+Package pdftex.def Info: images/logo.png  used on input line 78.
 (pdftex.def)             Requested size: 22.76044pt x 22.76062pt.
 
 Overfull \hbox (69.13286pt too wide) has occurred while \output is active
@@ -1076,23 +1076,23 @@ Overfull \hbox (140.49231pt too wide) has occurred while \output is active
 [8
 
 ]
-Overfull \hbox (69.13286pt too wide) in paragraph at lines 82--82
+Overfull \hbox (69.13286pt too wide) in paragraph at lines 89--89
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (140.49231pt too wide) in paragraph at lines 82--82
+Overfull \hbox (140.49231pt too wide) in paragraph at lines 89--89
  [][][][]  
  []
 
-<images/image1.png, id=265, 395.22656pt x 277.78781pt>
+<images/image1.png, id=287, 395.22656pt x 277.78781pt>
 File: images/image1.png Graphic file (type png)
 <use images/image1.png>
-Package pdftex.def Info: images/image1.png  used on input line 82.
+Package pdftex.def Info: images/image1.png  used on input line 89.
 (pdftex.def)             Requested size: 308.06367pt x 216.52524pt.
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 82.
+Package pdftex.def Info: images/logo.png  used on input line 89.
 (pdftex.def)             Requested size: 22.76044pt x 22.76062pt.
 
 Overfull \hbox (69.13286pt too wide) has occurred while \output is active
@@ -1107,6 +1107,118 @@ Overfull \hbox (140.49231pt too wide) has occurred while \output is active
 [9
 
  <./images/image1.png (PNG copy)>]
+Overfull \hbox (69.13286pt too wide) in paragraph at lines 109--109
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (140.49231pt too wide) in paragraph at lines 109--109
+ [][][][]  
+ []
+
+File: images/logo.png Graphic file (type png)
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png  used on input line 109.
+(pdftex.def)             Requested size: 22.76044pt x 22.76062pt.
+
+Overfull \hbox (69.13286pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (140.49231pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[10
+
+]
+Overfull \hbox (69.13286pt too wide) in paragraph at lines 127--127
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (140.49231pt too wide) in paragraph at lines 127--127
+ [][][][]  
+ []
+
+File: images/logo.png Graphic file (type png)
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png  used on input line 127.
+(pdftex.def)             Requested size: 22.76044pt x 22.76062pt.
+
+Overfull \hbox (69.13286pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (140.49231pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[11
+
+]
+File: images/logo.png Graphic file (type png)
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png  used on input line 127.
+(pdftex.def)             Requested size: 22.76044pt x 22.76062pt.
+
+Overfull \hbox (69.13286pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (140.49231pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[12
+
+]
+File: images/logo.png Graphic file (type png)
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png  used on input line 127.
+(pdftex.def)             Requested size: 22.76044pt x 22.76062pt.
+
+Overfull \hbox (69.13286pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (140.49231pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[13
+
+]
+Overfull \hbox (69.13286pt too wide) in paragraph at lines 136--136
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (140.49231pt too wide) in paragraph at lines 136--136
+ [][][][]  
+ []
+
+File: images/logo.png Graphic file (type png)
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png  used on input line 136.
+(pdftex.def)             Requested size: 22.76044pt x 22.76062pt.
+
+Overfull \hbox (69.13286pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (140.49231pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[14
+
+]
 \tf@nav=\write6
 \openout6 = `ECG.nav'.
 
@@ -1118,23 +1230,23 @@ Overfull \hbox (140.49231pt too wide) has occurred while \output is active
 
  (ECG.aux)
 Package rerunfilecheck Info: File `ECG.out' has not changed.
-(rerunfilecheck)             Checksum: 56EFC30DB5FB1F53A0929C4003A644BC;269.
+(rerunfilecheck)             Checksum: 37896BC553B9534C0895FCFEF5FB81F5;372.
  ) 
 Here is how much of TeX's memory you used:
- 21906 strings out of 478659
- 428656 string characters out of 2855762
- 686167 words of memory out of 3000000
- 39518 multiletter control sequences out of 15000+600000
- 410474 words of font info for 52 fonts, out of 8000000 for 9000
+ 22079 strings out of 478659
+ 433395 string characters out of 2855762
+ 693203 words of memory out of 3000000
+ 39679 multiletter control sequences out of 15000+600000
+ 411086 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,426b,612s stack positions out of 5000i,500n,10000p,200000b,80000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKT
 eX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTeX/fonts/type
 1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on ECG.pdf (9 pages, 156878 bytes).
+Output written on ECG.pdf (14 pages, 221878 bytes).
 PDF statistics:
- 317 PDF objects out of 1000 (max. 8388607)
- 22 named destinations out of 1000 (max. 500000)
- 119 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 579 PDF objects out of 1000 (max. 8388607)
+ 34 named destinations out of 1000 (max. 500000)
+ 505 words of extra memory for PDF output out of 10000 (max. 10000000)
 

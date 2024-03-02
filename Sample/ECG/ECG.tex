@@ -69,18 +69,70 @@ Min & 1st Quatile & Median & Mean & 3rd Quatile & Max & Var \\ \hline
 		\end{tabular}
 		\end{table}
 		
-		We ploted the electricity consumption(KWh per capita) data against time of their collection,Thus from 1971 to 2022 as shown in figure 4.1.
-		
-		
+		\begin{block}{}
+			\vspace{10pt}
+			We ploted the electricity consumption(KWh per capita) data against time of their collection,Thus from 1971 to 2022 as shown in \figurename \ref{plot:data}.
+			\vspace{10pt}
+		\end{block}
 		
 	\end{frame}
 
 	\begin{frame}
-		\begin{center}
-			\includegraphics[width=0.9\linewidth]{images/image1}
-		\end{center}
+		\begin{figure}
+			\begin{center}
+				\includegraphics[width=0.9\linewidth]{images/image1}
+			\end{center}
+		
+			\label{plot:data}
+			\caption{Plot of Electricity to Time}
+		\end{figure}
+	\end{frame}
+
+	% Stationarity
+	\section{Stationarity}
+	\begin{frame}{Testing For Stationarity}
+		There are variety types of stationarity tests but in this paper we are going to use the common ones and they are;
+		
+		\begin{itemize}
+			\item ADF test with hypothesis \\
+			H0:the series is not stationary \\
+			H1:the series is statrionary. \vspace{5pt}
+			
+			\item KPSS test with hypothesis \\
+			H0:the series is stationary \\
+			H1:the series is not statrionary. \vspace{5pt}
+			
+			\item PP test with hypothesis \\
+			H0:the series is not stationary \\
+			H1:the series is statrionary. \\
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Result After Computation}
+			\begin{block}{Augmented Dickey-Fuller Test}
+				data: tsd Dickey-Fuller = -1.6073, Lag order = 3, \\
+				\textcolor{\highlight}{p-value = 0.7324} alternative hypothesis: stationary \vspace{5pt}
+			\end{block} \pause
+			
+			\begin{alertblock}{KPSS Test for Level Stationarity}
+				data: tsd KPSS Level = 0.24024 \\
+				Truncation lag parameter = 3, \textcolor{\highlight}{p-value = 0.1} \vspace{5pt}
+			\end{alertblock} \pause
+			
+			\begin{exampleblock}{Phillips-Perron Unit Root Test}
+				data: tsd Dickey-Fuller Z(alpha) = -9.3188, \\
+				Truncation lag parameter = 3, \textcolor{\highlight}{p-value = 0.5576} \\
+				alternative hypothesis: stationary
+			\end{exampleblock}
 	\end{frame}
 	
-	% Stationarity
+	\begin{frame}
+		\begin{alertblock}{First Difference}
+			\vspace{5pt}
+			Since the series is not stationary we perform 1st differencing in order to achieve stationarity;
+			The figure 4.2 below is a plot after the first differencing .
+			\vspace{5pt}
+		\end{alertblock}
+	\end{frame}
 	
 \end{document}
