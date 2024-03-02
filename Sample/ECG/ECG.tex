@@ -112,12 +112,12 @@ Min & 1st Quatile & Median & Mean & 3rd Quatile & Max & Var \\ \hline
 			\begin{block}{Augmented Dickey-Fuller Test}
 				data: tsd Dickey-Fuller = -1.6073, Lag order = 3, \\
 				\textcolor{\highlight}{p-value = 0.7324} alternative hypothesis: stationary \vspace{5pt}
-			\end{block} \pause
+			\end{block}
 			
 			\begin{alertblock}{KPSS Test for Level Stationarity}
 				data: tsd KPSS Level = 0.24024 \\
 				Truncation lag parameter = 3, \textcolor{\highlight}{p-value = 0.1} \vspace{5pt}
-			\end{alertblock} \pause
+			\end{alertblock}
 			
 			\begin{exampleblock}{Phillips-Perron Unit Root Test}
 				data: tsd Dickey-Fuller Z(alpha) = -9.3188, \\
@@ -133,6 +133,31 @@ Min & 1st Quatile & Median & Mean & 3rd Quatile & Max & Var \\ \hline
 			The figure 4.2 below is a plot after the first differencing .
 			\vspace{5pt}
 		\end{alertblock}
+	\end{frame}
+
+	\begin{frame}{Plot of First Difference}
+		\begin{figure}
+			\begin{center}
+				\includegraphics[width=0.9\linewidth]{images/image2}
+			\end{center}
+		
+			\caption{First difference plot}
+		\end{figure}
+
+	\end{frame}
+
+	\begin{frame}{Stationarity Testing For Differenced Data}
+		\begin{block}{Augmented Dickey-Fuller Test}
+			data: diff1 Dickey-Fuller = -4.8579, Lag order = 3, p-value = 0.01 alternative hypothesis: stationary \vspace{5pt}
+		\end{block}
+		
+		\begin{alertblock}{KPSS Test for Level Stationarity}
+			data: diff1 KPSS Level = 0.14346, Truncation lag parameter = 3, p-value = 0.1 \vspace{5pt}
+		\end{alertblock}
+		
+		\begin{exampleblock}{Phillips-Perron Unit Root Test}
+			data: diff1 Dickey-Fuller Z(alpha) = -43.687, Truncation lag parameter = 3, p-value = 0.01 alternative hypothesis: stationary.
+		\end{exampleblock}
 	\end{frame}
 	
 \end{document}
