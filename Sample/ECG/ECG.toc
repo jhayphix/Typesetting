@@ -2,3 +2,4 @@
 \beamer@sectionintoc {2}{Introduction}{4}{0}{2}
 \beamer@sectionintoc {3}{Description}{8}{0}{3}
 \beamer@sectionintoc {4}{Stationarity}{10}{0}{4}
+\beamer@sectionintoc {5}{ACF and PACF}{15}{0}{5}
