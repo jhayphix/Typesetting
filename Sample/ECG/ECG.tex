@@ -1,17 +1,23 @@
 % Document
 \documentclass{beamer}
-\usetheme{Antibes}
+\usetheme{Madrid}
+\usepackage{graphicx}
+\usepackage{multirow}
 
 % Preamble
-\author{ECF GROUP}
+
 \title{ ANALYSING AND FORECASTING ELECTRICITY CONSUMPTION OF GHANA TIME SERIES}
+\author{ECF GROUP}
+\logo{\includegraphics[height=0.8cm, width=0.8cm]{images/logo.png}}
+\institute{Kwame Nkrumah University of Science and Technology}
+
 \date{March 2, 2024}
 
 
 % Body
 \begin{document}
 	% Define variables here
-	
+	\newcommand{\highlight}{blue}
 	
 	% Title page
 	\begin{frame}
@@ -19,6 +25,62 @@
 	\end{frame}
 	
 	% Table of Content
+	\begin{frame}
+		\tableofcontents
+	\end{frame}
 	
+	% Names
+	\section{Names}
+	\begin{frame}
+		\begin{table}
+			\begin{tabular}{lc}
+				\multicolumn{2}{c}{\textbf{MEMBERS}}  \vspace{10pt}    \\
+				\textbf{NAME}     & \textbf{INDEX NUMBER} \vspace{10pt}  \\
+				DARKO ROCKSON     & 4347020               \\
+				APAAH PRINCE      & 4341520               \\
+				AMPONG DORCAS     & 4340320               \\
+				BOATENG ELIZABETH & 4346020              
+			\end{tabular}
+		\end{table}
+	\end{frame}
+	
+	
+	% Introduction
+	\section{Introduction}
+	\begin{frame}{INTRODUCTION}
+		Ghana has three primarily distribution utilities, two of which are states owned \textcolor{\highlight}{(ECG \& NEDCo)} and one of which is run privately \textcolor{\highlight}{(EPC)}. \vspace{10pt} \pause
+		
+		Energy mix has primarily consisted of hydro and thermal sources.In 2021 hydro accounting for around \textcolor{\highlight}{34.1\%} of the total power, with the thermal accounting for \textcolor{\highlight}{65.3\%} and renewable accounting for 0.55\% \vspace{10pt} \pause
+		
+		Total electricity generation almost doubled from 14,068 GWh in 2011 to 22,051 GWh in 2021, representing an annual average growth rate of 11\%. \vspace{10pt} \pause
+		
+		Total electricity consumption increased from 13,036 GWh in 2017 to 18,067 GWh in 2021 representing an annual average growth rate of 8\% (according to energy commission of Ghana).
+	\end{frame}
+	
+	
+	% Description
+	\section{Description}
+	\begin{frame}{Description}
+		\begin{table}
+		\begin{tabular}{|l|l|l|l|l|l|l|}
+\hline
+Min & 1st Quatile & Median & Mean & 3rd Quatile & Max & Var \\ \hline
+86.27 & 281.04 & 328.29 & 322.29 & 372.99 & 523.25 & 6647.897 \\ \hline
+		\end{tabular}
+		\end{table}
+		
+		We ploted the electricity consumption(KWh per capita) data against time of their collection,Thus from 1971 to 2022 as shown in figure 4.1.
+		
+		
+		
+	\end{frame}
+
+	\begin{frame}
+		\begin{center}
+			\includegraphics[width=0.9\linewidth]{images/image1}
+		\end{center}
+	\end{frame}
+	
+	% Stationarity
 	
 \end{document}
