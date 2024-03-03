@@ -6,6 +6,12 @@
 \usepackage{subfigure}
 \usepackage{comment}
 
+% Customizing table of contents
+\setbeamertemplate{section in toc}[sections numbered]
+\setbeamertemplate{subsection in toc}[subsections numbered]
+\setbeamercolor{section in toc}{fg=blue}
+\setbeamercolor{subsection in toc}{fg=blue!70}
+
 % Preamble
 \title{Multivariate Time Series Modelling Of Ex-Pump Prices Of Petroleum Products In Ghana}
 \subtitle{Chapter 4: Results and Discussions}
@@ -25,17 +31,27 @@
 	\newcommand{\highlight}{blue}
 	\newcommand{\warning}{red}
 	
+	\newcommand{\VAR}{Vector Autocorelation }
+	\newcommand{\VARHighlight}{\textcolor{\highlight}{Vector Autocorelation } }
+	\newcommand{\VEC}{Vector Error Correlation }
+	\newcommand{\VECHighlight}{\textcolor{\highlight}{Vector Error Correlation } }
+	
 	
 	% Insert title here
 	\begin{frame}
 		\titlepage
+	\end{frame}
+
+	% Insert table of content
+	\begin{frame}{Table of Contents}
+		\tableofcontents
+		
 	\end{frame}
 	
 	% --------------------------------------------------------------------
 	% Introduction
 	% --------------------------------------------------------------------
 	\section{Introduction}
-	\label{sec:introduction}
 	\begin{frame}{Introduction}
 		
 		\begin{block}{Objective}
@@ -65,7 +81,6 @@
 	% Descriptive Statistics
 	% --------------------------------------------------------------------
 	\section{Descriptive Statistics}
-	\label{sec:Descriptive}
 	\begin{frame}{Descriptive Statistics}
 		\begin{block}{}
 			\vspace{4pt}
@@ -102,7 +117,7 @@ Number of Observations & 144     & 144      & 144      & 144     \\ \hline
 		\end{table}
 	\end{frame}
 
-	% --------------------------------------------------------------------
+	% -------------------------------------------------------------------
 	\begin{frame}{Plot of Original Series}
 		\begin{figure}
 			\subfigure{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/plots/plot_original/plot_original_gasoline}}
@@ -163,14 +178,19 @@ Number of Observations & 144     & 144      & 144      & 144     \\ \hline
 		\begin{table}[]
 			\caption{ \ref{table:stationarity_original} Univariate URTs of the Original Series}
 			\label{table:stationarity_original}
-			\begin{tabular}{lllll}
+			\begin{tabular}{llllll}
 \hline
-&  \multicolumn{2}{l}{(Test Statistics)} & \multicolumn{2}{l}{(P-Values)} \\ \hline
-SERIES   & ADF    & KPSS      & ADF    & KPSS           \\
-GASOLINE & -2.738 & 2.370     & 0.269  & 0.010          \\
-GASOIL   & -2.450 & 2.437     & 0.389  & 0.010          \\
-KEROSENE & -3.106 & 0.709     & 0.166  & 0.010          \\
-LPG      & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
+&  & \multicolumn{2}{l}{(Test Statistics)} & \multicolumn{2}{l}{(P-Values)} \\ \hline
+
+SERIES   & LAG ORDER & ADF    & KPSS      & ADF    & KPSS           \\
+
+GASOLINE & 5         & -2.738 & 2.370     & 0.269  & 0.010          \\
+
+GASOIL   & 5         & -2.450 & 2.437     & 0.389  & 0.010          \\
+
+KEROSENE & 5         & -3.106 & 0.709     & 0.166  & 0.010          \\
+
+LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 			\end{tabular}
 		\end{table}
 	
@@ -215,14 +235,18 @@ LPG      & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 		\begin{table}[]
 			\caption{ \ref{table:stationarity_first_diff} Univariate URTs of the Differenced Series}
 			\label{table:stationarity_first_diff}
-			\begin{tabular}{lllll}
-				\hline
-				&  \multicolumn{2}{l}{(Test Statistics)} & \multicolumn{2}{l}{(P-Values)} \\ \hline
-				SERIES   & ADF    & KPSS      & ADF    & KPSS           \\
-				GASOLINE & -7.781 & 0.031     & 0.010  & 0.10          \\
-				GASOIL   & -5.537 & 0.045     & 0.010  & 0.10          \\
-				KEROSENE & -4.493 & 0.263     & 0.010  & 0.10          \\
-				LPG      & -4.473 & 0.063     & 0.010  & 0.10          \\ \hline
+			\begin{tabular}{llllll}
+	\hline
+	&  & \multicolumn{2}{l}{(Test Statistics)} & \multicolumn{2}{l}{(P-Values)} \\ \hline
+	SERIES   &LAG ORDER & ADF    & KPSS      & ADF    & KPSS           \\
+	
+	GASOLINE &5         & -7.781 & 0.031     & 0.010  & 0.10          \\
+	
+	GASOIL   &5         & -5.537 & 0.045     & 0.010  & 0.10          \\
+	
+	KEROSENE &5         & -4.493 & 0.263     & 0.010  & 0.10          \\
+	
+	LPG      &5         & -4.473 & 0.063     & 0.010  & 0.10          \\ \hline
 			\end{tabular}
 		\end{table}
 	
@@ -267,6 +291,18 @@ LPG      & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 	% --------------------------------------------------------------------
 	% Estimation of VAR or VEC Models
 	% --------------------------------------------------------------------
+	\section{Estimation of VAR/ VEC Models}
+	\begin{frame}{Estimation of VAR/ VEC Models}
+		\begin{block}{}
+			Estimating parameters of \VARHighlight (VAR) or \VECHighlight (VEC) models require that variables are 
+			covariance stationary \vspace{5pt}
+		\end{block} \vspace{5pt}
+		
+		VAR for instance cannot be used if the variables are not stationary 
+		Also, if the data is non-stationary, the forecast cannot be done because VAR assumes 
+		stationarity
+	
+	\end{frame}
 	
 	% --------------------------------------------------------------------
 	% LLS Criteria and Cointergration
