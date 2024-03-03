@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2024.1.31)  3 MAR 2024 05:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2024.1.31)  3 MAR 2024 06:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1037,6 +1037,65 @@ Overfull \hbox (115.8125pt too wide) has occurred while \output is active
 [5
 
 ]
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 111--111
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 111--111
+ [][][][]  
+ []
+
+<images/plots/plot_original/plot_original_gasoline.png, id=234, 396.48125pt x 2
+30.8625pt>
+File: images/plots/plot_original/plot_original_gasoline.png Graphic file (type 
+png)
+<use images/plots/plot_original/plot_original_gasoline.png>
+Package pdftex.def Info: images/plots/plot_original/plot_original_gasoline.png 
+ used on input line 111.
+(pdftex.def)             Requested size: 136.91927pt x 78.14346pt.
+<images/plots/plot_original/plot_original_gasoil.png, id=235, 385.44pt x 231.86
+626pt>
+File: images/plots/plot_original/plot_original_gasoil.png Graphic file (type pn
+g)
+<use images/plots/plot_original/plot_original_gasoil.png>
+Package pdftex.def Info: images/plots/plot_original/plot_original_gasoil.png  u
+sed on input line 111.
+(pdftex.def)             Requested size: 136.91154pt x 78.14357pt.
+<images/plots/plot_original/plot_original_kerosene.png, id=236, 388.45125pt x 2
+32.87pt>
+File: images/plots/plot_original/plot_original_kerosene.png Graphic file (type 
+png)
+<use images/plots/plot_original/plot_original_kerosene.png>
+Package pdftex.def Info: images/plots/plot_original/plot_original_kerosene.png 
+ used on input line 111.
+(pdftex.def)             Requested size: 136.92018pt x 78.14429pt.
+<images/plots/plot_original/plot_original_lpg.png, id=237, 384.43625pt x 234.87
+75pt>
+File: images/plots/plot_original/plot_original_lpg.png Graphic file (type png)
+<use images/plots/plot_original/plot_original_lpg.png>
+Package pdftex.def Info: images/plots/plot_original/plot_original_lpg.png  used
+ on input line 111.
+(pdftex.def)             Requested size: 136.9187pt x 78.14417pt.
+File: images/logo/logoKnust.png Graphic file (type png)
+<use images/logo/logoKnust.png>
+Package pdftex.def Info: images/logo/logoKnust.png  used on input line 111.
+(pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
+
+Overfull \hbox (58.6327pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[6
+
+ <./images/plots/plot_original/plot_original_gasoline.png> <./images/plots/plot
+_original/plot_original_gasoil.png> <./images/plots/plot_original/plot_original
+_kerosene.png> <./images/plots/plot_original/plot_original_lpg.png>]
 \tf@nav=\write6
 \openout6 = `chapter_4.nav'.
 
@@ -1046,24 +1105,25 @@ Overfull \hbox (115.8125pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `chapter_4.snm'.
 
- (chapter_4.aux)
+
+(chapter_4.aux)
 Package rerunfilecheck Info: File `chapter_4.out' has not changed.
 (rerunfilecheck)             Checksum: C79E26AB145312B1493BFC496E2C2352;259.
  ) 
 Here is how much of TeX's memory you used:
- 22068 strings out of 478659
- 432388 string characters out of 2855762
- 688220 words of memory out of 3000000
- 39687 multiletter control sequences out of 15000+600000
+ 22121 strings out of 478659
+ 434852 string characters out of 2855762
+ 689265 words of memory out of 3000000
+ 39732 multiletter control sequences out of 15000+600000
  410792 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,438b,562s stack positions out of 5000i,500n,10000p,200000b,80000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKT
 eX/fonts/type1/public/amsfonts/cm/cmss8.pfb>
-Output written on chapter_4.pdf (5 pages, 129965 bytes).
+Output written on chapter_4.pdf (6 pages, 204522 bytes).
 PDF statistics:
- 251 PDF objects out of 1000 (max. 8388607)
- 16 named destinations out of 1000 (max. 500000)
- 256 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 289 PDF objects out of 1000 (max. 8388607)
+ 19 named destinations out of 1000 (max. 500000)
+ 276 words of extra memory for PDF output out of 10000 (max. 10000000)
 
