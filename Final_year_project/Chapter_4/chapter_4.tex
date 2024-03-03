@@ -21,6 +21,9 @@
 	\newcommand{\finishDate}{June, 2015 }
 	\newcommand{\numOfObservations}{204 }
 	
+	\newcommand{\highlight}{blue}
+	\newcommand{\warning}{red}
+	
 	
 	% Insert title here
 	\begin{frame}
@@ -71,8 +74,26 @@
 		\end{block} \vspace{5pt}
 	
 		\begin{block}{}
-			The descriptive statistics of the products are shown in Table 4.1
+			The descriptive statistics of the products are shown in Table \ref{table:description} on page \pageref{table:description}
 		\end{block}
+	\end{frame}
+
+	\begin{frame}{}
+		\begin{table}[]
+			\caption{ \ref{table:description} Summary Statistics}
+			\begin{tabular}{lllll}
+\hline
+Statistics             & GASOIL  & GASOLINE & KEROSENE & LPG     \\ \hline
+Mean                   & 122.445 & 123.570  & 82.989   & 94.766  \\
+Maximum                & 175.480 & 177.090  & 120.420  & 136.190 \\
+Minimum                & 11.600  & 49.170   & 6.470    & 58.500  \\
+Standard Deviation     & 32.306  & 31.817   & 27.186   & 20.609  \\ 
+Skewness               & -0.201  & 0.1307   & -1.988   & 0.413   \\
+Kurtosis               & 3.374   & 2.123    & 6.293    & 2.292   \\
+Number of Observations & 144     & 144      & 144      & 144     \\ \hline
+			\end{tabular}
+			\label{table:description}
+		\end{table}
 	\end{frame}
 	
 	
