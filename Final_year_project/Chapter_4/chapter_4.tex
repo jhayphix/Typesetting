@@ -4,6 +4,7 @@
 \usetheme{Madrid}
 \usepackage{graphicx}
 \usepackage{subfigure}
+\usepackage{comment}
 
 % Preamble
 \title{Multivariate Time Series Modelling Of Ex-Pump Prices Of Petroleum Products In Ghana}
@@ -119,7 +120,9 @@ Number of Observations & 144     & 144      & 144      & 144     \\ \hline
 	% --------------------------------------------------------------------
 	% Trend and Stationarity Test
 	% --------------------------------------------------------------------
-	\section{Trend And Stationarity Test}
+	\section{Stationarity Test}
+	
+	\begin{comment}
 	\begin{frame}{Trend Test}
 		For trend test, We have chosen to apply
 		
@@ -133,6 +136,7 @@ Number of Observations & 144     & 144      & 144      & 144     \\ \hline
 			H1 : There is a tonic trend in the dataset over time. \vspace{5pt}
 		\end{exampleblock}
 	\end{frame}
+	\end{comment}
 
 	\begin{frame}{Staionarity Test}
 		We have numerous ways of testing for the presence of a unit root. 
@@ -169,8 +173,12 @@ KEROSENE & -3.106 & 0.709     & 0.166  & 0.010          \\
 LPG      & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 			\end{tabular}
 		\end{table}
+	
+	\begin{alertblock}{Is Stationary ?}
+		\vspace{5pt}
+		It is observed that for ADF, all the p-values of the series are greater than 0.05 and this indicates non stationarity. The KPSS test also showed the same results. We now  difference the series since the series are not stationary.
+	\end{alertblock}
 	\end{frame}
-
 	
 	% --------------------------------------------------------------------
 	% Differencing
