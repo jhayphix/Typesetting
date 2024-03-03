@@ -1,5 +1,9 @@
 \beamer@slide {sec:introduction}{2}
 \beamer@slide {sec:Descriptive}{4}
 \beamer@slide {table:description}{5}
-\beamer@slide {plot:original_data}{6}
+\beamer@slide {plot:original_series}{6}
 \beamer@slide {table:stationarity_original}{9}
+\beamer@slide {plot:difference_series}{11}
+\beamer@slide {table:stationarity_first_diff}{12}
+\beamer@slide {plot:acf__diff_series}{13}
+\beamer@slide {plot:pacf__diff_series}{14}

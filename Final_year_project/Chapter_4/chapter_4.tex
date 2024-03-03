@@ -96,7 +96,7 @@ Number of Observations & 144     & 144      & 144      & 144     \\ \hline
 		\end{table}
 	\end{frame}
 
-	\begin{frame}{Plot of Original Data}
+	\begin{frame}{Plot of Original Series}
 		\begin{figure}
 			\subfigure{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/plots/plot_original/plot_original_gasoline}}
 			\subfigure{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/plots/plot_original/plot_original_gasoil}}
@@ -104,8 +104,8 @@ Number of Observations & 144     & 144      & 144      & 144     \\ \hline
 			\subfigure{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/plots/plot_original/plot_original_lpg}}
 			
 			
-			\caption{ \ref{plot:original_data} Time Series Plot of the Original Series}
-			\label{plot:original_data}
+			\caption{ \ref{plot:original_series} Time Series Plot of the Original Series}
+			\label{plot:original_series}
 		\end{figure}
 		
 	\end{frame}
@@ -146,24 +146,98 @@ Number of Observations & 144     & 144      & 144      & 144     \\ \hline
 		\end{alertblock}
 	\end{frame}
 	
-	\begin{frame}{Stationarity of Original Data}
+	\begin{frame}{Stationarity of Original Series}
 		\begin{table}[]
 			\caption{ \ref{table:stationarity_original} Univariate URTs of the Original Series}
 			\label{table:stationarity_original}
 			\begin{tabular}{lllll}
-				\hline
-				&  \multicolumn{2}{l}{(Test Statistics)} & \multicolumn{2}{l}{(P-Values)} \\ \hline
-				SERIES   & ADF                & KPSS             & ADF            & KPSS           \\
-				GASOLINE & -2.738             & 2.370            & 0.269          & 0.010          \\
-				GASOIL   & -2.450             & 2.437            & 0.389          & 0.010          \\
-				KEROSENE & -3.106             & 0.709            & 0.166          & 0.010          \\
-				LPG      & -1.975             & 1.497            & 0.587          & 0.010          \\ \hline
+\hline
+&  \multicolumn{2}{l}{(Test Statistics)} & \multicolumn{2}{l}{(P-Values)} \\ \hline
+SERIES   & ADF    & KPSS      & ADF    & KPSS           \\
+GASOLINE & -2.738 & 2.370     & 0.269  & 0.010          \\
+GASOIL   & -2.450 & 2.437     & 0.389  & 0.010          \\
+KEROSENE & -3.106 & 0.709     & 0.166  & 0.010          \\
+LPG      & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 			\end{tabular}
 		\end{table}
 	\end{frame}
 
 	
 	% Differencing
+	\section{Differencing}
+	\begin{frame}{Differencing}
+
+			\begin{alertblock}{First Difference}
+				\vspace{5pt}
+				Since all the series (Gasoline, Gasoil, Kerosene, LPG) are not stationary we perform 1st differencing in order to achieve stationarity;
+				The figure \ref{plot:difference_series} below is a plot after the first differencing .
+				\vspace{5pt}
+			\end{alertblock}
+		
+	\end{frame}
+	
+	\begin{frame}{Plot of First Differenced Series}
+		\begin{figure}
+			\subfigure{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/plots/plot_diff/plot_diff_gasoline}}
+			\subfigure{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/plots/plot_diff/plot_diff_gasoil}}
+			\subfigure{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/plots/plot_diff/plot_diff_kerosene}}
+			\subfigure{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/plots/plot_diff/plot_diff_lpg}}
+			
+			
+			\caption{ \ref{plot:difference_series} Time Series Plot of the Original Series}
+			\label{plot:difference_series}
+		\end{figure}
+		
+	\end{frame}
+	\begin{frame}{Stationarity of First Differenced Series}
+		\begin{table}[]
+			\caption{ \ref{table:stationarity_first_diff} Univariate URTs of the Differenced Series}
+			\label{table:stationarity_first_diff}
+			\begin{tabular}{lllll}
+				\hline
+				&  \multicolumn{2}{l}{(Test Statistics)} & \multicolumn{2}{l}{(P-Values)} \\ \hline
+				SERIES   & ADF    & KPSS      & ADF    & KPSS           \\
+				GASOLINE & -7.781 & 0.031     & 0.010  & 0.10          \\
+				GASOIL   & -5.537 & 0.045     & 0.010  & 0.10          \\
+				KEROSENE & -4.493 & 0.263     & 0.010  & 0.10          \\
+				LPG      & -4.473 & 0.063     & 0.010  & 0.10          \\ \hline
+			\end{tabular}
+		\end{table}
+	
+		\begin{exampleblock}{Is Stationary ?}
+			\vspace{5pt}
+			It is observed that for ADF, all the p-values of the series are less than 0.05 and this
+			indicates the stationarity. The KPSS test also showed the same results. We now estimate the models since the series have attained stationarity.
+		\end{exampleblock}
+	\end{frame}
+	\begin{frame}{ACF Plot of First Differenced Series}
+		\begin{figure}
+			\subfigure{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/acf_pacf/acf_pacf_diff/acf_diff_gasoline}}
+			\subfigure{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/acf_pacf/acf_pacf_diff/acf_diff_gasoil}}
+			\subfigure{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/acf_pacf/acf_pacf_diff/acf_diff_kerosene}}
+			\subfigure{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/acf_pacf/acf_pacf_diff/acf_diff_lpg}}
+			
+			
+			\caption{ \ref{plot:acf__diff_series} ACF of the Differenced Series}
+			\label{plot:acf__diff_series}
+		\end{figure}
+		
+	\end{frame}
+	\begin{frame}{PACF Plot of First Differenced Series}
+		\begin{figure}
+			\subfigure{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/acf_pacf/acf_pacf_diff/pacf_diff_gasoline}}
+			\subfigure{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/acf_pacf/acf_pacf_diff/pacf_diff_gasoil}}
+			\subfigure{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/acf_pacf/acf_pacf_diff/pacf_diff_kerosene}}
+			\subfigure{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/acf_pacf/acf_pacf_diff/pacf_diff_lpg}}
+			
+			
+			\caption{ \ref{plot:pacf__diff_series} PACF of the Differenced Series}
+			\label{plot:pacf__diff_series}
+		\end{figure}
+		
+	\end{frame}
+	
+	
 	
 	
 	% Estimation of VAR or VEC Models
