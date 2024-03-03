@@ -110,9 +110,42 @@ Number of Observations & 144     & 144      & 144      & 144     \\ \hline
 		
 	\end{frame}
 	
-	
 	% Trend and Stationarity Test
+	\section{Trend And Stationarity Test}
+	\begin{frame}{Trend Test}
+		For trend test, We have chosen to apply
+		
+		\begin{block}{ Mann-Kendall Test}
+			H0 : There is no monotonic trend in the dataset over time. \\
+			H1 : There is a monotonic trend in the dataset over time. \vspace{5pt}
+		\end{block}
+		
+		\begin{exampleblock}{Sen's Slope Test}
+			H0 : There is no tonic trend in the dataset over time. \\
+			H1 : There is a tonic trend in the dataset over time. \vspace{5pt}
+		\end{exampleblock}
+	\end{frame}
+
+	\begin{frame}{Staionarity Test}
+		We have numerous ways of testing for the presence of a unit root. 
+		We have chosen to apply
+		
+		\begin{block}{Augmented Dickey-Fuller Test}
+			H0 : The series is not stationary \\
+			H1 : The series is stationary. \vspace{5pt}
+		\end{block}
 	
+		\begin{exampleblock}{Phillips-Perron Unit Root Test}
+			H0 : The series is not stationary \\
+			H1 : The series is statrionary. \vspace{5pt}
+		\end{exampleblock}
+		
+		\begin{alertblock}{KPSS Test for Level Stationarity}
+			H0 : The series is stationary \\
+			H1 : The series is not statrionary. \vspace{5pt}
+		\end{alertblock}
+	\end{frame}
+
 	
 	% Differencing
 	
