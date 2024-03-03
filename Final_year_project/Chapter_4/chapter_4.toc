@@ -1,5 +1,6 @@
 \beamer@sectionintoc {1}{Introduction}{3}{0}{1}
-\beamer@sectionintoc {2}{Descriptive Statistics}{5}{0}{2}
-\beamer@sectionintoc {3}{Stationarity Test}{8}{0}{3}
-\beamer@sectionintoc {4}{Differencing}{10}{0}{4}
-\beamer@sectionintoc {5}{Estimation of VAR/ VEC Models}{15}{0}{5}
+\beamer@sectionintoc {2}{Overview}{5}{0}{2}
+\beamer@sectionintoc {3}{Descriptive Statistics}{7}{0}{3}
+\beamer@sectionintoc {4}{Stationarity Test}{10}{0}{4}
+\beamer@sectionintoc {5}{Differencing}{12}{0}{5}
+\beamer@sectionintoc {6}{Estimation of VAR/ VEC Models}{17}{0}{6}
