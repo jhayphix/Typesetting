@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2024.1.31)  3 MAR 2024 04:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2024.1.31)  3 MAR 2024 04:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -672,40 +672,4 @@ Package: amsthm 2020/05/29 v2.20.6
 (C:\Program Files\MiKTeX\tex/latex/beamer\beamercolorthemewhale.sty)
 (C:\Program Files\MiKTeX\tex/latex/beamer\beamercolorthemeorchid.sty)
 (C:\Program Files\MiKTeX\tex/latex/beamer\beamerinnerthemerounded.sty)
-(C:\Program Files\MiKTeX\tex/latex/beamer\beamerouterthemeinfolines.sty))
-(C:\Program Files\MiKTeX\tex/latex/beamer\beamercolorthemeDefault.sty)
-(C:\Program Files\MiKTeX\tex/latex/subfigure\subfigure.sty
-Package: subfigure 2002/07/30 v2.1.4 subfigure package
-\subfigtopskip=\skip64
-\subfigcapskip=\skip65
-\subfigcaptopadj=\dimen292
-\subfigbottomskip=\skip66
-\subfigcapmargin=\dimen293
-\subfiglabelskip=\skip67
-\c@subfigure=\count331
-\c@lofdepth=\count332
-\c@subtable=\count333
-\c@lotdepth=\count334
-
-****************************************
-* Local config file subfigure.cfg used *
-****************************************
-(C:\Program Files\MiKTeX\tex/latex/subfigure\subfigure.cfg)
-\subfig@top=\skip68
-\subfig@bottom=\skip69
-))
-! Emergency stop.
-<*> ./chapter_4.tex
-                   
-*** (job aborted, no legal \end found)
-
- 
-Here is how much of TeX's memory you used:
- 20314 strings out of 478659
- 393699 string characters out of 2855762
- 659330 words of memory out of 3000000
- 38034 multiletter control sequences out of 15000+600000
- 404035 words of font info for 29 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 128i,0n,122p,432b,289s stack positions out of 5000i,500n,10000p,200000b,80000s
-!  ==> Fatal error occurred, no output PDF file produced!
+(C:\Program Files\MiKTeX\tex/latex/beamer\beamerouterthemeinfolines.sty
