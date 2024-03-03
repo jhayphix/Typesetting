@@ -6,3 +6,4 @@
 \beamer@slide {plot:acf__diff_series}{15}
 \beamer@slide {plot:pacf__diff_series}{16}
 \beamer@slide {table:lls}{20}
+\beamer@slide {table:cointegration}{23}

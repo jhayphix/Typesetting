@@ -69,7 +69,7 @@
 			The purpose of the study is to obtain a suitable model for the ex-pump prices of petroleum products in Ghana. 
 		\end{block} \vspace{5pt}
 		
-		 To examines how changes in the prices of one product cause changes in the price of others in both the short and long terms. \par \vspace{5pt}
+		 To examines how changes in the prices of one product cause changes in the price of others in both the short and long run. \par \vspace{5pt}
 		
 		Data spanning \startDate to \finishDate are obtained from the National Petroleum Authority of Ghana, covering four petroleum products; \textHighlight{Gasoline, Gasoil, Kerosene, and Liquefied Petroleum Gas (LPG) }. 
 	\end{frame}
@@ -112,8 +112,8 @@
 			\begin{itemize}[label=$\diamond$, leftmargin=2em, itemsep=1em]
 				\item Lag Length Selection (LLS)
 				\item Cointegration Test
-				\item Long Term Equilibrium
-				\item Short Term Equilibrium
+				\item Long Run Equilibrium
+				\item Short Run Equilibrium
 				\item Estimation of VEC Model (If There is cointegration)
 				\item Model Validation
 				\item Forecast of Ex-Pump prices of Products
@@ -346,8 +346,8 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 			\begin{itemize}[label=$\diamond$, leftmargin=2em, itemsep=1em]
 				\item Lag Length Selection (LLS)
 				\item Cointegration Test
-				\item Long Term Equilibrium
-				\item Short Term Equilibrium
+				\item Long Run Equilibrium
+				\item Short Run Equilibrium
 				\item Estimation of VEC Model (If There is cointegration)
 				\item Model Validation
 				\item Forecast of Ex-Pump prices of Products
@@ -447,7 +447,7 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 		\begin{block}{}
 			\vspaceTen
 			Once the unit roots and lag length selections are determined for a time series data, the next step is to inspect whether there exists a \\
-			\textHighlight{Cointegration (Long term relationship)} among the variables or not.
+			\textHighlight{Cointegration (Long run relationship)} among the variables or not.
 			\vspaceTen
 		\end{block}
 	\end{frame}
@@ -456,23 +456,94 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 	% Cointergration
 	% --------------------------------------------------------------------
 	\section{Cointegration}
-	\begin{frame}{Cointegration : Long Term Relationship}
+	\begin{frame}{Cointegration : Long Run Relationship}
 		Cointegration analysis is important because, if two or more non-stationary variables are cointegrated, a VAR model in the first difference is mis-specified due to the effects of a common trend. The cointegration test determines the type of the regression model to be applied i.e. VAR or VEC
 		
-		\begin{block}{ \vspaceFive Cointegration Test}
+		\begin{block}{ Cointegration Test}
 			H0 : There is no cointegration equation. \\
 			H1 : There is a cointegration equation 
 		\end{block}
 		
+	\end{frame}
+	
+	% --------------------------------------------------------------------
+	\begin{frame}
+		
+		% Table
+		\begin{table}[]
+			\caption{ \ref{table:cointegration} Determining the Number of Cointegrated Equations}
+			\label{table:cointegration}
+			\begin{tabular}{llllll}
+				\hline
+				\mc{1}{c}{Number} & \mc{1}{c}{} & \mc{1}{c}{Trace} & \mc{1}{c}{}    & \mc{1}{c}{Max-Eigen}  & \mc{1}{c}{}        \\
+				
+				\mc{1}{c}{of CE} & \mc{1}{c}{Eigenvalues} & \mc{1}{c}{Statictics} & \mc{1}{c}{P-Value} & \mc{1}{c}{Staticstics} & \mc{1}{c}{P-Value} \\ \hline
+				
+				None*     & 0.358   & 79.102  & 0.000  & 62.959 & 0.000 \\
+				
+				At most 1 & 0.070   & 16.143  & 0.702  & 10.258 & 0.720 \\
+				
+				At most 2 & 0.033   & 5.885   & 0.709  & 4.778  & 0.769 \\
+				
+				At most 3  & 0.008  & 1.107   & 0.293  & 1.107  & 0.293 \\ \hline
+			\end{tabular}
+		\end{table}
+	
+		% Description
+		\begin{exampleblock}{Conclusion}
+			Remarkably, the Trace test and max-Eigen statistics suggest the existence of a cointegrated equation (CE). \\ 
+			We shall take into account this fact at the next step. \\
+			Since all the series are I(1) and cointegrated, the products ought to be modelled as a VEC model 
+		\end{exampleblock}
+	\end{frame}
+
+	% --------------------------------------------------------------------
+	\begin{frame}
+		\begin{block}{}
+			As a result, a cointegration relationship is obtained. \\ 
+			This throws more light on the long run relationships among the products.\\
+			 Consequently, the products; \textHighlight{GASOLINE, GASOIL, KEROSENE, and LPG} prices are linked by a 
+			long run equation. 
+		\end{block}
+	
+		\begin{block}{}
+			Once the unit roots and lag length selections are determined for a time series data, the next step is to inspect whether there exists a long-run equilibrium relationship among the variables or not.
+		\end{block}
+	\end{frame}
+		
+	% --------------------------------------------------------------------
+	% Long and Short Run Equilibrium
+	% --------------------------------------------------------------------
+	
+	\section{Long And Short Run Equilibrium}
+	\begin{frame}{Long Run Relationship}
+		\begin{block}{The cointegrating (long-run) relationship is estimated to be;}
+			\vspaceFive
+			\textHighlight{GASOLINE} $ = $ $-$ 0.232 \textHighlight{GASOIL} $ + $  0.073 \textHighlight{KEROSENE} $-$ 0.775 \textHighlight{LPG}
+			\vspaceFive 
+		\end{block} 
+		\vspaceFive
+		
+		Thus, with GASOLINE price as the endogenous variable, the long-run relationship indicates that the ex-pump prices of the other products have long run effects. \\ \vspaceTen
+		
+		Specifically, the results indicate that the other products have a negative relation with GASOLINE price in the long run (except KEROSENE), all things being equal.
+	\end{frame}
+
+	% --------------------------------------------------------------------
+	\begin{frame}{Log Run Equilibrium}
+		\begin{block}{}
+			The coefficients of the error correction terms (ECT) [Table 8] show the speed of adjustments of disequilibrium in the period under study. The negative sign associated with the error term is simply a departure in one direction. These are satisfying as they imply convergence in the long run. That is, deviation from the long run is corrected
+		\end{block}.
+	\end{frame}
+	\begin{frame}
+		% Table
 		
 	\end{frame}
 	
 	% --------------------------------------------------------------------
-	% Long and Short Term Equilibrium
+	% Estimation of VEC Model
 	% --------------------------------------------------------------------
 	
-	% --------------------------------------------------------------------
-	% Estimation of VEC Model
 	% --------------------------------------------------------------------
 	
 	% --------------------------------------------------------------------
