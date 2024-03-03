@@ -39,6 +39,8 @@
 \newcommand{\VEC}{Vector Error Correlation }
 \newcommand{\VECHighlight}{\textHighlight{Vector Error Correlation }}
 
+\newcommand{\mc}[3]{\multicolumn{#1}{#2}{#3}}
+
 
 
 
@@ -94,7 +96,7 @@
 		\begin{block}{Start Up}
 			\vspaceFive
 			\begin{itemize}[label=$\diamond$, leftmargin=2em, itemsep=1em]
-				\item Plotting and Description Statistics
+				\item Plotting and Descriptive Statistics
 				\item Stationarity Test
 				\item Differencing If Not Stationary
 				\item Plotting of ACF and PACF
@@ -102,6 +104,8 @@
 			\vspaceFive
 		\end{block}
 	\end{frame}
+
+	% --------------------------------------------------------------------
 	\begin{frame}{RoadMap}
 		\begin{block}{Estimation Of Model}
 			\vspaceFive
@@ -335,32 +339,9 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 	% Estimation of VAR or VEC Models
 	% --------------------------------------------------------------------
 	\section{Estimation of VAR/ VEC Models}
-	\begin{frame}{Estimation of VAR/ VEC Models}
-		\begin{block}{}
-			Estimating parameters of \VARHighlight (VAR) or \VECHighlight (VEC) models require that variables are 
-			covariance stationary \vspaceFive
-		\end{block} \vspaceFive
+	\begin{frame}{What Next After Series is Stationary ?}
 		
-		\begin{block}{}
-			VAR for instance cannot be used if the variables are not stationary. \\
-			Also, if the data is non-stationary, the forecast cannot be done because \textHighlight{VAR assumes stationarity}
-		\end{block}
-	
-		\begin{block}{}
-			We then test for the long run relationship using \textHighlight{Johansen’s cointegration test}.  \\
-			That is if the result confirms that there is a long-run relationship among the variables, 
-			we can proceed to the VEC model. 
-		\end{block}
-	
-		\begin{exampleblock}{}
-			The first step involved in estimating is to first determine the lag Length or order. 
-		\end{exampleblock}
-	\end{frame}
-
-	% --------------------------------------------------------------------
-	\begin{frame}{Estimation of VAR/ VEC Models }
-		
-		\begin{block}{What Next After Series is Stationary ?}
+		\begin{block}{Estimation of VAR/ VEC Models}
 			\vspaceFive
 			\begin{itemize}[label=$\diamond$, leftmargin=2em, itemsep=1em]
 				\item Lag Length Selection (LLS)
@@ -375,11 +356,109 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 		\end{block}
 		
 	\end{frame}
-
+	
+	
 	
 	% --------------------------------------------------------------------
-	% LLS Criteria and Cointergration
+	\begin{frame}{Estimation of VAR/ VEC Models}
+		\begin{block}{}
+			Estimating parameters of \VARHighlight (VAR) or \VECHighlight (VEC) models require that variables are 
+			covariance stationary \vspaceFive
+		\end{block} \vspaceFive
+		
+		\begin{block}{}
+			VAR for instance cannot be used if the variables are not stationary. \\
+			Also, if the data is non-stationary, the forecast cannot be done because \textHighlight{VAR assumes stationarity}
+		\end{block}
+		
+		\begin{block}{}
+			We then test for the long run relationship using \textHighlight{Johansen’s cointegration test}.  \\
+			That is if the result confirms that there is a long-run relationship among the variables, 
+			we can proceed to the VEC model. 
+		\end{block}
+		
+		\begin{exampleblock}{}
+			The first step involved in estimating is to first determine the lag Length or order. 
+		\end{exampleblock}
+	\end{frame}
+	
+	
 	% --------------------------------------------------------------------
+	% LLS Criteria
+	% --------------------------------------------------------------------
+	\section{LLS Criteria and Cointergration}
+	\begin{frame}{Lag Length Selection (LLS) Criteria}
+		\begin{block}{}
+			LLS is significant for VAR/VEC models since selecting too few intervals to result in a cointegrated error and selecting too many intervals may lead to unnecessary loss of degrees of freedom
+		\end{block}
+	
+		\begin{exampleblock}{Three of the LLS criteria are used, namely ;}
+			\begin{itemize}
+				\item FPE (Final Prediction Error)
+				\item AIC (Akaike Information Criterion)
+				\item BIC (Bayesian Information Criterion), aka SC (Schwarz Criterion)
+			\end{itemize} 
+		\end{exampleblock}
+		
+		
+		\begin{block}{}
+			FPE, AIC, and BIC support the inclusion of lag 1 as italicized, and starred in Table \ref{table:lls}. 
+		\end{block}
+	\end{frame}
+
+	% --------------------------------------------------------------------
+	\begin{frame}
+
+		\begin{table}[]
+			% Caption and Label
+			\caption{ \ref{table:lls} Lag Length Selection Criteria}
+			\label{table:lls} \vspaceFive
+			
+			% Table Lag Length Selection
+			\begin{tabular}{llll}
+			\hline
+			\mc{1}{c}{Lag} & \mc{1}{c}{FPE} & \mc{1}{c}{AIC} & \mc{1}{c}{BIC} \\ \hline
+			
+			0              & 1.03 x 10      & 32.107         & 32.192         \\ \hline
+			
+			1*             & 117944.1*      & 23.029*        & 23.454*        \\ \hline
+			
+			2              & 127300.7       & 23.105         & 23.869         \\ \hline
+			
+			3              & 142926.7       & 23.219         & 24.3224        \\ \hline
+			
+			4              & 149122.0       & 23.259         & 24.701          \\ \hline
+			
+			5              & 169942.3       & 23.385         & 25.167          \\ \hline
+			
+			6              & 156708.8       & 23.297         & 25.419          \\ \hline
+			\end{tabular}
+		\end{table}
+	
+		% Description of table
+		\begin{block}{}
+			From Table \ref{table:lls}, we can rely on information criteria as only one of these three tests; FPE, AIC, and BIC obtained minimum values at the indicated lag.  \\
+			The test displays \textHighlight{lag 1} as the optimum. Thus, the lag length for the estimation is 1. 
+		\end{block}
+	\end{frame}
+
+	% --------------------------------------------------------------------
+	\begin{frame}{What Next After Lag Length Selection}
+		\begin{block}{}
+			\vspaceTen
+			Once the unit roots and lag length selections are determined for a time series data, the next step is to inspect whether there exists a \\
+			\textHighlight{Cointegration (Long term relationship)} among the variables or not.
+			\vspaceTen
+		\end{block}
+	\end{frame}
+
+	% --------------------------------------------------------------------
+	% Cointergration
+	% --------------------------------------------------------------------
+	\section{Cointegration}
+	\begin{frame}{Cointegration : Long Term Relationship}
+		... Co-integration	
+	\end{frame}
 	
 	% --------------------------------------------------------------------
 	% Long and Short Term Equilibrium
