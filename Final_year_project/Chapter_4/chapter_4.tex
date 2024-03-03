@@ -17,9 +17,9 @@
 % Body
 \begin{document}
 	% Define variables
-	\newcommand{\startDate}{ January, 2007 }
-	\newcommand{\finishDate}{ June, 2015 }
-	\newcommand{\numOfObservations}{ 204 }
+	\newcommand{\startDate}{January, 2007 }
+	\newcommand{\finishDate}{June, 2015 }
+	\newcommand{\numOfObservations}{204 }
 	
 	
 	% Insert title here
@@ -32,9 +32,9 @@
 	\label{sec:introduction}
 	\begin{frame}{Introduction}
 		
-		\begin{exampleblock}{Objective}
+		\begin{block}{Objective}
 			The purpose of the study is to obtain a suitable model for the ex-pump prices of petroleum products in Ghana. 
-		\end{exampleblock} \vspace{5pt}
+		\end{block} \vspace{5pt}
 		
 		 To examines how changes in the prices of one product cause changes in the price of others in both the short and long terms. \par \vspace{5pt}
 		
@@ -59,11 +59,20 @@
 	\section{Descriptive Statistics}
 	\label{sec:Descriptive}
 	\begin{frame}{Descriptive Statistics}
-		In all, \numOfObservations observations are used (January 2007 to June 2015). 
-		Training data of 144 observations (January 2007 to December 2012) for modelling and 
-		60 data points (January 2013 to June 2015) for model validations. 
-		The 144 observations and 60 data points are arrived at because the data is biweekly in nature. 
-		The descriptive statistics of the products are shown in Table 4.1.
+		\begin{block}{}
+			\vspace{4pt}
+			In all, \numOfObservations observations are used (\startDate to \finishDate). \vspace{4pt}
+		\end{block} \vspace{5pt}
+		
+		\begin{block}{}
+		Training data of 144 observations (January 2007 to December 2012) for modelling \\ \vspace{5pt}
+		
+		Testing data of 60 data points (January 2013 to June 2015) for model validations.
+		\end{block} \vspace{5pt}
+	
+		\begin{block}{}
+			The descriptive statistics of the products are shown in Table 4.1
+		\end{block}
 	\end{frame}
 	
 	
