@@ -5,12 +5,7 @@
 \usepackage{graphicx}
 \usepackage{subfigure}
 \usepackage{comment}
-
-% Customizing table of contents
-\setbeamertemplate{section in toc}[sections numbered]
-\setbeamertemplate{subsection in toc}[subsections numbered]
-\setbeamercolor{section in toc}{fg=blue}
-\setbeamercolor{subsection in toc}{fg=blue!70}
+\usepackage{enumitem}
 
 % Preamble
 \title{Multivariate Time Series Modelling Of Ex-Pump Prices Of Petroleum Products In Ghana}
@@ -21,21 +16,35 @@
 \logo{\includegraphics[width=20pt, height=20pt]{images/logo/logoKnust.png}}
 \date{\today}
 
+% Customizing table of contents
+\setbeamertemplate{section in toc}[sections numbered]
+\setbeamertemplate{subsection in toc}[subsections numbered]
+\setbeamercolor{section in toc}{fg=blue}
+\setbeamercolor{subsection in toc}{fg=blue!70}
+
+% Define variables
+\newcommand{\startDate}{January, 2007 }
+\newcommand{\finishDate}{June, 2015 }
+\newcommand{\numOfObservations}{204 }
+
+\newcommand{\vspaceFive}{\vspace{5pt}}
+\newcommand{\vspaceTen}{\vspace{10pt}}
+\newcommand{\hspaceFive}{\hspace{5pt}}
+\newcommand{\colorHighlight}{blue}
+\newcommand{\warning}{red}
+\newcommand{\textHighlight}[1]{\textcolor{blue}{#1}}
+
+\newcommand{\VAR}{Vector Autocorelation }
+\newcommand{\VARHighlight}{\textHighlight{Vector Autocorelation }}
+\newcommand{\VEC}{Vector Error Correlation }
+\newcommand{\VECHighlight}{\textHighlight{Vector Error Correlation }}
+
+
+
+
+
 % Body
 \begin{document}
-	% Define variables
-	\newcommand{\startDate}{January, 2007 }
-	\newcommand{\finishDate}{June, 2015 }
-	\newcommand{\numOfObservations}{204 }
-	
-	\newcommand{\highlight}{blue}
-	\newcommand{\warning}{red}
-	
-	\newcommand{\VAR}{Vector Autocorelation }
-	\newcommand{\VARHighlight}{\textcolor{\highlight}{Vector Autocorelation } }
-	\newcommand{\VEC}{Vector Error Correlation }
-	\newcommand{\VECHighlight}{\textcolor{\highlight}{Vector Error Correlation } }
-	
 	
 	% Insert title here
 	\begin{frame}
@@ -60,7 +69,7 @@
 		
 		 To examines how changes in the prices of one product cause changes in the price of others in both the short and long terms. \par \vspace{5pt}
 		
-		Data spanning \startDate to \finishDate are obtained from the National Petroleum Authority of Ghana, covering four petroleum products; \textcolor{blue}{Gasoline, Gasoil, Kerosene, and Liquefied Petroleum Gas (LPG) }. 
+		Data spanning \startDate to \finishDate are obtained from the National Petroleum Authority of Ghana, covering four petroleum products; \textHighlight{Gasoline, Gasoil, Kerosene, and Liquefied Petroleum Gas (LPG) }. 
 	\end{frame}
 	
 	% --------------------------------------------------------------------
@@ -295,14 +304,42 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 	\begin{frame}{Estimation of VAR/ VEC Models}
 		\begin{block}{}
 			Estimating parameters of \VARHighlight (VAR) or \VECHighlight (VEC) models require that variables are 
-			covariance stationary \vspace{5pt}
-		\end{block} \vspace{5pt}
+			covariance stationary \vspaceFive
+		\end{block} \vspaceFive
 		
-		VAR for instance cannot be used if the variables are not stationary 
-		Also, if the data is non-stationary, the forecast cannot be done because VAR assumes 
-		stationarity
+		\begin{block}{}
+			VAR for instance cannot be used if the variables are not stationary. \\
+			Also, if the data is non-stationary, the forecast cannot be done because \textHighlight{VAR assumes stationarity}
+		\end{block}
 	
+		\begin{block}{}
+			We then test for the long run relationship using \textHighlight{Johansen’s cointegration test}.  \\
+			That is if the result confirms that there is a long-run relationship among the variables, 
+			we can proceed to the VEC model. 
+		\end{block}
+	
+		\begin{exampleblock}{}
+			The first step involved in estimating is to first determine the lag Length or order. 
+		\end{exampleblock}
 	\end{frame}
+
+	% --------------------------------------------------------------------
+	\begin{frame}{Estimation of VAR/ VEC Models }
+		
+		\begin{block}{What Next After Series is Stationary ?}
+			\begin{itemize}[label=$\diamond$, leftmargin=2em, itemsep=0.5em]
+				\item Lag Length Selection (LLS)
+				\item Cointegration Test
+				\item Long Term Equilibrium
+				\item Short Term Equilibrium
+				\item Estimation of VEC Model (If There is cointegration)
+				\item Model Validation
+				\item Forecast of Ex-Pump prices of Products
+			\end{itemize}
+		\end{block}
+		
+	\end{frame}
+
 	
 	% --------------------------------------------------------------------
 	% LLS Criteria and Cointergration
