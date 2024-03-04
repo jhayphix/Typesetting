@@ -53,9 +53,6 @@
 \newcommand{\subTN}[2]{\text{#1}_{#2}}
 
 
-
-
-
 % Body
 \begin{document}
 	
@@ -713,6 +710,9 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 	% Estimation of VEC Model
 	% --------------------------------------------------------------------
 	\section{Estimation of VEC Model}
+	
+	% Commented out
+	\begin{comment}
 	\begin{frame}{Estimation of VEC Model}
 		The VEC models are estimated using these equations,
 		
@@ -756,6 +756,8 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 			\label{model:model_zt} 
 		\end{equation}
 	\end{frame}
+	\end{comment}
+	% --------------------------------------------------------------------
 	
 	% --------------------------------------------------------------------
 	\begin{frame}{Estimation of VEC Model}
@@ -788,65 +790,61 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 			The results of VAR are reported by the 4 equations below. The VEC models are computed with one lag. The models relating the products to their lags and that of others may best be described as;
 		\end{block} \vspaceFive
 		
-		\begin{math}
-			\begin{bmatrix}
-				\subTT{\varGasoline}{t} \\
-				\subTT{\varGasoil}{t} \\
-				\subTT{\varKerosene}{t} \\
-				\subTT{\varLpg}{t}
-			\end{bmatrix}
-		\end{math}
-		=
-		\begin{math}
-			\begin{bmatrix}
-				0.006 \\
-				0.017 \\
-				0.001 \\
-				0.020
-			\end{bmatrix}
-		\end{math}
-		+
-		
-		\begin{math}
-			\begin{bmatrix}
-				0.691 & 0.0221 & 0.027 & -0.580 \\
-				0.524 & -0.783 & -0.002 & -0.214 \\
-				0.058 & -0.002 & -0.518 & 0.059 \\
-				0.054 & -0.080 & 0.010 & -0.450
-			\end{bmatrix}
-		\end{math}
-		\begin{math}
-			\begin{bmatrix}
-				\subTT{\varGasoline}{t-1} \\
-				\subTT{\varGasoil}{t-1} \\
-				\subTT{\varKerosene}{t-1} \\
-				\subTT{\varLpg}{t-1}
-			\end{bmatrix}
-		\end{math}
-		+
-		
-		\begin{math}
-			\begin{bmatrix}
-				\subTT{ECT}{pg} & 0 & 0 & 0 \\
-				0 & \subTT{ECT}{g} & 0 & 0 \\
-				0 & 0 & \subTT{ECT}{k} & 0 \\
-				0 & 0 & 0 & \subTT{ECT}{l}
-			\end{bmatrix}
-		\end{math}
-		\begin{math}
-			\begin{bmatrix}
-				-1.613 \\
-				-0.695 \\
-				-0.039 \\
-				-0.036
-			\end{bmatrix}
-		\end{math}
+			\begin{math}
+				\begin{bmatrix}
+					\subTT{\varGasoline}{t} \\
+					\subTT{\varGasoil}{t} \\
+					\subTT{\varKerosene}{t} \\
+					\subTT{\varLpg}{t}
+				\end{bmatrix}
+			\end{math}
+			=
+			\begin{math}
+				\begin{bmatrix}
+					0.006 \\
+					0.017 \\
+					0.001 \\
+					0.020
+				\end{bmatrix}
+			\end{math}
+			+
+			
+			\begin{math}
+				\begin{bmatrix}
+					0.691 & 0.0221 & 0.027 & -0.580 \\
+					0.524 & -0.783 & -0.002 & -0.214 \\
+					0.058 & -0.002 & -0.518 & 0.059 \\
+					0.054 & -0.080 & 0.010 & -0.450
+				\end{bmatrix}
+			\end{math}
+			\begin{math}
+				\begin{bmatrix}
+					\subTT{\varGasoline}{t-1} \\
+					\subTT{\varGasoil}{t-1} \\
+					\subTT{\varKerosene}{t-1} \\
+					\subTT{\varLpg}{t-1}
+				\end{bmatrix}
+			\end{math}
+			+
+			
+			\begin{math}
+				\begin{bmatrix}
+					\subTT{ECT}{pg} & 0 & 0 & 0 \\
+					0 & \subTT{ECT}{g} & 0 & 0 \\
+					0 & 0 & \subTT{ECT}{k} & 0 \\
+					0 & 0 & 0 & \subTT{ECT}{l}
+				\end{bmatrix}
+			\end{math}
+			\begin{math}
+				\begin{bmatrix}
+					-1.613 \\
+					-0.695 \\
+					-0.039 \\
+					-0.036
+				\end{bmatrix}
+			\end{math}	
 	
 	\end{frame}
-	
-	
-	% --------------------------------------------------------------------
-	
 	
 	% --------------------------------------------------------------------
 	
@@ -875,7 +873,5 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 	% --------------------------------------------------------------------
 	% Summary of Chapter
 	% --------------------------------------------------------------------
-	
-	
 	
 \end{document}
