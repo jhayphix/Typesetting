@@ -6,6 +6,7 @@
 \usepackage{subfigure}
 \usepackage{comment}
 \usepackage{enumitem}
+\usepackage{amsmath}
 
 % Preamble
 \title{Multivariate Time Series Modelling Of Ex-Pump Prices Of Petroleum Products In Ghana}
@@ -40,6 +41,7 @@
 \newcommand{\VECHighlight}{\textHighlight{Vector Error Correlation }}
 
 \newcommand{\mc}[3]{\multicolumn{#1}{#2}{#3}}
+\newcommand{\textSubMath}[2]{$(\text{#1})_{\text{#2}}$}
 
 
 
@@ -535,10 +537,84 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 			The coefficients of the error correction terms (ECT) [Table 8] show the speed of adjustments of disequilibrium in the period under study. The negative sign associated with the error term is simply a departure in one direction. These are satisfying as they imply convergence in the long run. That is, deviation from the long run is corrected
 		\end{block}.
 	\end{frame}
+
+	% -------------------------------------------------------------------
 	\begin{frame}
 		% Table
+
+		\begin{table}[]
+			
+			% Gasoline table
+			\caption{ \ref{table:gasoline_model} Gasoline Model}
+			\label{table:gasoline_model}
+			\begin{tabular}{llll}
+				\hline
+				Parameters      & Coefficient & S.E   & t-satistics \\ \hline
+				
+				\mc{4}{l}{\textHighlight{Gasoline Model}}                  \\ 
+				
+				\textSubMath{Gasoline}{t-1} & 0.691   & 0.189 & 3.650*  \\ 
+				\textSubMath{Gasoil}{t-1}   & -0.602  & 0.386 & -1.561  \\ 
+				\textSubMath{Kerosene}{t-1} & 0.027   & 0.091 & 0.294   \\ 
+				\textSubMath{LPG}{t-1}     & -0.580   & 0.262 & -2.211*   \\ 
+				Constant        & 0.006       & 0.805 & 0.007    \\ 
+				ECT             & -1.613      & 0.145 & -11.118*  \\ 
+				\hline
+			\end{tabular}
+		\end{table}
+	\end{frame}
+	
+	% -------------------------------------------------------------------	
+	\begin{frame}
+		\begin{table}[]
+			
+			% Gasoline table
+			\caption{ \ref{table:gasoil_model} Gasoil Model}
+			\label{table:gasoil_model}
+			\begin{tabular}{llll}
+				\hline
+				Parameters      & Coefficient & S.E   & t-satistics \\ \hline
+				
+				\mc{4}{l}{\textHighlight{Gasoil Model}}                  \\ 
+				
+				\textSubMath{Gasoline}{t-1} & 0.524  & 0.126  & 4.165*  \\ 
+				\textSubMath{Gasoil}{t-1}   & -0.783 & 0.256 & -3.059*  \\ 
+				\textSubMath{Kerosene}{t-1} & -0.002 & 0.060 & -0.030   \\ 
+				\textSubMath{LPG}{t-1}     & -0.214  & 0.174 & -1.227   \\ 
+				Constant        		   & 0.017   & 0.535 & 0.032    \\ 
+				ECT             		   & -0.695  & 0.096 & -7.215*  \\ 
+				\hline	    
+				  
+			\end{tabular}
+		\end{table}
 		
 	\end{frame}
+
+	\begin{frame}
+		\begin{table}[]
+			
+			% Gasoline table
+			\caption{ \ref{table:kerosene_model} Gasoil Model}
+			\label{table:kerosene_model}
+			\begin{tabular}{llll}
+				\hline
+				Parameters      & Coefficient & S.E   & t-satistics \\ \hline
+				
+				\mc{4}{l}{\textHighlight{Kerosene Model}}                  \\ 
+				
+				\textSubMath{Gasoline}{t-1} & 0.524  & 0.126  & 4.165*  \\ 
+				\textSubMath{Gasoil}{t-1}   & -0.783 & 0.256 & -3.059*  \\ 
+				\textSubMath{Kerosene}{t-1} & -0.002 & 0.060 & -0.030   \\ 
+				\textSubMath{LPG}{t-1}     & -0.214  & 0.174 & -1.227   \\ 
+				Constant        		   & 0.017   & 0.535 & 0.032    \\ 
+				ECT             		   & -0.695  & 0.096 & -7.215*  \\ 
+				\hline	    
+				
+			\end{tabular}
+		\end{table}
+		
+	\end{frame}
+	
 	
 	% --------------------------------------------------------------------
 	% Estimation of VEC Model

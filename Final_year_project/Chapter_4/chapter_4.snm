@@ -7,3 +7,6 @@
 \beamer@slide {plot:pacf__diff_series}{16}
 \beamer@slide {table:lls}{20}
 \beamer@slide {table:cointegration}{23}
+\beamer@slide {table:gasoline_model}{27}
+\beamer@slide {table:gasoil_model}{28}
+\beamer@slide {table:kerosene_model}{29}
