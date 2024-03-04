@@ -7,6 +7,9 @@
 \usepackage{comment}
 \usepackage{enumitem}
 \usepackage{amsmath}
+\usepackage{caption} % For customizing captions
+\usepackage{booktabs} % For better-looking tables
+\usepackage{array} % For fixed-width columns
 
 % Preamble
 \title{Multivariate Time Series Modelling Of Ex-Pump Prices Of Petroleum Products In Ghana}
@@ -43,7 +46,7 @@
 \newcommand{\varGasoline}{w}
 \newcommand{\varGasoil}{x}
 \newcommand{\varKerosene}{y}
-\newcommand{\varLpg}{ppp}
+\newcommand{\varLpg}{z}
 
 \newcommand{\mc}[3]{\multicolumn{#1}{#2}{#3}}
 \newcommand{\textSubMath}[2]{$(\text{#1})_{\text{#2}}$}
@@ -427,17 +430,17 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 			\hline
 			\mc{1}{c}{Lag} & \mc{1}{c}{FPE} & \mc{1}{c}{AIC} & \mc{1}{c}{BIC} \\ \hline
 			
-			0              & 1.03 x $10^{9}$     & 32.107         & 32.192         \\ \hline
+			0              & 1.03 x $10^{9}$     & 32.107         & 32.192         \\
 			
-			1*             & 117944.1*      & 23.029*        & 23.454*        \\ \hline
+			1*             & 117944.1*      & 23.029*        & 23.454*        \\ 
 			
-			2              & 127300.7       & 23.105         & 23.869         \\ \hline
+			2              & 127300.7       & 23.105         & 23.869         \\ 
 			
-			3              & 142926.7       & 23.219         & 24.3224        \\ \hline
+			3              & 142926.7       & 23.219         & 24.3224        \\
 			
-			4              & 149122.0       & 23.259         & 24.701          \\ \hline
+			4              & 149122.0       & 23.259         & 24.701          \\
 			
-			5              & 169942.3       & 23.385         & 25.167          \\ \hline
+			5              & 169942.3       & 23.385         & 25.167          \\
 			
 			6              & 156708.8       & 23.297         & 25.419          \\ \hline
 			\end{tabular}
@@ -644,19 +647,19 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 			\caption{ \ref{table:LPG_model} LPG Model}
 			\label{table:LPG_model}
 			\begin{tabular}{llll}
-				\hline
-				Parameters      & Coefficient & S.E   & t-satistics \\ \hline
+				\toprule
+				Parameters & Coefficient & S.E & t-satistics \\
+				\midrule
+				\textHighlight{LPG Model} & & & \\ [10pt]
 				
-				\mc{4}{l}{\textHighlight{LPG Model}}                  \\ 
-				
-				\textSubMath{Gasoline}{t-1} & 0.054 & 0.106 & 0.505 \\
-				\textSubMath{Gasoil}{t-1} & -0.080 & 0.216 & -0.370 \\
-				\textSubMath{Kerosene}{t-1} & 0.010 & 0.051 & -0.197 \\
-				\textSubMath{LPG}{t-1} & -0.450 & 0.147 & -3.058* \\
-				Constant & 0.020 & 0.452 & 0.044 \\
+				\textSubMath{Gasoline}{t-1} & 0.054 & 0.106 & 0.505 \\ [10pt]
+				\textSubMath{Gasoil}{t-1} & -0.080 & 0.216 & -0.370 \\ [10pt]
+				\textSubMath{Kerosene}{t-1} & 0.010 & 0.051 & -0.197 \\ [10pt]
+				\textSubMath{LPG}{t-1} & -0.450 & 0.147 & -3.058* \\ [5pt]
+				Constant & 0.020 & 0.452 & 0.044 \\ [5pt]
 				ECT & -0.036 & 0.081 & -0.437 \\
 				
-				\hline	    
+				\bottomrule	    
 				
 			\end{tabular}
 		\end{table}
@@ -778,7 +781,7 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 			\subTT{\varKerosene}{t} = \text{c} + \subNT{\phi}{31}\subTT{\varGasoline}{t-1} + \subNT{\phi}{32}\subTT{\varGasoil}{t-1} + \subNT{\phi}{33}\subTT{\varKerosene}{t-1} + \subNT{\phi}{34}\subTT{\varLpg}{t-1} + \subNT{\epsilon}{t} 
 			\label{model:model_kerosene}
 		\end{equation}
-		
+	
 		\begin{equation}
 			\subTT{\varLpg}{t} = \text{c} + \subNT{\phi}{1}\subTT{\varGasoline}{t-1} + \subNT{\phi}{2}\subTT{\varGasoil}{t-1} + \subNT{\phi}{3}\subTT{\varKerosene}{t-1} + \subNT{\phi}{4}\subTT{\varLpg}{t-1} + \subNT{\epsilon}{t} 
 			\label{model:model_lpg}
@@ -849,8 +852,61 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 	\end{frame}
 	
 	% --------------------------------------------------------------------
+	\begin{frame}
+		where, 
+		\begin{math}
+			\begin{bmatrix}
+				\subTT{\varGasoline}{t} \\
+				\subTT{\varGasoil}{t} \\
+				\subTT{\varKerosene}{t} \\
+				\subTT{\varLpg}{t}
+			\end{bmatrix}
+		\end{math},
+		represents the projects GASOLINE, GASOIL, KEROSENE, LPG prices at the time t,
+		\begin{math}
+			\begin{bmatrix}
+				\subTT{ECT}{pg} & 0 & 0 & 0 \\
+				0 & \subTT{ECT}{g} & 0 & 0 \\
+				0 & 0 & \subTT{ECT}{k} & 0 \\
+				0 & 0 & 0 & \subTT{ECT}{l}
+			\end{bmatrix}
+		\end{math}
+		\vspaceFive
+		
+		refers to the error corrected terms (ECT) for each model,
+		(pg, g, k, and L respectively representing GASOLINE, GASOIL, KEROSENE, and LPG prices), and
+		\begin{math}
+			\begin{bmatrix}
+				\subTT{\varGasoline}{t-1} \\
+				\subTT{\varGasoil}{t-1} \\
+				\subTT{\varKerosene}{t-1} \\
+				\subTT{\varLpg}{t-1}
+			\end{bmatrix}
+		\end{math} 
+		referring to the lags of the products (i.e. lag 1). \\
+		\vspaceFive
+		The summary of the results of the VEC models is presented in Table \ref{table:model_summary}		
+		
+	\end{frame}
 	
 	% --------------------------------------------------------------------
+	\begin{frame}
+		\begin{table}
+			\caption{ \ref{table:model_summary} Summary Results of the Models}
+			\label{table:model_summary}
+			\begin{tabular}{lllll}
+				\toprule
+				Statistics/Products & GASOLINE & GASOIL & KEROSENE & LPG \\
+				\midrule
+				GASOLINE & 5 & -7.781 & 0.031 & 0.010 \\ [10pt]
+				GASOIL & 5 & -5.537 & 0.045 & 0.010 \\ [10pt]
+				KEROSENE & 5 & -4.493 & 0.263 & 0.010 \\ [10pt]
+				LPG & 5 & -4.473 & 0.063 & 0.010 \\ [10pt]
+				\bottomrule
+			\end{tabular}
+		\end{table}
+	\end{frame}
+	
 	
 	% --------------------------------------------------------------------
 	% Model Validation
