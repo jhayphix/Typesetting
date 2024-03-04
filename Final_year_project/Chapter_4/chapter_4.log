@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2024.1.31)  4 MAR 2024 01:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2024.1.31)  4 MAR 2024 02:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1883,6 +1883,32 @@ Overfull \hbox (115.8125pt too wide) has occurred while \output is active
 [32
 
 ]
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 701--701
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 701--701
+ [][][][]  
+ []
+
+File: images/logo/logoKnust.png Graphic file (type png)
+<use images/logo/logoKnust.png>
+Package pdftex.def Info: images/logo/logoKnust.png  used on input line 701.
+(pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
+
+Overfull \hbox (58.6327pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[33
+
+]
 \tf@nav=\write7
 \openout7 = `chapter_4.nav'.
 
@@ -1897,10 +1923,10 @@ Package rerunfilecheck Info: File `chapter_4.out' has not changed.
 (rerunfilecheck)             Checksum: 5B4F4F12AE414A538BA36241B3567745;1457.
  ) 
 Here is how much of TeX's memory you used:
- 22977 strings out of 478659
- 457348 string characters out of 2855762
- 706700 words of memory out of 3000000
- 40495 multiletter control sequences out of 15000+600000
+ 22987 strings out of 478659
+ 457647 string characters out of 2855762
+ 706736 words of memory out of 3000000
+ 40503 multiletter control sequences out of 15000+600000
  410792 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,463b,564s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1908,9 +1934,9 @@ Here is how much of TeX's memory you used:
 m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKT
 eX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTeX/fonts/type
 1/public/amsfonts/cm/cmsy10.pfb>
-Output written on chapter_4.pdf (32 pages, 792018 bytes).
+Output written on chapter_4.pdf (33 pages, 801215 bytes).
 PDF statistics:
- 1485 PDF objects out of 1728 (max. 8388607)
- 88 named destinations out of 1000 (max. 500000)
- 1540 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1524 PDF objects out of 1728 (max. 8388607)
+ 90 named destinations out of 1000 (max. 500000)
+ 1576 words of extra memory for PDF output out of 10000 (max. 10000000)
 
