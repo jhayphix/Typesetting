@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2024.1.31)  4 MAR 2024 02:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2024.1.31)  4 MAR 2024 15:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -714,24 +714,24 @@ File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
 (chapter_4.aux)
 \openout1 = `chapter_4.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -788,7 +788,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 51.
+Package hyperref Info: Link coloring OFF on input line 54.
 
 (C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -801,66 +801,66 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count344
 )
-LaTeX Info: Redefining \ref on input line 51.
-LaTeX Info: Redefining \pageref on input line 51.
-LaTeX Info: Redefining \nameref on input line 51.
+LaTeX Info: Redefining \ref on input line 54.
+LaTeX Info: Redefining \pageref on input line 54.
+LaTeX Info: Redefining \nameref on input line 54.
 
 (chapter_4.out) (chapter_4.out)
 \@outlinefile=\write6
 \openout6 = `chapter_4.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 51.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 54.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 51.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 54.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 51.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 51.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 51.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 51.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 51.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 54.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 51.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 51.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 51.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 54.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 51.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 51.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 51.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 54.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 51.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 51.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 54.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 51.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 54.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 51.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 51.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 51.
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 51.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 51.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 51.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 51.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 54.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 54.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 5
-1.
+4.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 5
-1.
+4.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 51.
+ut line 54.
 
 (C:\Program Files\MiKTeX\tex/latex/translator\translator-basic-dictionary-Engli
 sh.dict
@@ -886,29 +886,29 @@ Dictionary: translator-numbers-dictionary, Language: English
 lish.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 ) (chapter_4.nav)
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 51--51
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 54--54
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 51--51
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 54--54
  [][][][]  
  []
 
 
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 56--56
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 59--59
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 56--56
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 59--59
  [][][][]  
  []
 
-<images/logo/logoKnust.png, id=66, 331.99031pt x 490.83376pt>
+<images/logo/logoKnust.png, id=70, 331.99031pt x 490.83376pt>
 File: images/logo/logoKnust.png Graphic file (type png)
 <use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 56.
+Package pdftex.def Info: images/logo/logoKnust.png  used on input line 59.
 (pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
 
 Overfull \hbox (58.6327pt too wide) has occurred while \output is active
@@ -924,19 +924,19 @@ Overfull \hbox (115.8125pt too wide) has occurred while \output is active
 
 {C:/Users/macbookpro/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./image
 s/logo/logoKnust.png>]
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 62--62
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 65--65
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 62--62
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 65--65
  [][][][]  
  []
 
 (chapter_4.toc)
 File: images/logo/logoKnust.png Graphic file (type png)
 <use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 62.
+Package pdftex.def Info: images/logo/logoKnust.png  used on input line 65.
 (pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
 
 Overfull \hbox (58.6327pt too wide) has occurred while \output is active
@@ -951,18 +951,18 @@ Overfull \hbox (115.8125pt too wide) has occurred while \output is active
 [2
 
 ]
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 77--77
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 80--80
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 77--77
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 80--80
  [][][][]  
  []
 
 File: images/logo/logoKnust.png Graphic file (type png)
 <use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 77.
+Package pdftex.def Info: images/logo/logoKnust.png  used on input line 80.
 (pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
 
 Overfull \hbox (58.6327pt too wide) has occurred while \output is active
@@ -977,18 +977,18 @@ Overfull \hbox (115.8125pt too wide) has occurred while \output is active
 [3
 
 ]
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 91--91
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 94--94
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 91--91
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 94--94
  [][][][]  
  []
 
 File: images/logo/logoKnust.png Graphic file (type png)
 <use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 91.
+Package pdftex.def Info: images/logo/logoKnust.png  used on input line 94.
 (pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
 
 Overfull \hbox (58.6327pt too wide) has occurred while \output is active
@@ -1003,28 +1003,28 @@ Overfull \hbox (115.8125pt too wide) has occurred while \output is active
 [4
 
 ]
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 108--108
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 111--111
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 108--108
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 111--111
  [][][][]  
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 108
+LaTeX Font Info:    Trying to load font information for U+msa on input line 111
 .
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 108
+LaTeX Font Info:    Trying to load font information for U+msb on input line 111
 .
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 108.
+ut line 111.
 
 (C:\Program Files\MiKTeX\tex/latex/sansmathaccent\ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
@@ -1032,7 +1032,7 @@ thkerncmss.
 )
 File: images/logo/logoKnust.png Graphic file (type png)
 <use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 108.
+Package pdftex.def Info: images/logo/logoKnust.png  used on input line 111.
 (pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
 
 Overfull \hbox (58.6327pt too wide) has occurred while \output is active
@@ -1047,18 +1047,18 @@ Overfull \hbox (115.8125pt too wide) has occurred while \output is active
 [5
 
 ]
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 126--126
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 129--129
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 126--126
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 129--129
  [][][][]  
  []
 
 File: images/logo/logoKnust.png Graphic file (type png)
 <use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 126.
+Package pdftex.def Info: images/logo/logoKnust.png  used on input line 129.
 (pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
 
 Overfull \hbox (58.6327pt too wide) has occurred while \output is active
@@ -1073,18 +1073,18 @@ Overfull \hbox (115.8125pt too wide) has occurred while \output is active
 [6
 
 ]
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 148--148
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 151--151
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 148--148
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 151--151
  [][][][]  
  []
 
 File: images/logo/logoKnust.png Graphic file (type png)
 <use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 148.
+Package pdftex.def Info: images/logo/logoKnust.png  used on input line 151.
 (pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
 
 Overfull \hbox (58.6327pt too wide) has occurred while \output is active
@@ -1099,23 +1099,23 @@ Overfull \hbox (115.8125pt too wide) has occurred while \output is active
 [7
 
 ]
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 167--167
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 170--170
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 167--167
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 170--170
  [][][][]  
  []
 
 
-Overfull \hbox (11.05893pt too wide) in paragraph at lines 167--167
+Overfull \hbox (11.05893pt too wide) in paragraph at lines 170--170
  [] 
  []
 
 File: images/logo/logoKnust.png Graphic file (type png)
 <use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 167.
+Package pdftex.def Info: images/logo/logoKnust.png  used on input line 170.
 (pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
 
 Overfull \hbox (58.6327pt too wide) has occurred while \output is active
@@ -1130,49 +1130,49 @@ Overfull \hbox (115.8125pt too wide) has occurred while \output is active
 [8
 
 ]
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 182--182
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 185--185
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 182--182
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 185--185
  [][][][]  
  []
 
-<images/plots/plot_original/plot_original_gasoline.png, id=387, 396.48125pt x 2
+<images/plots/plot_original/plot_original_gasoline.png, id=393, 396.48125pt x 2
 30.8625pt>
 File: images/plots/plot_original/plot_original_gasoline.png Graphic file (type 
 png)
 <use images/plots/plot_original/plot_original_gasoline.png>
 Package pdftex.def Info: images/plots/plot_original/plot_original_gasoline.png 
- used on input line 182.
+ used on input line 185.
 (pdftex.def)             Requested size: 136.91927pt x 78.14346pt.
-<images/plots/plot_original/plot_original_gasoil.png, id=388, 385.44pt x 231.86
+<images/plots/plot_original/plot_original_gasoil.png, id=394, 385.44pt x 231.86
 626pt>
 File: images/plots/plot_original/plot_original_gasoil.png Graphic file (type pn
 g)
 <use images/plots/plot_original/plot_original_gasoil.png>
 Package pdftex.def Info: images/plots/plot_original/plot_original_gasoil.png  u
-sed on input line 182.
+sed on input line 185.
 (pdftex.def)             Requested size: 136.91154pt x 78.14357pt.
-<images/plots/plot_original/plot_original_kerosene.png, id=389, 388.45125pt x 2
+<images/plots/plot_original/plot_original_kerosene.png, id=395, 388.45125pt x 2
 32.87pt>
 File: images/plots/plot_original/plot_original_kerosene.png Graphic file (type 
 png)
 <use images/plots/plot_original/plot_original_kerosene.png>
 Package pdftex.def Info: images/plots/plot_original/plot_original_kerosene.png 
- used on input line 182.
+ used on input line 185.
 (pdftex.def)             Requested size: 136.92018pt x 78.14429pt.
-<images/plots/plot_original/plot_original_lpg.png, id=390, 384.43625pt x 234.87
+<images/plots/plot_original/plot_original_lpg.png, id=396, 384.43625pt x 234.87
 75pt>
 File: images/plots/plot_original/plot_original_lpg.png Graphic file (type png)
 <use images/plots/plot_original/plot_original_lpg.png>
 Package pdftex.def Info: images/plots/plot_original/plot_original_lpg.png  used
- on input line 182.
+ on input line 185.
 (pdftex.def)             Requested size: 136.9187pt x 78.14417pt.
 File: images/logo/logoKnust.png Graphic file (type png)
 <use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 182.
+Package pdftex.def Info: images/logo/logoKnust.png  used on input line 185.
 (pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
 
 Overfull \hbox (58.6327pt too wide) has occurred while \output is active
@@ -1190,18 +1190,18 @@ Overfull \hbox (115.8125pt too wide) has occurred while \output is active
 _original/plot_original_gasoil.png> <./images/plots/plot_original/plot_original
 _kerosene.png> <./images/plots/plot_original/plot_original_lpg.png>]
 Excluding 'comment' comment.
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 223--223
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 226--226
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 223--223
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 226--226
  [][][][]  
  []
 
 File: images/logo/logoKnust.png Graphic file (type png)
 <use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 223.
+Package pdftex.def Info: images/logo/logoKnust.png  used on input line 226.
 (pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
 
 Overfull \hbox (58.6327pt too wide) has occurred while \output is active
@@ -1216,18 +1216,18 @@ Overfull \hbox (115.8125pt too wide) has occurred while \output is active
 [10
 
 ]
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 250--250
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 253--253
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 250--250
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 253--253
  [][][][]  
  []
 
 File: images/logo/logoKnust.png Graphic file (type png)
 <use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 250.
+Package pdftex.def Info: images/logo/logoKnust.png  used on input line 253.
 (pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
 
 Overfull \hbox (58.6327pt too wide) has occurred while \output is active
@@ -1242,18 +1242,18 @@ Overfull \hbox (115.8125pt too wide) has occurred while \output is active
 [11
 
 ]
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 265--265
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 268--268
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 265--265
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 268--268
  [][][][]  
  []
 
 File: images/logo/logoKnust.png Graphic file (type png)
 <use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 265.
+Package pdftex.def Info: images/logo/logoKnust.png  used on input line 268.
 (pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
 
 Overfull \hbox (58.6327pt too wide) has occurred while \output is active
@@ -1268,45 +1268,45 @@ Overfull \hbox (115.8125pt too wide) has occurred while \output is active
 [12
 
 ]
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 280--280
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 283--283
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 280--280
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 283--283
  [][][][]  
  []
 
-<images/plots/plot_diff/plot_diff_gasoline.png, id=566, 383.4325pt x 258.9675pt
+<images/plots/plot_diff/plot_diff_gasoline.png, id=572, 383.4325pt x 258.9675pt
 >
 File: images/plots/plot_diff/plot_diff_gasoline.png Graphic file (type png)
 <use images/plots/plot_diff/plot_diff_gasoline.png>
 Package pdftex.def Info: images/plots/plot_diff/plot_diff_gasoline.png  used on
- input line 280.
+ input line 283.
 (pdftex.def)             Requested size: 136.9181pt x 78.14526pt.
-<images/plots/plot_diff/plot_diff_gasoil.png, id=567, 386.44376pt x 262.9825pt>
+<images/plots/plot_diff/plot_diff_gasoil.png, id=573, 386.44376pt x 262.9825pt>
 
 File: images/plots/plot_diff/plot_diff_gasoil.png Graphic file (type png)
 <use images/plots/plot_diff/plot_diff_gasoil.png>
 Package pdftex.def Info: images/plots/plot_diff/plot_diff_gasoil.png  used on i
-nput line 280.
+nput line 283.
 (pdftex.def)             Requested size: 136.91429pt x 78.14496pt.
-<images/plots/plot_diff/plot_diff_kerosene.png, id=568, 389.455pt x 263.98625pt
+<images/plots/plot_diff/plot_diff_kerosene.png, id=574, 389.455pt x 263.98625pt
 >
 File: images/plots/plot_diff/plot_diff_kerosene.png Graphic file (type png)
 <use images/plots/plot_diff/plot_diff_kerosene.png>
 Package pdftex.def Info: images/plots/plot_diff/plot_diff_kerosene.png  used on
- input line 280.
+ input line 283.
 (pdftex.def)             Requested size: 136.91148pt x 78.14514pt.
-<images/plots/plot_diff/plot_diff_lpg.png, id=569, 388.45125pt x 262.9825pt>
+<images/plots/plot_diff/plot_diff_lpg.png, id=575, 388.45125pt x 262.9825pt>
 File: images/plots/plot_diff/plot_diff_lpg.png Graphic file (type png)
 <use images/plots/plot_diff/plot_diff_lpg.png>
 Package pdftex.def Info: images/plots/plot_diff/plot_diff_lpg.png  used on inpu
-t line 280.
+t line 283.
 (pdftex.def)             Requested size: 136.92018pt x 78.14496pt.
 File: images/logo/logoKnust.png Graphic file (type png)
 <use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 280.
+Package pdftex.def Info: images/logo/logoKnust.png  used on input line 283.
 (pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
 
 Overfull \hbox (58.6327pt too wide) has occurred while \output is active
@@ -1323,18 +1323,18 @@ Overfull \hbox (115.8125pt too wide) has occurred while \output is active
  <./images/plots/plot_diff/plot_diff_gasoline.png> <./images/plots/plot_diff/pl
 ot_diff_gasoil.png> <./images/plots/plot_diff/plot_diff_kerosene.png> <./images
 /plots/plot_diff/plot_diff_lpg.png>]
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 307--307
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 310--310
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 307--307
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 310--310
  [][][][]  
  []
 
 File: images/logo/logoKnust.png Graphic file (type png)
 <use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 307.
+Package pdftex.def Info: images/logo/logoKnust.png  used on input line 310.
 (pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
 
 Overfull \hbox (58.6327pt too wide) has occurred while \output is active
@@ -1349,49 +1349,49 @@ Overfull \hbox (115.8125pt too wide) has occurred while \output is active
 [14
 
 ]
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 322--322
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 325--325
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 322--322
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 325--325
  [][][][]  
  []
 
-<images/acf_pacf/acf_pacf_diff/acf_diff_gasoline.png, id=641, 368.37625pt x 235
+<images/acf_pacf/acf_pacf_diff/acf_diff_gasoline.png, id=647, 368.37625pt x 235
 .88126pt>
 File: images/acf_pacf/acf_pacf_diff/acf_diff_gasoline.png Graphic file (type pn
 g)
 <use images/acf_pacf/acf_pacf_diff/acf_diff_gasoline.png>
 Package pdftex.def Info: images/acf_pacf/acf_pacf_diff/acf_diff_gasoline.png  u
-sed on input line 322.
+sed on input line 325.
 (pdftex.def)             Requested size: 136.91537pt x 78.14339pt.
-<images/acf_pacf/acf_pacf_diff/acf_diff_gasoil.png, id=642, 365.365pt x 236.885
+<images/acf_pacf/acf_pacf_diff/acf_diff_gasoil.png, id=648, 365.365pt x 236.885
 pt>
 File: images/acf_pacf/acf_pacf_diff/acf_diff_gasoil.png Graphic file (type png)
 
 <use images/acf_pacf/acf_pacf_diff/acf_diff_gasoil.png>
 Package pdftex.def Info: images/acf_pacf/acf_pacf_diff/acf_diff_gasoil.png  use
-d on input line 322.
+d on input line 325.
 (pdftex.def)             Requested size: 136.91676pt x 78.14337pt.
-<images/acf_pacf/acf_pacf_diff/acf_diff_kerosene.png, id=643, 365.365pt x 241.9
+<images/acf_pacf/acf_pacf_diff/acf_diff_kerosene.png, id=649, 365.365pt x 241.9
 0375pt>
 File: images/acf_pacf/acf_pacf_diff/acf_diff_kerosene.png Graphic file (type pn
 g)
 <use images/acf_pacf/acf_pacf_diff/acf_diff_kerosene.png>
 Package pdftex.def Info: images/acf_pacf/acf_pacf_diff/acf_diff_kerosene.png  u
-sed on input line 322.
+sed on input line 325.
 (pdftex.def)             Requested size: 136.91676pt x 78.14531pt.
-<images/acf_pacf/acf_pacf_diff/acf_diff_lpg.png, id=644, 357.335pt x 236.885pt>
+<images/acf_pacf/acf_pacf_diff/acf_diff_lpg.png, id=650, 357.335pt x 236.885pt>
 
 File: images/acf_pacf/acf_pacf_diff/acf_diff_lpg.png Graphic file (type png)
 <use images/acf_pacf/acf_pacf_diff/acf_diff_lpg.png>
 Package pdftex.def Info: images/acf_pacf/acf_pacf_diff/acf_diff_lpg.png  used o
-n input line 322.
+n input line 325.
 (pdftex.def)             Requested size: 136.91737pt x 78.14337pt.
 File: images/logo/logoKnust.png Graphic file (type png)
 <use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 322.
+Package pdftex.def Info: images/logo/logoKnust.png  used on input line 325.
 (pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
 
 Overfull \hbox (58.6327pt too wide) has occurred while \output is active
@@ -1408,49 +1408,49 @@ Overfull \hbox (115.8125pt too wide) has occurred while \output is active
  <./images/acf_pacf/acf_pacf_diff/acf_diff_gasoline.png> <./images/acf_pacf/acf
 _pacf_diff/acf_diff_gasoil.png> <./images/acf_pacf/acf_pacf_diff/acf_diff_keros
 ene.png> <./images/acf_pacf/acf_pacf_diff/acf_diff_lpg.png>]
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 337--337
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 340--340
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 337--337
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 340--340
  [][][][]  
  []
 
-<images/acf_pacf/acf_pacf_diff/pacf_diff_gasoline.png, id=677, 379.4175pt x 250
+<images/acf_pacf/acf_pacf_diff/pacf_diff_gasoline.png, id=683, 379.4175pt x 250
 .9375pt>
 File: images/acf_pacf/acf_pacf_diff/pacf_diff_gasoline.png Graphic file (type p
 ng)
 <use images/acf_pacf/acf_pacf_diff/pacf_diff_gasoline.png>
 Package pdftex.def Info: images/acf_pacf/acf_pacf_diff/pacf_diff_gasoline.png  
-used on input line 337.
+used on input line 340.
 (pdftex.def)             Requested size: 136.9144pt x 78.1459pt.
-<images/acf_pacf/acf_pacf_diff/pacf_diff_gasoil.png, id=678, 379.4175pt x 252.9
+<images/acf_pacf/acf_pacf_diff/pacf_diff_gasoil.png, id=684, 379.4175pt x 252.9
 45pt>
 File: images/acf_pacf/acf_pacf_diff/pacf_diff_gasoil.png Graphic file (type png
 )
 <use images/acf_pacf/acf_pacf_diff/pacf_diff_gasoil.png>
 Package pdftex.def Info: images/acf_pacf/acf_pacf_diff/pacf_diff_gasoil.png  us
-ed on input line 337.
+ed on input line 340.
 (pdftex.def)             Requested size: 136.9144pt x 78.14581pt.
-<images/acf_pacf/acf_pacf_diff/pacf_diff_kerosene.png, id=679, 367.3725pt x 226
+<images/acf_pacf/acf_pacf_diff/pacf_diff_kerosene.png, id=685, 367.3725pt x 226
 .8475pt>
 File: images/acf_pacf/acf_pacf_diff/pacf_diff_kerosene.png Graphic file (type p
 ng)
 <use images/acf_pacf/acf_pacf_diff/pacf_diff_kerosene.png>
 Package pdftex.def Info: images/acf_pacf/acf_pacf_diff/pacf_diff_kerosene.png  
-used on input line 337.
+used on input line 340.
 (pdftex.def)             Requested size: 136.91788pt x 78.14478pt.
-<images/acf_pacf/acf_pacf_diff/pacf_diff_lpg.png, id=680, 373.395pt x 220.825pt
+<images/acf_pacf/acf_pacf_diff/pacf_diff_lpg.png, id=686, 373.395pt x 220.825pt
 >
 File: images/acf_pacf/acf_pacf_diff/pacf_diff_lpg.png Graphic file (type png)
 <use images/acf_pacf/acf_pacf_diff/pacf_diff_lpg.png>
 Package pdftex.def Info: images/acf_pacf/acf_pacf_diff/pacf_diff_lpg.png  used 
-on input line 337.
+on input line 340.
 (pdftex.def)             Requested size: 136.91191pt x 78.14575pt.
 File: images/logo/logoKnust.png Graphic file (type png)
 <use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 337.
+Package pdftex.def Info: images/logo/logoKnust.png  used on input line 340.
 (pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
 
 Overfull \hbox (58.6327pt too wide) has occurred while \output is active
@@ -1467,18 +1467,18 @@ Overfull \hbox (115.8125pt too wide) has occurred while \output is active
  <./images/acf_pacf/acf_pacf_diff/pacf_diff_gasoline.png> <./images/acf_pacf/ac
 f_pacf_diff/pacf_diff_gasoil.png> <./images/acf_pacf/acf_pacf_diff/pacf_diff_ke
 rosene.png> <./images/acf_pacf/acf_pacf_diff/pacf_diff_lpg.png>]
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 360--360
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 363--363
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 360--360
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 363--363
  [][][][]  
  []
 
 File: images/logo/logoKnust.png Graphic file (type png)
 <use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 360.
+Package pdftex.def Info: images/logo/logoKnust.png  used on input line 363.
 (pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
 
 Overfull \hbox (58.6327pt too wide) has occurred while \output is active
@@ -1493,18 +1493,18 @@ Overfull \hbox (115.8125pt too wide) has occurred while \output is active
 [17
 
 ]
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 385--385
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 388--388
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 385--385
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 388--388
  [][][][]  
  []
 
 File: images/logo/logoKnust.png Graphic file (type png)
 <use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 385.
+Package pdftex.def Info: images/logo/logoKnust.png  used on input line 388.
 (pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
 
 Overfull \hbox (58.6327pt too wide) has occurred while \output is active
@@ -1519,18 +1519,18 @@ Overfull \hbox (115.8125pt too wide) has occurred while \output is active
 [18
 
 ]
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 409--409
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 412--412
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 409--409
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 412--412
  [][][][]  
  []
 
 File: images/logo/logoKnust.png Graphic file (type png)
 <use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 409.
+Package pdftex.def Info: images/logo/logoKnust.png  used on input line 412.
 (pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
 
 Overfull \hbox (58.6327pt too wide) has occurred while \output is active
@@ -1545,18 +1545,18 @@ Overfull \hbox (115.8125pt too wide) has occurred while \output is active
 [19
 
 ]
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 445--445
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 448--448
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 445--445
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 448--448
  [][][][]  
  []
 
 File: images/logo/logoKnust.png Graphic file (type png)
 <use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 445.
+Package pdftex.def Info: images/logo/logoKnust.png  used on input line 448.
 (pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
 
 Overfull \hbox (58.6327pt too wide) has occurred while \output is active
@@ -1571,18 +1571,18 @@ Overfull \hbox (115.8125pt too wide) has occurred while \output is active
 [20
 
 ]
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 455--455
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 458--458
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 455--455
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 458--458
  [][][][]  
  []
 
 File: images/logo/logoKnust.png Graphic file (type png)
 <use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 455.
+Package pdftex.def Info: images/logo/logoKnust.png  used on input line 458.
 (pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
 
 Overfull \hbox (58.6327pt too wide) has occurred while \output is active
@@ -1597,18 +1597,18 @@ Overfull \hbox (115.8125pt too wide) has occurred while \output is active
 [21
 
 ]
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 469--469
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 472--472
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 469--469
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 472--472
  [][][][]  
  []
 
 File: images/logo/logoKnust.png Graphic file (type png)
 <use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 469.
+Package pdftex.def Info: images/logo/logoKnust.png  used on input line 472.
 (pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
 
 Overfull \hbox (58.6327pt too wide) has occurred while \output is active
@@ -1623,18 +1623,18 @@ Overfull \hbox (115.8125pt too wide) has occurred while \output is active
 [22
 
 ]
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 500--500
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 503--503
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 500--500
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 503--503
  [][][][]  
  []
 
 File: images/logo/logoKnust.png Graphic file (type png)
 <use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 500.
+Package pdftex.def Info: images/logo/logoKnust.png  used on input line 503.
 (pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
 
 Overfull \hbox (58.6327pt too wide) has occurred while \output is active
@@ -1649,18 +1649,18 @@ Overfull \hbox (115.8125pt too wide) has occurred while \output is active
 [23
 
 ]
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 514--514
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 517--517
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 514--514
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 517--517
  [][][][]  
  []
 
 File: images/logo/logoKnust.png Graphic file (type png)
 <use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 514.
+Package pdftex.def Info: images/logo/logoKnust.png  used on input line 517.
 (pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
 
 Overfull \hbox (58.6327pt too wide) has occurred while \output is active
@@ -1675,268 +1675,18 @@ Overfull \hbox (115.8125pt too wide) has occurred while \output is active
 [24
 
 ]
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 532--532
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 535--535
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 532--532
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 535--535
  [][][][]  
  []
 
 File: images/logo/logoKnust.png Graphic file (type png)
 <use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 532.
+Package pdftex.def Info: images/logo/logoKnust.png  used on input line 535.
 (pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
 
-Overfull \hbox (58.6327pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[25
-
-]
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 539--539
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 539--539
- [][][][]  
- []
-
-File: images/logo/logoKnust.png Graphic file (type png)
-<use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 539.
-(pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
-
-Overfull \hbox (58.6327pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[26
-
-]
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 570--570
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 570--570
- [][][][]  
- []
-
-File: images/logo/logoKnust.png Graphic file (type png)
-<use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 570.
-(pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
-
-Overfull \hbox (58.6327pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[27
-
-]
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 601--601
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 601--601
- [][][][]  
- []
-
-File: images/logo/logoKnust.png Graphic file (type png)
-<use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 601.
-(pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
-
-Overfull \hbox (58.6327pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[28
-
-]
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 632--632
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 632--632
- [][][][]  
- []
-
-File: images/logo/logoKnust.png Graphic file (type png)
-<use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 632.
-(pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
-
-Overfull \hbox (58.6327pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[29
-
-]
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 663--663
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 663--663
- [][][][]  
- []
-
-File: images/logo/logoKnust.png Graphic file (type png)
-<use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 663.
-(pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
-
-Overfull \hbox (58.6327pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[30
-
-]
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 676--676
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 676--676
- [][][][]  
- []
-
-File: images/logo/logoKnust.png Graphic file (type png)
-<use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 676.
-(pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
-
-Overfull \hbox (58.6327pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[31
-
-]
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 691--691
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 691--691
- [][][][]  
- []
-
-File: images/logo/logoKnust.png Graphic file (type png)
-<use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 691.
-(pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
-
-Overfull \hbox (58.6327pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[32
-
-]
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 701--701
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 701--701
- [][][][]  
- []
-
-File: images/logo/logoKnust.png Graphic file (type png)
-<use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 701.
-(pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
-
-Overfull \hbox (58.6327pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[33
-
-]
-\tf@nav=\write7
-\openout7 = `chapter_4.nav'.
-
-\tf@toc=\write8
-\openout8 = `chapter_4.toc'.
-
-\tf@snm=\write9
-\openout9 = `chapter_4.snm'.
-
- (chapter_4.aux)
-Package rerunfilecheck Info: File `chapter_4.out' has not changed.
-(rerunfilecheck)             Checksum: 5B4F4F12AE414A538BA36241B3567745;1457.
- ) 
-Here is how much of TeX's memory you used:
- 22987 strings out of 478659
- 457647 string characters out of 2855762
- 706736 words of memory out of 3000000
- 40503 multiletter control sequences out of 15000+600000
- 410792 words of font info for 53 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 128i,15n,122p,463b,564s stack positions out of 5000i,500n,10000p,200000b,80000s
-<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Progra
-m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmsy10.pfb>
-Output written on chapter_4.pdf (33 pages, 801215 bytes).
-PDF statistics:
- 1524 PDF objects out of 1728 (max. 8388607)
- 90 named destinations out of 1000 (max. 500000)
- 1576 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+Overfull \hbox (58.6327pt too wide) has occurred while \ou

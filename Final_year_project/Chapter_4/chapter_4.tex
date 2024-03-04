@@ -42,7 +42,10 @@
 
 \newcommand{\mc}[3]{\multicolumn{#1}{#2}{#3}}
 \newcommand{\textSubMath}[2]{$(\text{#1})_{\text{#2}}$}
-
+\newcommand{\yLag}[1]{\text{y}_{\text{t}-#1}}
+\newcommand{\subTT}[2]{\text{#1}_{\text{#2}}}
+\newcommand{\subNT}[2]{#1_{\text{#2}}}
+\newcommand{\subTN}[2]{\text{#1}_{#2}}
 
 
 
@@ -702,6 +705,54 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 	
 	% --------------------------------------------------------------------
 	% Estimation of VEC Model
+	% --------------------------------------------------------------------
+	\section{Estimation of VEC Model}
+	\begin{frame}{Estimation of VEC Model}
+		The VEC models are estimated using these equations,
+		
+		\begin{equation}
+			\subTT{w}{t} = \text{c} + \subNT{\phi}{1}\subTT{w}{t-1} + \subNT{\phi}{2}\subTT{x}{t-1} + \subNT{\phi}{3}\subTT{y}{t-1} + \subNT{\phi}{4}\subTT{z}{t-1} + \subNT{\epsilon}{t} 
+			\label{eq:wt}
+		\end{equation}
+	
+		\begin{equation}
+			\subTT{x}{t} = \text{c} + \subNT{\phi}{1}\subTT{w}{t-1} + \subNT{\phi}{2}\subTT{x}{t-1} + \subNT{\phi}{3}\subTT{y}{t-1} + \subNT{\phi}{4}\subTT{z}{t-1} + \subNT{\epsilon}{t} 
+			\label{eq:xt}
+		\end{equation}
+	
+		\begin{equation}
+			\subTT{y}{t} = \text{c} + \subNT{\phi}{1}\subTT{w}{t-1} + \subNT{\phi}{2}\subTT{x}{t-1} + \subNT{\phi}{3}\subTT{y}{t-1} + \subNT{\phi}{4}\subTT{z}{t-1} + \subNT{\epsilon}{t} 
+			\label{eq:yt}
+		\end{equation}
+	
+		\begin{equation}
+			\subTT{z}{t} = \text{c} + \subNT{\phi}{1}\subTT{w}{t-1} + \subNT{\phi}{2}\subTT{x}{t-1} + \subNT{\phi}{3}\subTT{y}{t-1} + \subNT{\phi}{4}\subTT{z}{t-1} + \subNT{\epsilon}{t} 
+			\label{eq:zt}
+		\end{equation}
+		
+		\begin{block}{}
+			The results of VAR are reported by the 4 equations below. The VEC models are computed with one lag. The models relating the products to their lags and that of others may best be described as;
+		\end{block}
+	\end{frame}
+
+	% --------------------------------------------------------------------
+	\begin{frame}
+		\begin{equation}
+			\begin{bmatrix}
+				\subTT{w}{t} \\
+				\subTT{x}{t} \\
+				\subTT{y}{t} \\
+				\subTT{z}{t}
+			\end{bmatrix}
+			
+		\end{equation}
+	
+	\end{frame}
+	
+	
+	% --------------------------------------------------------------------
+	
+	
 	% --------------------------------------------------------------------
 	
 	% --------------------------------------------------------------------
