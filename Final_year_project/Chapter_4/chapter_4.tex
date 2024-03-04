@@ -48,12 +48,15 @@
 \newcommand{\varKerosene}{y}
 \newcommand{\varLpg}{z}
 
+% Table
 \newcommand{\mc}[3]{\multicolumn{#1}{#2}{#3}}
-\newcommand{\textSubMath}[2]{$(\text{#1})_{\text{#2}}$}
+
+% Math
 \newcommand{\yLag}[1]{\text{y}_{\text{t}-#1}}
 \newcommand{\subTT}[2]{\text{#1}_{\text{#2}}}
 \newcommand{\subNT}[2]{#1_{\text{#2}}}
 \newcommand{\subTN}[2]{\text{#1}_{#2}}
+\newcommand{\mathSubTT}[2]{$(\text{#1})_{\text{#2}}$}
 
 
 % Body
@@ -427,8 +430,9 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 			
 			% Table Lag Length Selection
 			\begin{tabular}{llll}
-			\hline
-			\mc{1}{c}{Lag} & \mc{1}{c}{FPE} & \mc{1}{c}{AIC} & \mc{1}{c}{BIC} \\ \hline
+			\toprule
+			Lag & FPE & AIC & BIC \\
+			\midrule
 			
 			0              & 1.03 x $10^{9}$     & 32.107         & 32.192         \\
 			
@@ -485,18 +489,16 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 			\caption{ \ref{table:cointegration} Determining the Number of Cointegrated Equations}
 			\label{table:cointegration}
 			\begin{tabular}{llllll}
-				\hline
-				\mc{1}{c}{Number} & \mc{1}{c}{} & \mc{1}{c}{Trace} & \mc{1}{c}{}    & \mc{1}{c}{Max-Eigen}  & \mc{1}{c}{}        \\
+				\toprule
+				Number & & Trace &  & Max-Eigen  & \\
+				of EC & Eigenvalues & Statictics & P-Value & Staticstics & P-Value \\
+				\midrule
 				
-				\mc{1}{c}{of CE} & \mc{1}{c}{Eigenvalues} & \mc{1}{c}{Statictics} & \mc{1}{c}{P-Value} & \mc{1}{c}{Staticstics} & \mc{1}{c}{P-Value} \\ \hline
-				
-				None*     & 0.358   & 79.102  & 0.000  & 62.959 & 0.000 \\
-				
-				At most 1 & 0.070   & 16.143  & 0.702  & 10.258 & 0.720 \\
-				
-				At most 2 & 0.033   & 5.885   & 0.709  & 4.778  & 0.769 \\
-				
-				At most 3  & 0.008  & 1.107   & 0.293  & 1.107  & 0.293 \\ \hline
+			   None*     & 0.358 & 79.102 & 0.000 & 62.959 & 0.000 \\ [5pt]	
+			   At most 1 & 0.070 & 16.143 & 0.702 & 10.258 & 0.720 \\ [5pt]
+			   At most 2 & 0.033 & 5.885  & 0.709 & 4.778  & 0.769 \\ [5pt]
+			   At most 3 & 0.008 & 1.107  & 0.293 & 1.107  & 0.293 \\ [5pt]
+				\bottomrule
 			\end{tabular}
 		\end{table}
 	
@@ -530,7 +532,13 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 	\begin{frame}{Long Run Relationship}
 		\begin{block}{The cointegrating (long-run) relationship is estimated to be;}
 			\vspaceFive
-			\textHighlight{GASOLINE} $ = $ $-$ 0.0221 \textHighlight{GASOIL} $ + $  0.027 \textHighlight{KEROSENE} $-$ 0.580 \textHighlight{LPG}
+			\begin{math}
+				\textHighlight{\text{GASOLINE}} = 
+				- 0.0221 \textHighlight{\text{ GASOIL}} + 
+				0.027 \textHighlight{\text{ KEROSENE}} - 
+				0.580 \textHighlight{\text{ LPG}}
+			\end{math}
+			
 			\vspaceFive 
 		\end{block} 
 		\vspaceFive
@@ -543,7 +551,14 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 	% --------------------------------------------------------------------
 	\begin{frame}{Log Run Equilibrium}
 		\begin{block}{}
-			The coefficients of the error correction terms (ECT) [Table \ref{table:gasoline_model}, \ref{table:gasoil_model}, \ref{table:kerosene_model}, \ref{table:LPG_model}] show the speed of adjustments of disequilibrium in the period under study. The negative sign associated with the error term is simply a departure in one direction. These are satisfying as they imply convergence in the long run. That is, deviation from the long run is corrected
+			\vspaceFive
+			The coefficients of the error correction terms (ECT) [Table \ref{table:gasoline_model}, \ref{table:gasoil_model}, \ref{table:kerosene_model}, \ref{table:LPG_model}] \\ show the speed of adjustments of disequilibrium in the period under study.
+			\vspaceFive
+		\end{block}.
+		\begin{block}{}
+			\vspaceFive
+			The negative sign associated with the error term is simply a departure in one direction. These are satisfying as they imply convergence in the long run. That is, deviation from the long run is corrected
+			\vspaceFive
 		\end{block}.
 	\end{frame}
 
@@ -556,47 +571,48 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 			\caption{ \ref{table:gasoline_model} Gasoline Model}
 			\label{table:gasoline_model}
 			\begin{tabular}{llll}
-				\hline
-				Parameters      & Coefficient & S.E   & t-satistics \\ \hline
+				\toprule
+				Parameters & Coefficient & S.E & t-satistics \\
+				\midrule
+				\textHighlight{GASOLINE Model} & & & \\ [6pt] 
 				
-				\mc{4}{l}{\textHighlight{Gasoline Model}}                  \\ 
-				
-				\textSubMath{Gasoline}{t-1} & 0.691   & 0.189 & 3.650*  \\ 
-				\textSubMath{Gasoil}{t-1}   & -0.0221  & 0.386 & -1.561*  \\ 
-				\textSubMath{Kerosene}{t-1} & 0.027   & 0.091 & 0.294   \\ 
-				\textSubMath{LPG}{t-1}     & -0.580   & 0.262 & -2.211   \\ 
-				Constant        & 0.006       & 0.805 & 0.007    \\ 
-				ECT             & -0.613      & 0.145 & -11.118*  \\ 
+				\mathSubTT{Gasoline}{t-1} & 0.691 & 0.189 & 3.650*  \\ [5pt]
+				\mathSubTT{Gasoil}{t-1} & -0.0221 & 0.386 & -1.561* \\ [5pt]
+				\mathSubTT{Kerosene}{t-1} & 0.027 & 0.091 & 0.294 \\ [5pt]
+				\mathSubTT{LPG}{t-1}     & -0.580 & 0.262 & -2.211 \\ [5pt]
+				Constant        & 0.006  & 0.805 & 0.007    \\ [5pt]
+				ECT             & -0.613 & 0.145 & -11.118*  \\ 
 				\hline
 			\end{tabular}
 		\end{table}
 	
 		% Description
 		\begin{block}{}
-			The negative sign associated with the coefficients of the error term of GASOLINE price indicates that the models are stable dynamically. \\ This suggests that the speed of adjustments is high. \\ The magnitude of the correction of the imbalances, however,suggests for instance that , \textHighlight{61.3\%} of the imbalances in GASOLINE prices are corrected every two weeks
+			 The negative coefficients of the error term for GASOLINE prices indicate dynamic stability, suggesting rapid adjustment speeds.
+			 \\ The magnitude of the correction of the imbalances suggest that , \textHighlight{61.3\%} of the imbalances in GASOLINE prices are corrected.
 		\end{block}
 		
 	\end{frame}
 	
 	% -------------------------------------------------------------------	
-	\begin{frame}{VEC Model Coefficients}
+	\begin{frame}
 		\begin{table}[]
 			
 			% Gasoline table
 			\caption{ \ref{table:gasoil_model} Gasoil Model}
 			\label{table:gasoil_model}
 			\begin{tabular}{llll}
-				\hline
-				Parameters      & Coefficient & S.E   & t-satistics \\ \hline
+				 \toprule
+				 Parameters & Coefficient & S.E & t-satistics \\
+				 \midrule
+				 \textHighlight{GASOIL Model} & & & \\ [6pt]
 				
-				\mc{4}{l}{\textHighlight{Gasoil Model}}                  \\ 
-				
-				\textSubMath{Gasoline}{t-1} & 0.524  & 0.126  & 4.165*  \\ 
-				\textSubMath{Gasoil}{t-1}   & -0.783 & 0.256 & -3.059*  \\ 
-				\textSubMath{Kerosene}{t-1} & -0.002 & 0.060 & -0.030   \\ 
-				\textSubMath{LPG}{t-1}     & -0.214  & 0.174 & -1.227   \\ 
-				Constant        		   & 0.017   & 0.535 & 0.032    \\ 
-				ECT             		   & -0.695  & 0.096 & -7.215*  \\ 
+				\mathSubTT{Gasoline}{t-1} & 0.524  & 0.126  & 4.165*  \\ [5pt]
+				\mathSubTT{Gasoil}{t-1}   & -0.783 & 0.256 & -3.059*  \\ [5pt]
+				\mathSubTT{Kerosene}{t-1} & -0.002 & 0.060 & -0.030   \\ [5pt]
+				\mathSubTT{LPG}{t-1}     & -0.214  & 0.174 & -1.227   \\ [5pt]
+				Constant  & 0.017   & 0.535 & 0.032    \\ [5pt]
+				ECT   & -0.695  & 0.096 & -7.215*  \\
 				\hline	    
 				  
 			\end{tabular}
@@ -609,27 +625,26 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 		
 	\end{frame}
 
-	\begin{frame}{VEC Model Coefficients}
+	\begin{frame}
 		\begin{table}[]
 			
 			% Gasoline table
 			\caption{ \ref{table:kerosene_model} Kerosene Model}
 			\label{table:kerosene_model}
 			\begin{tabular}{llll}
-				\hline
-				Parameters      & Coefficient & S.E   & t-satistics \\ \hline
+				\toprule
+				Parameters & Coefficient & S.E & t-satistics \\
+				\midrule
+				\textHighlight{KEROSENE Model} & & & \\ [6pt] 
 				
-				\mc{4}{l}{\textHighlight{Kerosene Model}}                  \\ 
-				
-				\textSubMath{Gasoline}{t-1} & 0.058 & 0.163 & 0.359 \\
-				\textSubMath{Gasoil}{t-1} & -0.002 & -0.085 & -0.256 \\
-				\textSubMath{Kerosene}{t-1} & -0.518 & 0.078 & -6.652* \\
-				\textSubMath{LPG}{t-1} & 0.059 & 0.225 & 0.263 \\
-				Constant & 0.001 & 0.692 & 0.002 \\
+				\mathSubTT{Gasoline}{t-1} & 0.058 & 0.163 & 0.359 \\ [5pt]
+				\mathSubTT{Gasoil}{t-1} & -0.002 & -0.085 & -0.256 \\ [5pt]
+				\mathSubTT{Kerosene}{t-1} & -0.518 & 0.078 & -6.652* \\ [5pt]
+				\mathSubTT{LPG}{t-1} & 0.059 & 0.225 & 0.263 \\ [5pt]
+				Constant & 0.001 & 0.692 & 0.002 \\ [5pt]
 				ECT & -0.039 & 0.125 & -0.313 \\
-				 
-				\hline	    
-				
+				\bottomrule
+
 			\end{tabular}
 		\end{table}
 	
@@ -640,8 +655,8 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 		
 	\end{frame}
 
-	\begin{frame}{VEC Model Coefficients}
-		\begin{table}[]
+	\begin{frame}
+		\begin{table}
 			
 			% LPG table
 			\caption{ \ref{table:LPG_model} LPG Model}
@@ -650,12 +665,12 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 				\toprule
 				Parameters & Coefficient & S.E & t-satistics \\
 				\midrule
-				\textHighlight{LPG Model} & & & \\ [10pt]
+				\textHighlight{LPG Model} & & & \\ [6pt]
 				
-				\textSubMath{Gasoline}{t-1} & 0.054 & 0.106 & 0.505 \\ [10pt]
-				\textSubMath{Gasoil}{t-1} & -0.080 & 0.216 & -0.370 \\ [10pt]
-				\textSubMath{Kerosene}{t-1} & 0.010 & 0.051 & -0.197 \\ [10pt]
-				\textSubMath{LPG}{t-1} & -0.450 & 0.147 & -3.058* \\ [5pt]
+				\mathSubTT{Gasoline}{t-1} & 0.054 & 0.106 & 0.505 \\ [5pt]
+				\mathSubTT{Gasoil}{t-1} & -0.080 & 0.216 & -0.370 \\ [5pt]
+				\mathSubTT{Kerosene}{t-1} & 0.010 & 0.051 & -0.197 \\ [5pt]
+				\mathSubTT{LPG}{t-1} & -0.450 & 0.147 & -3.058* \\ [5pt]
 				Constant & 0.020 & 0.452 & 0.044 \\ [5pt]
 				ECT & -0.036 & 0.081 & -0.437 \\
 				
