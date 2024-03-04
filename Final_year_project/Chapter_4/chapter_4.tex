@@ -40,12 +40,18 @@
 \newcommand{\VEC}{Vector Error Correlation }
 \newcommand{\VECHighlight}{\textHighlight{Vector Error Correlation }}
 
+\newcommand{\varGasoline}{Gasoline}
+\newcommand{\varGasoil}{Gasoil}
+\newcommand{\varKerosene}{Kerosene}
+\newcommand{\varLpg}{LPG}
+
 \newcommand{\mc}[3]{\multicolumn{#1}{#2}{#3}}
 \newcommand{\textSubMath}[2]{$(\text{#1})_{\text{#2}}$}
 \newcommand{\yLag}[1]{\text{y}_{\text{t}-#1}}
 \newcommand{\subTT}[2]{\text{#1}_{\text{#2}}}
 \newcommand{\subNT}[2]{#1_{\text{#2}}}
 \newcommand{\subTN}[2]{\text{#1}_{#2}}
+
 
 
 
@@ -711,22 +717,67 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 		The VEC models are estimated using these equations,
 		
 		\begin{equation}
-			\subTT{w}{t} = \text{c} + \subNT{\phi}{1}\subTT{w}{t-1} + \subNT{\phi}{2}\subTT{x}{t-1} + \subNT{\phi}{3}\subTT{y}{t-1} + \subNT{\phi}{4}\subTT{z}{t-1} + \subNT{\epsilon}{t} 
-			\label{eq:wt}
+			\subTT{w}{t} = \text{c} 
+			 + \subNT{\phi}{11}\subTT{w}{t-1}
+			 + \subNT{\phi}{12}\subTT{x}{t-1} 
+			 + \subNT{\phi}{13}\subTT{y}{t-1} 
+			 + \subNT{\phi}{14}\subTT{z}{t-1} 
+			 + \subNT{\epsilon}{wt} 
+			\label{model:model_wt}
 		\end{equation}
 	
 		\begin{equation}
-			\subTT{x}{t} = \text{c} + \subNT{\phi}{1}\subTT{w}{t-1} + \subNT{\phi}{2}\subTT{x}{t-1} + \subNT{\phi}{3}\subTT{y}{t-1} + \subNT{\phi}{4}\subTT{z}{t-1} + \subNT{\epsilon}{t} 
-			\label{eq:xt}
+			\subTT{x}{t} = \text{c} 
+			+ \subNT{\phi}{21}\subTT{w}{t-1}
+			+ \subNT{\phi}{22}\subTT{x}{t-1} 
+			+ \subNT{\phi}{23}\subTT{y}{t-1} 
+			+ \subNT{\phi}{24}\subTT{z}{t-1} 
+			+ \subNT{\epsilon}{xt}
+			\label{model:model_xt} 
 		\end{equation}
 	
 		\begin{equation}
-			\subTT{y}{t} = \text{c} + \subNT{\phi}{1}\subTT{w}{t-1} + \subNT{\phi}{2}\subTT{x}{t-1} + \subNT{\phi}{3}\subTT{y}{t-1} + \subNT{\phi}{4}\subTT{z}{t-1} + \subNT{\epsilon}{t} 
-			\label{eq:yt}
+			\subTT{y}{t} = \text{c}
+			+ \subNT{\phi}{31}\subTT{w}{t-1}
+			+ \subNT{\phi}{32}\subTT{x}{t-1} 
+			+ \subNT{\phi}{33}\subTT{y}{t-1} 
+			+ \subNT{\phi}{44}\subTT{z}{t-1} 
+			+ \subNT{\epsilon}{yt} 
+			\label{model:model_yt} 
 		\end{equation}
 	
 		\begin{equation}
-			\subTT{z}{t} = \text{c} + \subNT{\phi}{1}\subTT{w}{t-1} + \subNT{\phi}{2}\subTT{x}{t-1} + \subNT{\phi}{3}\subTT{y}{t-1} + \subNT{\phi}{4}\subTT{z}{t-1} + \subNT{\epsilon}{t} 
+			\subTT{z}{t} = \text{c}
+			+ \subNT{\phi}{41}\subTT{w}{t-1}
+			+ \subNT{\phi}{42}\subTT{x}{t-1} 
+			+ \subNT{\phi}{43}\subTT{y}{t-1} 
+			+ \subNT{\phi}{44}\subTT{z}{t-1} 
+			+ \subNT{\epsilon}{zt}
+			\label{model:model_zt} 
+		\end{equation}
+	\end{frame}
+	
+	% --------------------------------------------------------------------
+	\begin{frame}{Estimation of VEC Model}
+		Thus,
+		
+		\begin{equation}
+			\subTT{\varGasoline}{t} = \text{c} + \subNT{\phi}{11}\subTT{\varGasoline}{t-1} + \subNT{\phi}{12}\subTT{\varGasoil}{t-1} + \subNT{\phi}{13}\subTT{\varKerosene}{t-1} + \subNT{\phi}{14}\subTT{\varLpg}{t-1} + \subNT{\epsilon}{t} 
+			\label{model:model_gasoline}
+		\end{equation}
+		
+		\begin{equation}
+			\subTT{\varGasoil}{t} = \text{c} + \subNT{\phi}{21}\subTT{\varGasoline}{t-1} + \subNT{\phi}{22}\subTT{\varGasoil}{t-1} + \subNT{\phi}{23}\subTT{\varKerosene}{t-1} + \subNT{\phi}{24}\subTT{\varLpg}{t-1} + \subNT{\epsilon}{t} 
+			\label{model:model_gasoil}
+		\end{equation}
+		
+		\begin{equation}
+			\subTT{\varKerosene}{t} = \text{c} + \subNT{\phi}{31}\subTT{\varGasoline}{t-1} + \subNT{\phi}{32}\subTT{\varGasoil}{t-1} + \subNT{\phi}{33}\subTT{\varKerosene}{t-1} + \subNT{\phi}{34}\subTT{\varLpg}{t-1} + \subNT{\epsilon}{t} 
+			\label{model:model_kerosene}
+		\end{equation}
+		
+		\begin{equation}
+			\subTT{\varLpg}{t} = \text{c} + \subNT{\phi}{1}\subTT{\varGasoline}{t-1} + \subNT{\phi}{2}\subTT{\varGasoil}{t-1} + \subNT{\phi}{3}\subTT{\varKerosene}{t-1} + \subNT{\phi}{4}\subTT{\varLpg}{t-1} + \subNT{\epsilon}{t} 
 			\label{eq:zt}
 		\end{equation}
 		
@@ -737,15 +788,49 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 
 	% --------------------------------------------------------------------
 	\begin{frame}
-		\begin{equation}
+		\begin{math}
 			\begin{bmatrix}
-				\subTT{w}{t} \\
-				\subTT{x}{t} \\
-				\subTT{y}{t} \\
-				\subTT{z}{t}
+				\subTT{\varGasoline}{t} \\
+				\subTT{\varGasoil}{t} \\
+				\subTT{\varKerosene}{t} \\
+				\subTT{\varLpg}{t}
 			\end{bmatrix}
-			
-		\end{equation}
+		\end{math}
+		=
+		\begin{math}
+			\begin{bmatrix}
+				0.006 \\
+				0.017 \\
+				0.001 \\
+				0.020
+			\end{bmatrix}
+		\end{math}
+		+
+		\begin{math}
+			\begin{bmatrix}
+				0.691 & 0.0221 & 0.027 & -0.580 \\
+				0.524 & -0.783 & -0.002 & -0.214 \\
+				0.058 & -0.002 & -0.518 & 0.059 \\
+				0.054 & -0.080 & 0.010 & -0.450
+			\end{bmatrix}
+		\end{math}
+		\begin{math}
+			\begin{bmatrix}
+				\subTT{\varGasoline}{t-1} \\
+				\subTT{\varGasoil}{t-1} \\
+				\subTT{\varKerosene}{t-1} \\
+				\subTT{\varLpg}{t-1}
+			\end{bmatrix}
+		\end{math}
+		+
+		\begin{math}
+			\begin{bmatrix}
+				\subTT{ECT}{pg} & 0 & 0 & 0 \\
+				0 & \subTT{ECT}{g} & 0 & 0 \\
+				0 & 0 & \subTT{ECT}{k} & 0 \\
+				0 & 0 & 0 & \subTT{ECT}{l}
+			\end{bmatrix}
+		\end{math}
 	
 	\end{frame}
 	

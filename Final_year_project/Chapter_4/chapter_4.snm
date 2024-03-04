@@ -11,7 +11,11 @@
 \beamer@slide {table:gasoil_model}{28}
 \beamer@slide {table:kerosene_model}{29}
 \beamer@slide {table:LPG_model}{30}
-\beamer@slide {eq:wt}{34}
-\beamer@slide {eq:xt}{34}
-\beamer@slide {eq:yt}{34}
-\beamer@slide {eq:zt}{34}
+\beamer@slide {model:model_wt}{34}
+\beamer@slide {model:model_xt}{34}
+\beamer@slide {model:model_yt}{34}
+\beamer@slide {model:model_zt}{34}
+\beamer@slide {model:model_gasoline}{35}
+\beamer@slide {model:model_gasoil}{35}
+\beamer@slide {model:model_kerosene}{35}
+\beamer@slide {eq:zt}{35}
