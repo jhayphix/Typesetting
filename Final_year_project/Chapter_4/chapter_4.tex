@@ -534,16 +534,15 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 	% --------------------------------------------------------------------
 	\begin{frame}{Log Run Equilibrium}
 		\begin{block}{}
-			The coefficients of the error correction terms (ECT) [Table 8] show the speed of adjustments of disequilibrium in the period under study. The negative sign associated with the error term is simply a departure in one direction. These are satisfying as they imply convergence in the long run. That is, deviation from the long run is corrected
+			The coefficients of the error correction terms (ECT) [Table \ref{table:gasoline_model}, \ref{table:gasoil_model}, \ref{table:kerosene_model}, \ref{table:LPG_model}] show the speed of adjustments of disequilibrium in the period under study. The negative sign associated with the error term is simply a departure in one direction. These are satisfying as they imply convergence in the long run. That is, deviation from the long run is corrected
 		\end{block}.
 	\end{frame}
 
 	% -------------------------------------------------------------------
-	\begin{frame}{VEC Model Coefficients}
+	\begin{frame}
 		% Table
 
-		\begin{table}[]
-			
+		\begin{table}[]		
 			% Gasoline table
 			\caption{ \ref{table:gasoline_model} Gasoline Model}
 			\label{table:gasoline_model}
@@ -558,10 +557,16 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 				\textSubMath{Kerosene}{t-1} & 0.027   & 0.091 & 0.294   \\ 
 				\textSubMath{LPG}{t-1}     & -0.580   & 0.262 & -2.211*   \\ 
 				Constant        & 0.006       & 0.805 & 0.007    \\ 
-				ECT             & -1.613      & 0.145 & -11.118*  \\ 
+				ECT             & -0.613      & 0.145 & -11.118*  \\ 
 				\hline
 			\end{tabular}
 		\end{table}
+	
+		% Description
+		\begin{block}{}
+			The negative sign associated with the coefficients of the error term of GASOLINE price indicates that the models are stable dynamically. \\ This suggests that the speed of adjustments is high. \\ The magnitude of the correction of the imbalances, however,suggests for instance that , \textHighlight{61.3\%} of the imbalances in GASOLINE prices are corrected every two weeks
+		\end{block}
+		
 	\end{frame}
 	
 	% -------------------------------------------------------------------	
