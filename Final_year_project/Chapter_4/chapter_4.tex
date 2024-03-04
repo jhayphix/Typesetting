@@ -40,10 +40,10 @@
 \newcommand{\VEC}{Vector Error Correlation }
 \newcommand{\VECHighlight}{\textHighlight{Vector Error Correlation }}
 
-\newcommand{\varGasoline}{Gasoline}
-\newcommand{\varGasoil}{Gasoil}
-\newcommand{\varKerosene}{Kerosene}
-\newcommand{\varLpg}{LPG}
+\newcommand{\varGasoline}{w}
+\newcommand{\varGasoil}{x}
+\newcommand{\varKerosene}{y}
+\newcommand{\varLpg}{ppp}
 
 \newcommand{\mc}[3]{\multicolumn{#1}{#2}{#3}}
 \newcommand{\textSubMath}[2]{$(\text{#1})_{\text{#2}}$}
@@ -760,8 +760,9 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 	% --------------------------------------------------------------------
 	
 	% --------------------------------------------------------------------
+	% Model Equations
 	\begin{frame}{Estimation of VEC Model}
-		Thus,
+		The VEC models are estimated using these equations,
 		
 		\begin{equation}
 			\subTT{\varGasoline}{t} = \text{c} + \subNT{\phi}{11}\subTT{\varGasoline}{t-1} + \subNT{\phi}{12}\subTT{\varGasoil}{t-1} + \subNT{\phi}{13}\subTT{\varKerosene}{t-1} + \subNT{\phi}{14}\subTT{\varLpg}{t-1} + \subNT{\epsilon}{t} 
@@ -785,6 +786,7 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 	\end{frame}
 
 	% --------------------------------------------------------------------
+	% VEC Model Equations
 	\begin{frame}
 		\begin{block}{}
 			The results of VAR are reported by the 4 equations below. The VEC models are computed with one lag. The models relating the products to their lags and that of others may best be described as;
