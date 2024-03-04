@@ -539,7 +539,7 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 	\end{frame}
 
 	% -------------------------------------------------------------------
-	\begin{frame}
+	\begin{frame}{VEC Model Coefficients}
 		% Table
 
 		\begin{table}[]
@@ -565,7 +565,7 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 	\end{frame}
 	
 	% -------------------------------------------------------------------	
-	\begin{frame}
+	\begin{frame}{VEC Model Coefficients}
 		\begin{table}[]
 			
 			% Gasoline table
@@ -590,7 +590,7 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 		
 	\end{frame}
 
-	\begin{frame}
+	\begin{frame}{VEC Model Coefficients}
 		\begin{table}[]
 			
 			% Gasoline table
@@ -616,8 +616,31 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 		
 	\end{frame}
 
-
-	
+	\begin{frame}{VEC Model Coefficients}
+		\begin{table}[]
+			
+			% LPG table
+			\caption{ \ref{table:LPG_model} LPG Model}
+			\label{table:LPG_model}
+			\begin{tabular}{llll}
+				\hline
+				Parameters      & Coefficient & S.E   & t-satistics \\ \hline
+				
+				\mc{4}{l}{\textHighlight{LPG Model}}                  \\ 
+				
+				\textSubMath{Gasoline}{t-1} & 0.054 & 0.106 & 0.505 \\
+				\textSubMath{Gasoil}{t-1} & -0.080 & 0.216 & -0.370 \\
+				\textSubMath{Kerosene}{t-1} & 0.010 & 0.051 & -0.197 \\
+				\textSubMath{LPG}{t-1} & -0.450 & 0.147 & -3.058* \\
+				Constant & 0.020 & 0.452 & 0.044 \\
+				ECT & -0.036 & 0.081 & -0.437 \\
+				
+				\hline	    
+				
+			\end{tabular}
+		\end{table}
+		
+	\end{frame}
 	
 	% --------------------------------------------------------------------
 	% Estimation of VEC Model
