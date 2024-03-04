@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2024.1.31)  4 MAR 2024 16:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2024.1.31)  4 MAR 2024 16:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1935,17 +1935,17 @@ Overfull \hbox (115.8125pt too wide) has occurred while \output is active
 [34
 
 ]
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 787--787
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 783--783
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 787--787
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 783--783
  [][][][]  
  []
 
 
-Overfull \hbox (0.99791pt too wide) detected at line 787
+Overfull \hbox (0.99791pt too wide) detected at line 783
 [][][] \OT1/cmss/m/n/10.95 = [] + \OML/cmm/m/it/10.95 [][][] \OT1/cmss/m/n/10.
 95 + \OML/cmm/m/it/10.95 [][][] \OT1/cmss/m/n/10.95 + \OML/cmm/m/it/10.95 [][
 ][] \OT1/cmss/m/n/10.95 + \OML/cmm/m/it/10.95 [][][] \OT1/cmss/m/n/10.95 + \OM
@@ -1953,20 +1953,16 @@ L/cmm/m/it/10.95 [][][]
  []
 
 
-Overfull \hbox (4.28294pt too wide) detected at line 787
+Overfull \hbox (4.28294pt too wide) detected at line 783
 [][][] \OT1/cmss/m/n/10.95 = [] + \OML/cmm/m/it/10.95 [][][] \OT1/cmss/m/n/10.
 95 + \OML/cmm/m/it/10.95 [][][] \OT1/cmss/m/n/10.95 + \OML/cmm/m/it/10.95 [][
 ][] \OT1/cmss/m/n/10.95 + \OML/cmm/m/it/10.95 [][][] \OT1/cmss/m/n/10.95 + \OM
 L/cmm/m/it/10.95 [][][]
- []
-
-
-Overfull \vbox (15.8303pt too high) detected at line 787
  []
 
 File: images/logo/logoKnust.png Graphic file (type png)
 <use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 787.
+Package pdftex.def Info: images/logo/logoKnust.png  used on input line 783.
 (pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
 
 Overfull \hbox (58.6327pt too wide) has occurred while \output is active
@@ -1981,18 +1977,18 @@ Overfull \hbox (115.8125pt too wide) has occurred while \output is active
 [35
 
 ]
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 835--835
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 845--845
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 835--835
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 845--845
  [][][][]  
  []
 
 File: images/logo/logoKnust.png Graphic file (type png)
 <use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 835.
+Package pdftex.def Info: images/logo/logoKnust.png  used on input line 845.
 (pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
 
 Overfull \hbox (58.6327pt too wide) has occurred while \output is active
@@ -2022,8 +2018,8 @@ Package rerunfilecheck Info: File `chapter_4.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  23033 strings out of 478659
- 458274 string characters out of 2855762
- 710396 words of memory out of 3000000
+ 458294 string characters out of 2855762
+ 714396 words of memory out of 3000000
  40534 multiletter control sequences out of 15000+600000
  410792 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2034,7 +2030,7 @@ eX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX/fonts/typ
 e1/public/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/am
 sfonts/cm/cmss8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cms
 y10.pfb>
-Output written on chapter_4.pdf (36 pages, 841491 bytes).
+Output written on chapter_4.pdf (36 pages, 841608 bytes).
 PDF statistics:
  1640 PDF objects out of 1728 (max. 8388607)
  105 named destinations out of 1000 (max. 500000)
