@@ -1292,14 +1292,25 @@
 	% --------------------------------------------------------------------
 	\section{Summary of Results}
 	\begin{frame}{Summary of Results}
-		In the previous section, we obtained a VEC model with a lag of 1. The model's performance indicates a close fit to the data, as confirmed by model validation. 
-		However, the model statistics reveal lower percentage variations in GASOLINE, GASOIL, KEROSENE, and LPG prices compared to expectations, with figures notably lower than depicted in the model fit graph.
-		
-		Surprisingly, the performance statistics are higher for a VAR model, as shown in Table \ref{table:summary_results} on Page \pageref{table:summary_results}. Particularly, the lowest R-square (90.3\%) is observed for GASOLINE prices in the VAR model. 
-		
-		Despite better fits obtained in the VEC graphs compared to those in the appendices, it's expected that the performance statistics for the VEC model should at least match those in Table 15, given that the VEC model is intended to improve upon VAR.
+		\begin{block}{}
+			In the previous section, we obtained a VEC model with a lag of 1. The model's performance indicates a close fit to the data, as confirmed by model validation.
+		\end{block} 
+	
+		\begin{block}{}
+			However, the model statistics reveal lower percentage variations in GASOLINE, GASOIL, KEROSENE, and LPG prices compared to expectations, with figures notably lower than depicted in the model fit graph.
+		\end{block}
 	\end{frame}
-
+	
+	\begin{frame}{Summary of Results}
+		\begin{block}{}
+			Surprisingly, the performance statistics are higher for a VAR model, as shown in Table \ref{table:summary_results} on Page \pageref{table:summary_results}. Particularly, the lowest R-square (90.3\%) is observed for GASOLINE prices in the VAR model. 
+		\end{block}
+		
+		\begin{block}{}
+			Despite better fits obtained in the VEC graphs compared to those in the appendices, it's expected that the performance statistics for the VEC model should at least match those in Table 15, given that the VEC model is intended to improve upon VAR.
+		\end{block}
+	\end{frame}
+	
 	\begin{frame}
 		\begin{table}
 			\caption{ \ref{table:summary_results} Summary Results of VAR Models}
@@ -1309,9 +1320,9 @@
 				\textbf{Statistics/Products} & \textbf{GASOLINE} & \textbf{GASOIL} & \textbf{KEROSENE} & \textbf{LPG} \\
 				\midrule
 	
-				\textbf{F-statistic} & 294.988 & 763.646 & 379.972 & 497.413 \\
-				\textbf{p-value} & 0.000 & 0.000 & 0.000 & 0.000 \\
-				\textbf{S.E.} & 9.468 & 5.928 & 0.366 & 4.573 \\
+				\textbf{F-statistic} & 294.988 & 763.646 & 379.972 & 497.413 \\ [10pt]
+				\textbf{p-value} & 0.000 & 0.000 & 0.000 & 0.000 \\ [10pt]
+				\textbf{S.E.} & 9.468 & 5.928 & 0.366 & 4.573 \\ [10pt]
 				\textbf{R-square} & 0.903 & 0.960 & 0.923 & 0.940 \\
 				
 				\bottomrule
@@ -1320,8 +1331,22 @@
 		\end{table}
 	\end{frame}
 
+	% --------------------------------------------------------------------
+	% Discussions and Findings
 	\begin{frame}{Discussions and Findings}
+		\begin{exampleblock}{}
+			The study findings reveal dynamic relationships among ex-pump prices of petroleum products in the long run, indicating dynamically stable models. Short-term results suggest mutual influence of prices, particularly GASOLINE and GASOIL. 
+		\end{exampleblock}
 		
+		\begin{exampleblock}{}
+			Analysis including  granger causality supports these relationships, showing direct effects on prices. Forecasts demonstrate increasing trends over time, reflecting historical patterns. 
+			Petroleum product prices have consistently risen over years, impacting economic policies due to their significance in energy supply. 
+		\end{exampleblock}
+	\end{frame}
+	\begin{frame}{Discussions and Findings}
+		\begin{exampleblock}{}
+			Literature highlights various effects of oil price shocks on economic variables, though some studies present conflicting views. The model's fitness, as depicted in model fit graphs, differs from model statistics, which were anticipated to explain over 90\% variation, a result observed in corresponding VAR models.
+		\end{exampleblock}
 	\end{frame}
 	
 	% --------------------------------------------------------------------
@@ -1329,7 +1354,13 @@
 	% --------------------------------------------------------------------
 	\section{Summary of Chapter}
 	\begin{frame}{Chapter Summary}
-	
+		\begin{block}{}
+			In this chapter, it is evident that ex-pump prices of petroleum products exhibit a consistent upward trend over the observed period. Short-term fluctuations indicate interdependence among product prices, while stability prevails in the medium to long term, with Premium Gasoline and Gas Oil prices playing pivotal roles. 
+		\end{block}
+		
+		\begin{block}{}
+			Analysis through Granger causality confirms these findings. A VEC model of order 1 emerges as suitable, outperforming the VAR model with varying R-square values. Notably, Premium Gasoline and Gas Oil prices demonstrate competitive dynamics, reflecting their interchangeable usage patterns.
+		\end{block}
 	\end{frame}
 	
 \end{document}
