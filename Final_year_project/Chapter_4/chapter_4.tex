@@ -929,19 +929,37 @@
 				\toprule
 				Statistics/Products & GASOLINE & GASOIL & KEROSENE & LPG \\
 				\midrule
-				F-statistic & 5 & -7.781 & 0.031 & 0.010 \\ [10pt]
-				Prob (F-statistic) & 5 & -5.537 & 0.045 & 0.010 \\ [10pt]
-				S.E. & 5 & -4.493 & 0.263 & 0.010 \\ [10pt]
-				R-squared & 5 & -4.473 & 0.063 & 0.010 \\ [10pt]
+				
+				F-statistic         & 31.515 & 18.810 & 9.884 & 8.133 \\ [10pt]
+				Prob (F-statistic)  & 0.000 & 0.000 & 0.000 & 0.000   \\ [10pt]
+				S.E.                & 9.562 & 6.351 & 8.218 & 5.367   \\ [10pt]
+				R-squared           & 53.9\% & 41.1\% & 26.8\% & 23.1\% \\ [10pt]
 				\bottomrule
 			\end{tabular}
 		\end{table}
+	
+		\begin{exampleblock}{}
+			Table \ref{table:model_summary} is a summary of the statistics of the VEC models. The results indicate that the models perform creditably well. GASOIL appears to be the best in terms of the variability accounted for.
+		\end{exampleblock}
 	\end{frame}
-	
-	
+
 	% --------------------------------------------------------------------
 	% Model Validation
 	% --------------------------------------------------------------------
+	% ------------- Model Diagnostics --------------
+	\section{Model Validation}
+	\begin{frame}{Model Diagnostics}
+		\begin{block}{}
+			After modeling, some forecasts are normally estimated. But before the estimated model can be used to generate any forecast, it is imperative to undertake residual analysis or model diagnostics.
+		\end{block}
+		
+		\begin{block}{}
+			The diagnostic test results include Q- statistics, residual portmanteau test, residual serial correlations, and white heteroscedasticity test. \\
+			Tables 10 to 12 provide information on the analysis of the residuals of the models.
+		\end{block}
+	\end{frame}
+	
+	
 	
 	% --------------------------------------------------------------------
 	% Forecast of Ex-Pump Prices of Products
