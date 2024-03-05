@@ -44,6 +44,8 @@
 \newcommand{\tPrim}[1]{\textcolor{\colorPrimary}{#1}}
 \newcommand{\textSuccess}[1]{\textcolor{\colorSuccess}{#1}}
 \newcommand{\tSuc}[1]{\textcolor{\colorSuccess}{#1}}
+\newcommand{\textWarning}[1]{\textcolor{\colorWarning}{#1}}
+\newcommand{\tWarn}[1]{\textcolor{\colorWarning}{#1}}
 
 
 % Text Assignment
@@ -178,17 +180,22 @@
 				Statistics  & GASOIL  & GASOLINE & KEROSENE & LPG \\ 
 				\midrule
 				
-				Mean                   & 122.445 & 123.570  & 82.989   & 94.766  \\ [5pt]
-				Maximum                & 175.480 & 177.090  & 120.420  & 136.190 \\ [5pt]
-				Minimum                & 11.600  & 49.170   & 6.470    & 58.500  \\	[5pt]
-				Standard Deviation     & 32.306  & 31.817   & 27.186   & 20.609  \\ [5pt]
-				Skewness               & -0.201  & 0.1307   & -1.988   & 0.413   \\ [5pt]
-				Kurtosis               & 3.374   & 2.123    & 6.293    & 2.292   \\ [5pt]
-				Number of Observations & 144     & 144      & 144      & 144     \\
+				Mean    & 122.445 & \tPrim{123.570} & \tWarn{82.989} & 94.766  \\ [5pt]
+				Maximum & 175.480 & \tPrim{177.090} & \tWarn{120.420} & 136.190 \\ [5pt]
+				Minimum & 11.600  & 49.170 & \tWarn{6.470} & \tPrim{58.500} \\ [5pt]
+		Standard Deviation & \tPrim{32.306} & 31.817 & 27.186 & \tWarn{20.609 }\\ [5pt]
+				Skewness & -0.201  & 0.1307   & -1.988   & 0.413   \\ [5pt]
+				Kurtosis & 3.374   & 2.123    & 6.293    & 2.292   \\ [5pt]
+				Number of Observations & 144     & 144      & 144      & 144 \\
 				\bottomrule
 			\end{tabular}
 			\label{table:description}
 		\end{table}
+		\begin{center}
+			{\LARGE $\textPrimary{\bullet}$ } Highest \hspace{20pt}
+			{\LARGE $ \textWarning{\bullet} $} Lowest
+		\end{center}
+		
 	\end{frame}
 
 	% -------------------------------------------------------------------
@@ -922,10 +929,10 @@
 				\toprule
 				Statistics/Products & GASOLINE & GASOIL & KEROSENE & LPG \\
 				\midrule
-				GASOLINE & 5 & -7.781 & 0.031 & 0.010 \\ [10pt]
-				GASOIL & 5 & -5.537 & 0.045 & 0.010 \\ [10pt]
-				KEROSENE & 5 & -4.493 & 0.263 & 0.010 \\ [10pt]
-				LPG & 5 & -4.473 & 0.063 & 0.010 \\ [10pt]
+				F-statistic & 5 & -7.781 & 0.031 & 0.010 \\ [10pt]
+				Prob (F-statistic) & 5 & -5.537 & 0.045 & 0.010 \\ [10pt]
+				S.E. & 5 & -4.493 & 0.263 & 0.010 \\ [10pt]
+				R-squared & 5 & -4.473 & 0.063 & 0.010 \\ [10pt]
 				\bottomrule
 			\end{tabular}
 		\end{table}
