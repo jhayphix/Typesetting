@@ -18,3 +18,5 @@
 \beamer@slide {table:model_summary}{37}
 \beamer@slide {table:residual_port_test}{39}
 \beamer@slide {table:residual_corr_test}{41}
+\beamer@slide {table:residual_hetro}{42}
+\beamer@slide {plot:model_validation}{45}

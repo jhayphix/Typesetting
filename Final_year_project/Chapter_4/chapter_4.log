@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2024.1.31)  5 MAR 2024 02:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2024.1.31)  5 MAR 2024 04:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -964,7 +964,7 @@ Overfull \hbox (115.8125pt too wide) in paragraph at lines 80--80
  [][][][]  
  []
 
-<images/logo/logoKnust.png, id=74, 331.99031pt x 490.83376pt>
+<images/logo/logoKnust.png, id=78, 331.99031pt x 490.83376pt>
 File: images/logo/logoKnust.png Graphic file (type png)
 <use images/logo/logoKnust.png>
 Package pdftex.def Info: images/logo/logoKnust.png  used on input line 80.
@@ -1198,7 +1198,7 @@ Overfull \hbox (115.8125pt too wide) in paragraph at lines 214--214
  [][][][]  
  []
 
-<images/plots/plot_original/plot_original_gasoline.png, id=400, 396.48125pt x 2
+<images/plots/plot_original/plot_original_gasoline.png, id=406, 396.48125pt x 2
 30.8625pt>
 File: images/plots/plot_original/plot_original_gasoline.png Graphic file (type 
 png)
@@ -1206,7 +1206,7 @@ png)
 Package pdftex.def Info: images/plots/plot_original/plot_original_gasoline.png 
  used on input line 214.
 (pdftex.def)             Requested size: 136.91927pt x 78.14346pt.
-<images/plots/plot_original/plot_original_gasoil.png, id=401, 385.44pt x 231.86
+<images/plots/plot_original/plot_original_gasoil.png, id=407, 385.44pt x 231.86
 626pt>
 File: images/plots/plot_original/plot_original_gasoil.png Graphic file (type pn
 g)
@@ -1214,7 +1214,7 @@ g)
 Package pdftex.def Info: images/plots/plot_original/plot_original_gasoil.png  u
 sed on input line 214.
 (pdftex.def)             Requested size: 136.91154pt x 78.14357pt.
-<images/plots/plot_original/plot_original_kerosene.png, id=402, 388.45125pt x 2
+<images/plots/plot_original/plot_original_kerosene.png, id=408, 388.45125pt x 2
 32.87pt>
 File: images/plots/plot_original/plot_original_kerosene.png Graphic file (type 
 png)
@@ -1222,7 +1222,7 @@ png)
 Package pdftex.def Info: images/plots/plot_original/plot_original_kerosene.png 
  used on input line 214.
 (pdftex.def)             Requested size: 136.92018pt x 78.14429pt.
-<images/plots/plot_original/plot_original_lpg.png, id=403, 384.43625pt x 234.87
+<images/plots/plot_original/plot_original_lpg.png, id=409, 384.43625pt x 234.87
 75pt>
 File: images/plots/plot_original/plot_original_lpg.png Graphic file (type png)
 <use images/plots/plot_original/plot_original_lpg.png>
@@ -1336,28 +1336,28 @@ Overfull \hbox (115.8125pt too wide) in paragraph at lines 312--312
  [][][][]  
  []
 
-<images/plots/plot_diff/plot_diff_gasoline.png, id=581, 383.4325pt x 258.9675pt
+<images/plots/plot_diff/plot_diff_gasoline.png, id=587, 383.4325pt x 258.9675pt
 >
 File: images/plots/plot_diff/plot_diff_gasoline.png Graphic file (type png)
 <use images/plots/plot_diff/plot_diff_gasoline.png>
 Package pdftex.def Info: images/plots/plot_diff/plot_diff_gasoline.png  used on
  input line 312.
 (pdftex.def)             Requested size: 136.9181pt x 78.14526pt.
-<images/plots/plot_diff/plot_diff_gasoil.png, id=582, 386.44376pt x 262.9825pt>
+<images/plots/plot_diff/plot_diff_gasoil.png, id=588, 386.44376pt x 262.9825pt>
 
 File: images/plots/plot_diff/plot_diff_gasoil.png Graphic file (type png)
 <use images/plots/plot_diff/plot_diff_gasoil.png>
 Package pdftex.def Info: images/plots/plot_diff/plot_diff_gasoil.png  used on i
 nput line 312.
 (pdftex.def)             Requested size: 136.91429pt x 78.14496pt.
-<images/plots/plot_diff/plot_diff_kerosene.png, id=583, 389.455pt x 263.98625pt
+<images/plots/plot_diff/plot_diff_kerosene.png, id=589, 389.455pt x 263.98625pt
 >
 File: images/plots/plot_diff/plot_diff_kerosene.png Graphic file (type png)
 <use images/plots/plot_diff/plot_diff_kerosene.png>
 Package pdftex.def Info: images/plots/plot_diff/plot_diff_kerosene.png  used on
  input line 312.
 (pdftex.def)             Requested size: 136.91148pt x 78.14514pt.
-<images/plots/plot_diff/plot_diff_lpg.png, id=584, 388.45125pt x 262.9825pt>
+<images/plots/plot_diff/plot_diff_lpg.png, id=590, 388.45125pt x 262.9825pt>
 File: images/plots/plot_diff/plot_diff_lpg.png Graphic file (type png)
 <use images/plots/plot_diff/plot_diff_lpg.png>
 Package pdftex.def Info: images/plots/plot_diff/plot_diff_lpg.png  used on inpu
@@ -1417,7 +1417,7 @@ Overfull \hbox (115.8125pt too wide) in paragraph at lines 355--355
  [][][][]  
  []
 
-<images/acf_pacf/acf_pacf_diff/acf_diff_gasoline.png, id=658, 368.37625pt x 235
+<images/acf_pacf/acf_pacf_diff/acf_diff_gasoline.png, id=664, 368.37625pt x 235
 .88126pt>
 File: images/acf_pacf/acf_pacf_diff/acf_diff_gasoline.png Graphic file (type pn
 g)
@@ -1425,7 +1425,7 @@ g)
 Package pdftex.def Info: images/acf_pacf/acf_pacf_diff/acf_diff_gasoline.png  u
 sed on input line 355.
 (pdftex.def)             Requested size: 136.91537pt x 78.14339pt.
-<images/acf_pacf/acf_pacf_diff/acf_diff_gasoil.png, id=659, 365.365pt x 236.885
+<images/acf_pacf/acf_pacf_diff/acf_diff_gasoil.png, id=665, 365.365pt x 236.885
 pt>
 File: images/acf_pacf/acf_pacf_diff/acf_diff_gasoil.png Graphic file (type png)
 
@@ -1433,7 +1433,7 @@ File: images/acf_pacf/acf_pacf_diff/acf_diff_gasoil.png Graphic file (type png)
 Package pdftex.def Info: images/acf_pacf/acf_pacf_diff/acf_diff_gasoil.png  use
 d on input line 355.
 (pdftex.def)             Requested size: 136.91676pt x 78.14337pt.
-<images/acf_pacf/acf_pacf_diff/acf_diff_kerosene.png, id=660, 365.365pt x 241.9
+<images/acf_pacf/acf_pacf_diff/acf_diff_kerosene.png, id=666, 365.365pt x 241.9
 0375pt>
 File: images/acf_pacf/acf_pacf_diff/acf_diff_kerosene.png Graphic file (type pn
 g)
@@ -1441,7 +1441,7 @@ g)
 Package pdftex.def Info: images/acf_pacf/acf_pacf_diff/acf_diff_kerosene.png  u
 sed on input line 355.
 (pdftex.def)             Requested size: 136.91676pt x 78.14531pt.
-<images/acf_pacf/acf_pacf_diff/acf_diff_lpg.png, id=661, 357.335pt x 236.885pt>
+<images/acf_pacf/acf_pacf_diff/acf_diff_lpg.png, id=667, 357.335pt x 236.885pt>
 
 File: images/acf_pacf/acf_pacf_diff/acf_diff_lpg.png Graphic file (type png)
 <use images/acf_pacf/acf_pacf_diff/acf_diff_lpg.png>
@@ -1476,7 +1476,7 @@ Overfull \hbox (115.8125pt too wide) in paragraph at lines 370--370
  [][][][]  
  []
 
-<images/acf_pacf/acf_pacf_diff/pacf_diff_gasoline.png, id=695, 379.4175pt x 250
+<images/acf_pacf/acf_pacf_diff/pacf_diff_gasoline.png, id=701, 379.4175pt x 250
 .9375pt>
 File: images/acf_pacf/acf_pacf_diff/pacf_diff_gasoline.png Graphic file (type p
 ng)
@@ -1484,7 +1484,7 @@ ng)
 Package pdftex.def Info: images/acf_pacf/acf_pacf_diff/pacf_diff_gasoline.png  
 used on input line 370.
 (pdftex.def)             Requested size: 136.9144pt x 78.1459pt.
-<images/acf_pacf/acf_pacf_diff/pacf_diff_gasoil.png, id=696, 379.4175pt x 252.9
+<images/acf_pacf/acf_pacf_diff/pacf_diff_gasoil.png, id=702, 379.4175pt x 252.9
 45pt>
 File: images/acf_pacf/acf_pacf_diff/pacf_diff_gasoil.png Graphic file (type png
 )
@@ -1492,7 +1492,7 @@ File: images/acf_pacf/acf_pacf_diff/pacf_diff_gasoil.png Graphic file (type png
 Package pdftex.def Info: images/acf_pacf/acf_pacf_diff/pacf_diff_gasoil.png  us
 ed on input line 370.
 (pdftex.def)             Requested size: 136.9144pt x 78.14581pt.
-<images/acf_pacf/acf_pacf_diff/pacf_diff_kerosene.png, id=697, 367.3725pt x 226
+<images/acf_pacf/acf_pacf_diff/pacf_diff_kerosene.png, id=703, 367.3725pt x 226
 .8475pt>
 File: images/acf_pacf/acf_pacf_diff/pacf_diff_kerosene.png Graphic file (type p
 ng)
@@ -1500,7 +1500,7 @@ ng)
 Package pdftex.def Info: images/acf_pacf/acf_pacf_diff/pacf_diff_kerosene.png  
 used on input line 370.
 (pdftex.def)             Requested size: 136.91788pt x 78.14478pt.
-<images/acf_pacf/acf_pacf_diff/pacf_diff_lpg.png, id=698, 373.395pt x 220.825pt
+<images/acf_pacf/acf_pacf_diff/pacf_diff_lpg.png, id=704, 373.395pt x 220.825pt
 >
 File: images/acf_pacf/acf_pacf_diff/pacf_diff_lpg.png Graphic file (type png)
 <use images/acf_pacf/acf_pacf_diff/pacf_diff_lpg.png>
@@ -2150,18 +2150,18 @@ Overfull \hbox (115.8125pt too wide) has occurred while \output is active
 [40
 
 ]
-Overfull \hbox (58.6327pt too wide) in paragraph at lines 1033--1033
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 1032--1032
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 1033--1033
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 1032--1032
  [][][][]  
  []
 
 File: images/logo/logoKnust.png Graphic file (type png)
 <use images/logo/logoKnust.png>
-Package pdftex.def Info: images/logo/logoKnust.png  used on input line 1033.
+Package pdftex.def Info: images/logo/logoKnust.png  used on input line 1032.
 (pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
 
 Overfull \hbox (58.6327pt too wide) has occurred while \output is active
@@ -2176,6 +2176,187 @@ Overfull \hbox (115.8125pt too wide) has occurred while \output is active
 [41
 
 ]
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 1059--1059
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 1059--1059
+ [][][][]  
+ []
+
+
+Overfull \hbox (14.63339pt too wide) in paragraph at lines 1059--1059
+ [] 
+ []
+
+File: images/logo/logoKnust.png Graphic file (type png)
+<use images/logo/logoKnust.png>
+Package pdftex.def Info: images/logo/logoKnust.png  used on input line 1059.
+(pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
+
+Overfull \hbox (58.6327pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[42
+
+]
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 1072--1072
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 1072--1072
+ [][][][]  
+ []
+
+File: images/logo/logoKnust.png Graphic file (type png)
+<use images/logo/logoKnust.png>
+Package pdftex.def Info: images/logo/logoKnust.png  used on input line 1072.
+(pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
+
+Overfull \hbox (58.6327pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[43
+
+]
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 1095--1095
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 1095--1095
+ [][][][]  
+ []
+
+File: images/logo/logoKnust.png Graphic file (type png)
+<use images/logo/logoKnust.png>
+Package pdftex.def Info: images/logo/logoKnust.png  used on input line 1095.
+(pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
+
+Overfull \hbox (58.6327pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[44
+
+]
+Overfull \hbox (58.6327pt too wide) in paragraph at lines 1110--1110
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (115.8125pt too wide) in paragraph at lines 1110--1110
+ [][][][]  
+ []
+
+<images/plots/plot_validation/plot_validation_gasoline.png, id=1956, 388.45125p
+t x 186.6975pt>
+File: images/plots/plot_validation/plot_validation_gasoline.png Graphic file (t
+ype png)
+<use images/plots/plot_validation/plot_validation_gasoline.png>
+Package pdftex.def Info: images/plots/plot_validation/plot_validation_gasoline.
+png  used on input line 1110.
+(pdftex.def)             Requested size: 136.92018pt x 78.14462pt.
+! Undefined control sequence.
+<argument> \@empty { $ \APLminus 
+                                 $ GASOLINE(Estimate) GASOLINE}
+l.1110 	\end{frame}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument>  $ \APLminus 
+                        $ GASOLINE(Estimate) GASOLINE
+l.1110 	\end{frame}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...bcapfont \ignorespaces  $ \APLminus 
+                                                  $ GASOLINE(Estimate) GASOL...
+l.1110 	\end{frame}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<images/plots/plot_validation/plot_validation_gasoil.png, id=1957, 336.25626pt 
+x 183.68625pt>
+File: images/plots/plot_validation/plot_validation_gasoil.png Graphic file (typ
+e png)
+<use images/plots/plot_validation/plot_validation_gasoil.png>
+Package pdftex.def Info: images/plots/plot_validation/plot_validation_gasoil.pn
+g  used on input line 1110.
+(pdftex.def)             Requested size: 136.91675pt x 78.1455pt.
+<images/plots/plot_validation/plot_validation_kerosene.png, id=1958, 377.41pt x
+ 191.71625pt>
+File: images/plots/plot_validation/plot_validation_kerosene.png Graphic file (t
+ype png)
+<use images/plots/plot_validation/plot_validation_kerosene.png>
+Package pdftex.def Info: images/plots/plot_validation/plot_validation_kerosene.
+png  used on input line 1110.
+(pdftex.def)             Requested size: 136.91559pt x 78.14488pt.
+<images/plots/plot_validation/plot_validation_lpg.png, id=1959, 334.24875pt x 1
+89.70876pt>
+File: images/plots/plot_validation/plot_validation_lpg.png Graphic file (type p
+ng)
+<use images/plots/plot_validation/plot_validation_lpg.png>
+Package pdftex.def Info: images/plots/plot_validation/plot_validation_lpg.png  
+used on input line 1110.
+(pdftex.def)             Requested size: 136.92046pt x 78.14581pt.
+
+Overfull \vbox (1.81985pt too high) detected at line 1110
+ []
+
+File: images/logo/logoKnust.png Graphic file (type png)
+<use images/logo/logoKnust.png>
+Package pdftex.def Info: images/logo/logoKnust.png  used on input line 1110.
+(pdftex.def)             Requested size: 19.9996pt x 19.99698pt.
+
+Overfull \hbox (58.6327pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[45
+
+ <./images/plots/plot_validation/plot_validation_gasoline.png> <./images/plots/
+plot_validation/plot_validation_gasoil.png> <./images/plots/plot_validation/plo
+t_validation_kerosene.png> <./images/plots/plot_validation/plot_validation_lpg.
+png>]
 \tf@nav=\write7
 \openout7 = `chapter_4.nav'.
 
@@ -2187,14 +2368,14 @@ Overfull \hbox (115.8125pt too wide) has occurred while \output is active
 
  (chapter_4.aux)
 Package rerunfilecheck Info: File `chapter_4.out' has not changed.
-(rerunfilecheck)             Checksum: 31D0F384FF1DECDC3161706ECFC7FC91;1754.
+(rerunfilecheck)             Checksum: A28E30F59B83C4471EC07D571F1A3973;1887.
  ) 
 Here is how much of TeX's memory you used:
- 24585 strings out of 478659
- 488083 string characters out of 2855762
- 738831 words of memory out of 3000000
- 42056 multiletter control sequences out of 15000+600000
- 415205 words of font info for 69 fonts, out of 8000000 for 9000
+ 24694 strings out of 478659
+ 491921 string characters out of 2855762
+ 737976 words of memory out of 3000000
+ 42142 multiletter control sequences out of 15000+600000
+ 418498 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,438b,564s stack positions out of 5000i,500n,10000p,200000b,80000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Progra
@@ -2202,10 +2383,10 @@ m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKT
 eX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX/fonts/typ
 e1/public/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/am
 sfonts/cm/cmss8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cms
-y10.pfb>
-Output written on chapter_4.pdf (41 pages, 889178 bytes).
+s9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on chapter_4.pdf (45 pages, 987877 bytes).
 PDF statistics:
- 1864 PDF objects out of 2073 (max. 8388607)
- 115 named destinations out of 1000 (max. 500000)
- 1808 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2053 PDF objects out of 2073 (max. 8388607)
+ 126 named destinations out of 1000 (max. 500000)
+ 2004 words of extra memory for PDF output out of 10000 (max. 10000000)
 

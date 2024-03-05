@@ -944,11 +944,11 @@
 	\end{frame}
 
 	% --------------------------------------------------------------------
-	% Model Validation
+	% Model Diagnostics
 	% --------------------------------------------------------------------
 	
 	% --------------- Model Diagnostics ---------------
-	\section{Model Validation}
+	\section{Model Diagnostics}
 	\begin{frame}{Model Diagnostics}
 		\begin{block}{}
 			After modeling, some forecasts are normally estimated. But before the estimated model can be used to generate any forecast,\\
@@ -1000,10 +1000,9 @@
 		\end{block}
 	\end{frame}
 	
+	% --------------- Lagrange Multiplier Test ---------------
 	\begin{frame}
-		
 		\begin{table}
-			
 			\caption{ \ref{table:residual_corr_test} VECM Residual Serial Correlation LM Tests}
 			\label{table:residual_corr_test}
 			
@@ -1031,11 +1030,89 @@
 		
 		
 	\end{frame}
+
+	% --------------- Residual Heteroskedasticity ---------------
+	\begin{frame}
+		\begin{table}
+			\caption{ \ref{table:residual_hetro} VEC Residual Heteroskedasticity}
+			\label{table:residual_hetro}
+			
+			\begin{tabular}{llllll}
+				\toprule
+			 	Dependent & R-squared & F (34,163) & P-value & Chi-square (34) & P-Value \\
+			 	\midrule
+			 	res1*res1 & 0.292 & 3.415 & 0.001 & 38.236 & 0.290 \\
+			 	res2*res2 & 0.093 & 0.850 & 0.615 & 12.184 & 0.093 \\
+			 	res3*res3 & 0.216 & 2.280 & 0.009 & 28.266 & 0.216 \\
+			 	res4*res4 & 0.065 & 0.573 & 0.881 & 8.474 & 0.065 \\
+			 	res2*res1 & 0.215 & 2.273 & 0.009 & 28.198 & 0.215 \\
+			 	res3*res1 & 0.155 & 1.516 & 0.116 & 20.262 & 0.155 \\
+			 	res3*res2 & 0.181 & 1.835 & 0.041 & 23.753 & 0.181 \\
+			 	res4*res1 & 0.064 & 0.569 & 0.884 & 8.414 & 0.064 \\
+			 	res4*res2 & 0.049 & 0.425 & 0.964 & 6.387 & 0.049 \\
+			 	res4*res3 & 0.265 & 2.980 & 0.001 & 34.654 & 0.264 \\
+				
+				\bottomrule
+			\end{tabular}
+		\end{table}
+		
+	\end{frame}
+	\begin{frame}{ VEC Residual Heteroskedasticity}
+		\begin{block}{}
+			\vspaceFive
+			Table \ref{table:residual_hetro} presents the results of a Heteroscedasticity test, which assesses whether the variances of the error terms in a linear regression model are consistent. The test assumes normal distribution of error terms and aims to verify if variances across the series remain constant.
+			\vspaceFive
+		\end{block}
+		
+		\begin{block}{}
+			\vspaceFive
+			The findings indicate that the variances are indeed constant, as evidenced by the Chi-Square test's p-value exceeding 0.05. This conclusion is further supported by the p-values from both the F and Chi-square tests.
+			\vspaceFive
+		\end{block}
+	\end{frame}
+
+	% --------------------------------------------------------------------
+	% Model Validation
+	% --------------------------------------------------------------------
+	\section{Model Validation}
+	\begin{frame}{Model Validation}
+		
+		\begin{block}{}
+			Model validation and certification are crucial in the modeling process, aiding stakeholders in reducing costs, time, and risks associated with extensive product testing. These procedures are essential for establishing trust in statistical models. 
+		\end{block}
+		
+		\begin{block}{}
+			Data was divided into training and validation sets, with 70\% of data points used for modeling (2007 to 2012) and the remaining for validation (2013 to 2015). Out-of-sample forecasts for 2013 to 2015 were employed for model validation, comparing predicted product prices to actual prices. 
+		\end{block}
+		
+		\begin{block}{}
+			\vspaceFive
+			The forecasts closely resembled the original prices, demonstrating the models' effectiveness and accuracy.
+			\vspaceFive
+		\end{block}
+		
+		
+	\end{frame}
 	
+	\begin{frame}{Model Validation}
+		
+		
+		\begin{figure}
+			\subfigure[ $ \APLminus $ GASOLINE(Estimate) GASOLINE]{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/plots/plot_validation/plot_validation_gasoline}}
+			\subfigure{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/plots/plot_validation/plot_validation_gasoil}}
+			\subfigure{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/plots/plot_validation/plot_validation_kerosene}}
+			\subfigure{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/plots/plot_validation/plot_validation_lpg}}
+			
+			
+			\caption{ \ref{plot:model_validation} Model Validation}
+			\label{plot:model_validation}
+		\end{figure}
+	\end{frame}
 	
 	% --------------------------------------------------------------------
 	% Forecast of Ex-Pump Prices of Products
 	% --------------------------------------------------------------------
+	
 	
 	% --------------------------------------------------------------------
 	% Granger Gausality Test
