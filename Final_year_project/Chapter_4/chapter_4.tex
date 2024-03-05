@@ -165,15 +165,19 @@
 		\begin{table}[]
 			\caption{ \ref{table:description} Summary Statistics}
 			\begin{tabular}{lllll}
-\hline
-Statistics             & GASOIL  & GASOLINE & KEROSENE & LPG     \\ \hline
+\toprule
+Statistics             & GASOIL  & GASOLINE & KEROSENE & LPG     \\ 
+\midrule
+
 Mean                   & 122.445 & 123.570  & 82.989   & 94.766  \\
 Maximum                & 175.480 & 177.090  & 120.420  & 136.190 \\
 Minimum                & 11.600  & 49.170   & 6.470    & 58.500  \\
 Standard Deviation     & 32.306  & 31.817   & 27.186   & 20.609  \\ 
 Skewness               & -0.201  & 0.1307   & -1.988   & 0.413   \\
 Kurtosis               & 3.374   & 2.123    & 6.293    & 2.292   \\
-Number of Observations & 144     & 144      & 144      & 144     \\ \hline
+Number of Observations & 144     & 144      & 144      & 144     \\
+
+\bottomrule
 			\end{tabular}
 			\label{table:description}
 		\end{table}
@@ -238,8 +242,9 @@ Number of Observations & 144     & 144      & 144      & 144     \\ \hline
 	% --------------------------------------------------------------------
 	\begin{frame}{Stationarity of Original Series}
 		\begin{table}[]
-			\caption{ \ref{table:stationarity_original} Univariate URTs of the Original Series}
-			\label{table:stationarity_original}
+			\caption{ \ref{table:stationary_original} Univariate URTs of the Original Series}
+			\label{table:stationary_original}
+			
 			\begin{tabular}{llllll}
 				\toprule
 				& & \mc{2}{l}{(Test Statistics)} & \mc{2}{l}{(P-Values)} \\
@@ -247,13 +252,11 @@ Number of Observations & 144     & 144      & 144      & 144     \\ \hline
 				
 				Series & Lag Order & ADF  & KPSS  & ADF  & KPSS \\ [5pt]
 
-GASOLINE & 5         & -2.738 & 2.370     & 0.269  & 0.010          \\
-
-GASOIL   & 5         & -2.450 & 2.437     & 0.389  & 0.010          \\
-
-KEROSENE & 5         & -3.106 & 0.709     & 0.166  & 0.010          \\
-
-LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
+				GASOLINE & 5 & -2.738 & 2.370 & 0.269  & 0.010 \\
+				GASOIL   & 5 & -2.450 & 2.437 & 0.389  & 0.010 \\
+				KEROSENE & 5 & -3.106 & 0.709 & 0.166  & 0.010 \\
+				LPG      & 5 & -1.975 & 1.497 & 0.587  & 0.010 \\
+				\bottomrule
 			\end{tabular}
 		\end{table}
 	
