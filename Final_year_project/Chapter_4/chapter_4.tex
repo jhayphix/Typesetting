@@ -989,10 +989,47 @@
 			\end{tabular}
 		\end{table}
 	\end{frame}
-	\begin{frame}
+	\begin{frame}{VEC Residual Portmanteau Tests for Autocorrelations}
 		\begin{block}{}
-			The null hypothesis is that there are no residual autocorrelations up to lag h. \\ The test is valid only for lags larger than the selected lag order. \\ We observe that the residual passes the white noise test since no autocorrelation is left in the VEC model after lag 1.
+			The null hypothesis is that there are no residual autocorrelations up to lag h. The test is valid only for lags larger than the selected lag order. \\
+			We observe that the residual passes the white noise test since no autocorrelation is left in the VEC model after lag 1.
 		\end{block}
+	
+		\begin{block}{Lagrange Multiplier Test}
+			The LM (Lagrange Multiplier) test is a statistical test used to access the goodness of fit of a model. It is also know as the Lagrange Multiplier(LM) test for model specification
+		\end{block}
+	\end{frame}
+	
+	\begin{frame}
+		
+		\begin{table}
+			
+			\caption{ \ref{table:residual_corr_test} VECM Residual Serial Correlation LM Tests}
+			\label{table:residual_corr_test}
+			
+			\begin{tabular}{lll}
+				\toprule
+				Lags & LM-Stat  & P-values \\
+				\midrule
+				
+				1     & 18.022   & 0.323 \\
+				2     & 18.924   & 0.273 \\
+				3     & 8.073    & 0.947 \\
+				4     & 14.278   & 0.578 \\
+				5     & 6.001    & 0.988 \\
+				6     & 66.795   & 0.000 \\
+				7     & 20.731   & 0.189 \\
+				8     & 69.676   & 0.000 \\
+				9     & 8.623    & 0.928 \\
+				10    & 5.030    & 0.996 \\
+				11    & 14.290   & 0.577 \\
+				12    & 14.019   & 0.597 \\
+				
+				\bottomrule
+			\end{tabular}
+		\end{table}
+		
+		
 	\end{frame}
 	
 	
