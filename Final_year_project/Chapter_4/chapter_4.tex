@@ -10,7 +10,7 @@
 \usepackage{caption} % For customizing captions
 \usepackage{booktabs} % For better-looking tables
 \usepackage{array} % For fixed-width columns
-% \usepackage{apl} % For \APL minus
+\usepackage{apl} % For \APL minus
 
 % Preamble
 \title{Multivariate Time Series Modelling Of Ex-Pump Prices Of Petroleum Products In Ghana}
@@ -64,8 +64,9 @@
 \newcommand{\mc}[3]{\multicolumn{#1}{#2}{#3}}
 
 % Figure
-\newcommand{\dashRed}{\textcolor{red}{ ----- }}
+\newcommand{\dashRed}{\textcolor{red}{\APLminus }}
 \newcommand{\dashBlue}{\textcolor{blue}{ ----- }}
+
 
 \newcommand{\subCaptionDash}[1]{{\tiny \dashBlue #1 (Estimate) \vspace{5pt} \dashRed #1}}
 
@@ -1152,6 +1153,17 @@
 			\end{tabular}
 		\end{table}
 		
+	\end{frame}
+	\begin{frame}
+		\begin{exampleblock}{ \vspaceFive Do forecasted petroleum prices follow the same trend as historical data? \vspaceFive}
+			It was noticed that the forecasts for the series consistently rise as time progresses. \\
+			This aligns with the trend seen in the original products (Figure 1). \\ Therefore, the prices of petroleum products have consistently increased over the years, as expected. \vspaceFive
+		\end{exampleblock} \vspaceTen
+	
+		\begin{exampleblock}{}
+			Next, we look at causality among the products, hereafter referred to as
+			Granger causality.
+		\end{exampleblock}
 	\end{frame}
 	
 	
