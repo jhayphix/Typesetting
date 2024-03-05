@@ -21,23 +21,11 @@
 \logo{\includegraphics[width=20pt, height=20pt]{images/logo/logoKnust.png}}
 \date{\today}
 
-% Customizing table of contents
-\setbeamertemplate{section in toc}[sections numbered]
-\setbeamertemplate{subsection in toc}[subsections numbered]
-\setbeamercolor{section in toc}{fg=blue}
-\setbeamercolor{subsection in toc}{fg=blue!70}
+% -------------------------------------------------------
 
-% Define variables
-\newcommand{\startDate}{January, 2007 }
-\newcommand{\finishDate}{June, 2015 }
-\newcommand{\numOfObservations}{204 }
-
-% Formating
-\newcommand{\vspaceFive}{\vspace{5pt}}
-\newcommand{\vspaceTen}{\vspace{10pt}}
-\newcommand{\hspaceFive}{\hspace{5pt}}
-
+% -------------------------------------------------------
 % Color
+% -------------------------------------------------------
 \newcommand{\colorPrimary}{blue}
 \newcommand{\colorWarning}{red}
 \newcommand{\colorSuccess}{green}
@@ -48,8 +36,50 @@
 \newcommand{\textWarning}[1]{\textcolor{\colorWarning}{#1}}
 \newcommand{\tWarn}[1]{\textcolor{\colorWarning}{#1}}
 
+% Customizing table of contents
+\setbeamertemplate{section in toc}[sections numbered]
+\setbeamertemplate{subsection in toc}[subsections numbered]
+\setbeamercolor{section in toc}{fg=blue}
+\setbeamercolor{subsection in toc}{fg=blue!70}
 
+% -------------------------------------------------------
+% Define variables
+% -------------------------------------------------------
+\newcommand{\startDate}{January, 2007 }
+\newcommand{\finishDate}{June, 2015 }
+\newcommand{\numOfObservations}{204 }
+
+% -------------------------------------------------------
+% Formating
+% -------------------------------------------------------
+\newcommand{\vspaceFive}{\vspace{5pt}}
+\newcommand{\vspaceTen}{\vspace{10pt}}
+\newcommand{\hspaceFive}{\hspace{5pt}}
+
+% -------------------------------------------------------
+% Math
+% -------------------------------------------------------
+\newcommand{\yLag}[1]{\text{y}_{\text{t}-#1}}
+\newcommand{\subTT}[2]{\text{#1}_{\text{#2}}}
+\newcommand{\subNT}[2]{#1_{\text{#2}}}
+\newcommand{\subTN}[2]{\text{#1}_{#2}}
+\newcommand{\mathSubTT}[2]{$(\text{#1})_{\text{#2}}$}
+\newcommand{\mathSup}[2]{$ \text{#1}^\text{#2} $}
+
+
+% -------------------------------------------------------
+% Tables and Figures
+% -------------------------------------------------------
+\newcommand{\mc}[3]{\multicolumn{#1}{#2}{#3}}
+
+\newcommand{\dashRed}{\textcolor{red}{ ----- }}
+\newcommand{\dashBlue}{\textcolor{blue}{ ----- }}
+\newcommand{\subCaptionDash}[1]{{\tiny \dashBlue #1 (Estimate) \vspace{5pt} \dashRed #1}}
+
+
+% -------------------------------------------------------
 % Text Assignment
+% -------------------------------------------------------
 \newcommand{\VAR}{Vector Autocorelation }
 \newcommand{\VARHighlight}{\textPrimary{Vector Autocorelation }}
 \newcommand{\VEC}{Vector Error Correlation }
@@ -59,24 +89,6 @@
 \newcommand{\varGasoil}{x}
 \newcommand{\varKerosene}{y}
 \newcommand{\varLpg}{z}
-
-% Table
-\newcommand{\mc}[3]{\multicolumn{#1}{#2}{#3}}
-
-% Figure
-\newcommand{\dashRed}{\textcolor{red}{ ----- }}
-\newcommand{\dashBlue}{\textcolor{blue}{ ----- }}
-
-
-\newcommand{\subCaptionDash}[1]{{\tiny \dashBlue #1 (Estimate) \vspace{5pt} \dashRed #1}}
-
-% Math
-\newcommand{\yLag}[1]{\text{y}_{\text{t}-#1}}
-\newcommand{\subTT}[2]{\text{#1}_{\text{#2}}}
-\newcommand{\subNT}[2]{#1_{\text{#2}}}
-\newcommand{\subTN}[2]{\text{#1}_{#2}}
-\newcommand{\mathSubTT}[2]{$(\text{#1})_{\text{#2}}$}
-\newcommand{\mathSup}[2]{$ \text{#1}^\text{#2} $}
 
 
 % Body
@@ -1168,8 +1180,70 @@
 	
 	
 	% --------------------------------------------------------------------
-	% Granger Gausality Test
+	% Granger Causality Test
 	% --------------------------------------------------------------------
+	\section{Granger Causality Test}
+	\begin{frame}
+		\begin{table}
+			\caption{ \ref{table:granger_causality_1} Granger Causality}
+			\label{table:granger_causality_1}
+			\begin{tabular}{lccc}
+
+					\multicolumn{4}{c}{\textbf{Dependent variable: GASOLINE}} \\ [5pt]
+					\toprule
+					
+					Excluded & $\chi^2$ & df & p-value \\
+					\midrule
+					GASOIL & 4.889 & 1 & 0.027 \\
+					KEROSENE & 0.086 & 1 & 0.769 \\
+					LPG & 2.436 & 1 & 0.119 \\
+					All & 32.268 & 3 & 0.000 \\
+					
+					\bottomrule
+			\end{tabular} \vspace{20pt}
+			
+			\begin{tabular}{lccc}
+					\multicolumn{4}{c}{\textbf{Dependent variable: GASOIL}} \\ [5pt]
+					\toprule
+
+					Excluded & $\chi^2$ & df & p-value \\
+					\midrule
+					GASOLINE & 17.345 & 1 & 0.000 \\
+					KEROSENE & 0.001 & 1 & 0.976 \\
+					LPG & 1.506 & 1 & 0.220 \\
+					All & 33.009 & 3 & 0.000 \\
+					
+					\bottomrule
+			\end{tabular}
+			
+		\end{table}
+	\end{frame}
+	\begin{frame}
+		\begin{table}
+			{\begin{tabular}{l cc}
+					\multicolumn{3}{c}{\textbf{Dependent variable: KEROSENE}} \\
+					\cmidrule{2-3}
+					Excluded & $\chi^2$ & p-value \\
+					\cmidrule{2-3}
+					GASOLINE & 0.129 & 0.720 \\
+					GASOIL & 0.065 & 0.798 \\
+					LPG & 0.069 & 0.793 \\
+					All & 0.241 & 3 \\
+			\end{tabular}}
+			
+			{\begin{tabular}{l ccc}
+					\multicolumn{4}{c}{\textbf{Dependent variable: LPG}} \\
+					\cmidrule{2-4}
+					Excluded & $\chi^2$ & df & p-value \\
+					\cmidrule{2-4}
+					GASOLINE & 0.255 & 1 & 0.614 \\
+					GASOIL & 0.137 & 1 & 0.711 \\
+					KEROSENE & 0.039 & 1 & 0.844 \\
+					All & 0.349 & 3 & 0.951 \\
+			\end{tabular}}
+			
+		\end{table}
+	\end{frame}
 	
 	% --------------------------------------------------------------------
 	% Impurse Response Functions ( IRFs )
