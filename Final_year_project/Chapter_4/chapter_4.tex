@@ -10,6 +10,7 @@
 \usepackage{caption} % For customizing captions
 \usepackage{booktabs} % For better-looking tables
 \usepackage{array} % For fixed-width columns
+% \usepackage{apl} % For \APL minus
 
 % Preamble
 \title{Multivariate Time Series Modelling Of Ex-Pump Prices Of Petroleum Products In Ghana}
@@ -61,6 +62,12 @@
 
 % Table
 \newcommand{\mc}[3]{\multicolumn{#1}{#2}{#3}}
+
+% Figure
+\newcommand{\dashRed}{\textcolor{red}{ ----- }}
+\newcommand{\dashBlue}{\textcolor{blue}{ ----- }}
+
+\newcommand{\subCaptionDash}[1]{{\tiny \dashBlue #1 (Estimate) \vspace{5pt} \dashRed #1}}
 
 % Math
 \newcommand{\yLag}[1]{\text{y}_{\text{t}-#1}}
@@ -260,7 +267,7 @@
 			\caption{ \ref{table:stationary_original} Univariate URTs of the Original Series}
 			\label{table:stationary_original}
 			
-			\begin{tabular}{llllll}
+			\begin{tabular}{lcllll}
 				\toprule
 				& & \mc{2}{l}{(Test Statistics)} & \mc{2}{l}{(P-Values)} \\
 				\midrule
@@ -317,7 +324,7 @@
 			\caption{ \ref{table:stationary_first_diff} Univariate URTs of the Differenced Series}
 			\label{table:stationary_first_diff}
 			
-			\begin{tabular}{llllll}
+			\begin{tabular}{lcllll}
 				\toprule
 				& & \mc{2}{l}{(Test Statistics)} & \mc{2}{l}{(P-Values)} \\
 				\midrule
@@ -450,7 +457,7 @@
 			\label{table:lls}
 			
 			% Table Lag Length Selection
-			\begin{tabular}{llll}
+			\begin{tabular}{cccc}
 			\toprule
 			Lag & FPE & AIC & BIC \\
 			\midrule
@@ -586,7 +593,7 @@
 			% Gasoline table
 			\caption{ \ref{table:gasoline_model} Gasoline Model}
 			\label{table:gasoline_model}
-			\begin{tabular}{llll}
+			\begin{tabular}{lccc}
 				\toprule
 				Parameters & Coefficient & S.E & t-satistics \\
 				\midrule
@@ -617,7 +624,7 @@
 			% Gasoline table
 			\caption{ \ref{table:gasoil_model} Gasoil Model}
 			\label{table:gasoil_model}
-			\begin{tabular}{llll}
+			\begin{tabular}{lccc}
 				 \toprule
 				 Parameters & Coefficient & S.E & t-satistics \\
 				 \midrule
@@ -647,7 +654,7 @@
 			% Gasoline table
 			\caption{ \ref{table:kerosene_model} Kerosene Model}
 			\label{table:kerosene_model}
-			\begin{tabular}{llll}
+			\begin{tabular}{lccc}
 				\toprule
 				Parameters & Coefficient & S.E & t-satistics \\
 				\midrule
@@ -677,7 +684,7 @@
 			% LPG table
 			\caption{ \ref{table:LPG_model} LPG Model}
 			\label{table:LPG_model}
-			\begin{tabular}{llll}
+			\begin{tabular}{lccc}
 				\toprule
 				Parameters & Coefficient & S.E & t-satistics \\
 				\midrule
@@ -925,7 +932,7 @@
 		\begin{table}
 			\caption{ \ref{table:model_summary} Summary Results of the Models}
 			\label{table:model_summary}
-			\begin{tabular}{lllll}
+			\begin{tabular}{lcccc}
 				\toprule
 				Statistics/Products & GASOLINE & GASOIL & KEROSENE & LPG \\
 				\midrule
@@ -967,7 +974,7 @@
 		\begin{table}
 			\caption{ \ref{table:residual_port_test} VEC Residual Portmanteau Tests for Autocorrelations}
 			\label{table:residual_port_test}
-			\begin{tabular}{llllll}
+			\begin{tabular}{cccccc}
 				\toprule
 				Lags & Q-Stat & Prob. & Adj Q-Stat & P-Value & df \\
 				\midrule
@@ -1006,7 +1013,7 @@
 			\caption{ \ref{table:residual_corr_test} VECM Residual Serial Correlation LM Tests}
 			\label{table:residual_corr_test}
 			
-			\begin{tabular}{lll}
+			\begin{tabular}{ccc}
 				\toprule
 				Lags & LM-Stat  & P-values \\
 				\midrule
@@ -1095,13 +1102,11 @@
 	\end{frame}
 	
 	\begin{frame}{Model Validation}
-		
-		
 		\begin{figure}
-			\subfigure[ $ \APLminus $ GASOLINE(Estimate) GASOLINE]{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/plots/plot_validation/plot_validation_gasoline}}
-			\subfigure{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/plots/plot_validation/plot_validation_gasoil}}
-			\subfigure{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/plots/plot_validation/plot_validation_kerosene}}
-			\subfigure{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/plots/plot_validation/plot_validation_lpg}}
+			\subfigure[\subCaptionDash{GASOLINE}]{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/plots/plot_validation/plot_validation_gasoline}}
+			\subfigure[\subCaptionDash{GASOIL}]{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/plots/plot_validation/plot_validation_gasoil}}
+			\subfigure[\subCaptionDash{KEROSENE}]{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/plots/plot_validation/plot_validation_kerosene}}
+			\subfigure[\subCaptionDash{LPG}]{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/plots/plot_validation/plot_validation_lpg}}
 			
 			
 			\caption{ \ref{plot:model_validation} Model Validation}
@@ -1112,6 +1117,42 @@
 	% --------------------------------------------------------------------
 	% Forecast of Ex-Pump Prices of Products
 	% --------------------------------------------------------------------
+	\section{Forecast of Ex-Pump Prices of Products}
+	\begin{frame}{Forecast of Ex-Pump Prices of Products}
+		\begin{block}{}
+			\vspaceTen
+			After model diagnostics and validation, we, therefore, forecast the prices of the products for the next 12 period as shown in Table \ref{table:forecast} on page \pageref{table:forecast}
+			\vspaceTen
+		\end{block}
+	\end{frame}
+	\begin{frame}
+		\begin{table}
+			\caption{ \ref{table:forecast} Forecasts of Ex-pump Prices for the four Products}
+			\label{table:forecast}
+			
+			\begin{tabular}{ccccc}
+				\toprule
+				Period & Premium Gasoline & Gas Oil & Kerosene & LPG \\
+				\midrule
+				
+				1 & 172.037 & 172.360 & 91.401 & 130.290 \\
+				2 & 173.121 & 172.360 & 91.887 & 130.693 \\
+				3 & 173.962 & 172.360 & 92.475 & 131.114 \\
+				4 & 174.684 & 172.360 & 93.115 & 131.548 \\
+				5 & 175.392 & 206.830 & 93.765 & 131.985 \\
+				6 & 176.123 & 206.830 & 94.406 & 132.420 \\
+				7 & 176.874 & 206.830 & 95.038 & 132.854 \\
+				8 & 177.631 & 206.830 & 95.667 & 133.287 \\
+				9 & 178.389 & 206.830 & 96.296 & 133.720 \\
+				10 & 179.144 & 206.830 & 96.926 & 134.153 \\
+				11 & 179.897 & 211.110 & 97.557 & 134.586 \\
+				12 & 180.650 & 211.110 & 98.188 & 135.019 \\
+				
+				\bottomrule
+			\end{tabular}
+		\end{table}
+		
+	\end{frame}
 	
 	
 	% --------------------------------------------------------------------

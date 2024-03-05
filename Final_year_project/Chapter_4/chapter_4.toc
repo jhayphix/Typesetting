@@ -11,3 +11,4 @@
 \beamer@sectionintoc {11}{Estimation of VEC Model}{34}{0}{11}
 \beamer@sectionintoc {12}{Model Diagnostics}{38}{0}{12}
 \beamer@sectionintoc {13}{Model Validation}{44}{0}{13}
+\beamer@sectionintoc {14}{Forecast of Ex-Pump Prices of Products}{46}{0}{14}
