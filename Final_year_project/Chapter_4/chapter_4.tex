@@ -31,17 +31,26 @@
 \newcommand{\finishDate}{June, 2015 }
 \newcommand{\numOfObservations}{204 }
 
+% Formating
 \newcommand{\vspaceFive}{\vspace{5pt}}
 \newcommand{\vspaceTen}{\vspace{10pt}}
 \newcommand{\hspaceFive}{\hspace{5pt}}
-\newcommand{\colorHighlight}{blue}
-\newcommand{\warning}{red}
-\newcommand{\textHighlight}[1]{\textcolor{blue}{#1}}
 
+% Color
+\newcommand{\colorPrimary}{blue}
+\newcommand{\colorWarning}{red}
+\newcommand{\colorSuccess}{green}
+\newcommand{\textPrimary}[1]{\textcolor{\colorPrimary}{#1}}
+\newcommand{\tPrim}[1]{\textcolor{\colorPrimary}{#1}}
+\newcommand{\textSuccess}[1]{\textcolor{\colorSuccess}{#1}}
+\newcommand{\tSuc}[1]{\textcolor{\colorSuccess}{#1}}
+
+
+% Text Assignment
 \newcommand{\VAR}{Vector Autocorelation }
-\newcommand{\VARHighlight}{\textHighlight{Vector Autocorelation }}
+\newcommand{\VARHighlight}{\textPrimary{Vector Autocorelation }}
 \newcommand{\VEC}{Vector Error Correlation }
-\newcommand{\VECHighlight}{\textHighlight{Vector Error Correlation }}
+\newcommand{\VECHighlight}{\textPrimary{Vector Error Correlation }}
 
 \newcommand{\varGasoline}{w}
 \newcommand{\varGasoil}{x}
@@ -86,7 +95,7 @@
 		
 		 To examines how changes in the prices of one product cause changes in the price of others in both the short and long run. \par \vspace{5pt}
 		
-		Data spanning \startDate to \finishDate are obtained from the National Petroleum Authority of Ghana, covering four petroleum products; \textHighlight{Gasoline, Gasoil, Kerosene, and Liquefied Petroleum Gas (LPG) }. 
+		Data spanning \startDate to \finishDate are obtained from the National Petroleum Authority of Ghana, covering four petroleum products; \textPrimary{Gasoline, Gasoil, Kerosene, and Liquefied Petroleum Gas (LPG) }. 
 	\end{frame}
 	
 	% --------------------------------------------------------------------
@@ -387,11 +396,11 @@
 		
 		\begin{block}{}
 			VAR for instance cannot be used if the variables are not stationary. \\
-			Also, if the data is non-stationary, the forecast cannot be done because \textHighlight{VAR assumes stationarity}
+			Also, if the data is non-stationary, the forecast cannot be done because \textPrimary{VAR assumes stationarity}
 		\end{block}
 		
 		\begin{block}{}
-			We then test for the long run relationship using \textHighlight{Johansen’s cointegration test}.  \\
+			We then test for the long run relationship using \textPrimary{Johansen’s cointegration test}.  \\
 			That is if the result confirms that there is a long-run relationship among the variables, 
 			we can proceed to the VEC model. 
 		\end{block}
@@ -453,7 +462,7 @@
 		% Description of table
 		\begin{block}{}
 			From Table \ref{table:lls}, we can rely on information criteria as only one of these three tests; FPE, AIC, and BIC obtained minimum values at the indicated lag.  \\
-			The test displays \textHighlight{lag 1} as the optimum. Thus, the lag length for the estimation is 1. 
+			The test displays \textPrimary{lag 1} as the optimum. Thus, the lag length for the estimation is 1. 
 		\end{block}
 	\end{frame}
 
@@ -462,7 +471,7 @@
 		\begin{block}{}
 			\vspaceTen
 			Once the unit roots and lag length selections are determined for a time series data, the next step is to inspect whether there exists a \\
-			\textHighlight{Cointegration (Long run relationship)} among the variables or not.
+			\textPrimary{Cointegration (Long run relationship)} among the variables or not.
 			\vspaceTen
 		\end{block}
 	\end{frame}
@@ -515,7 +524,7 @@
 		\begin{block}{}
 			As a result, a cointegration relationship is obtained. \\ 
 			This throws more light on the long run relationships among the products.\\
-			 Consequently, the products; \textHighlight{GASOLINE, GASOIL, KEROSENE, and LPG} prices are linked by a 
+			 Consequently, the products; \textPrimary{GASOLINE, GASOIL, KEROSENE, and LPG} prices are linked by a 
 			long run equation. 
 		\end{block}
 	
@@ -533,10 +542,10 @@
 		\begin{block}{The cointegrating (long-run) relationship is estimated to be;}
 			\vspaceFive
 			\begin{math}
-				\textHighlight{\text{GASOLINE}} = 
-				- 0.0221 \textHighlight{\text{ GASOIL}} + 
-				0.027 \textHighlight{\text{ KEROSENE}} - 
-				0.580 \textHighlight{\text{ LPG}}
+				\textPrimary{\text{GASOLINE}} = 
+				- 0.0221 \textPrimary{\text{ GASOIL}} + 
+				0.027 \textPrimary{\text{ KEROSENE}} - 
+				0.580 \textPrimary{\text{ LPG}}
 			\end{math}
 			
 			\vspaceFive 
@@ -574,7 +583,7 @@
 				\toprule
 				Parameters & Coefficient & S.E & t-satistics \\
 				\midrule
-				\textHighlight{GASOLINE Model} & & & \\ [6pt] 
+				\textPrimary{GASOLINE Model} & & & \\ [6pt] 
 				
 				\mathSubTT{Gasoline}{t-1} & 0.691 & 0.189 & 3.650*  \\ [5pt]
 				\mathSubTT{Gasoil}{t-1} & -0.0221 & 0.386 & -1.561* \\ [5pt]
@@ -589,7 +598,7 @@
 		% Description
 		\begin{block}{}
 			 The negative coefficients of the error term for GASOLINE prices indicate dynamic stability, suggesting rapid adjustment speeds.
-			 \\ The magnitude of the correction of the imbalances suggest that , \textHighlight{61.3\%} of the imbalances in GASOLINE prices are corrected.
+			 \\ The magnitude of the correction of the imbalances suggest that , \textPrimary{61.3\%} of the imbalances in GASOLINE prices are corrected.
 		\end{block}
 		
 	\end{frame}
@@ -605,7 +614,7 @@
 				 \toprule
 				 Parameters & Coefficient & S.E & t-satistics \\
 				 \midrule
-				 \textHighlight{GASOIL Model} & & & \\ [6pt]
+				 \textPrimary{GASOIL Model} & & & \\ [6pt]
 				
 				\mathSubTT{Gasoline}{t-1} & 0.524  & 0.126  & 4.165*  \\ [5pt]
 				\mathSubTT{Gasoil}{t-1}   & -0.783 & 0.256 & -3.059*  \\ [5pt]
@@ -635,7 +644,7 @@
 				\toprule
 				Parameters & Coefficient & S.E & t-satistics \\
 				\midrule
-				\textHighlight{KEROSENE Model} & & & \\ [6pt] 
+				\textPrimary{KEROSENE Model} & & & \\ [6pt] 
 				
 				\mathSubTT{Gasoline}{t-1} & 0.058 & 0.163 & 0.359 \\ [5pt]
 				\mathSubTT{Gasoil}{t-1} & -0.002 & -0.085 & -0.256 \\ [5pt]
@@ -665,7 +674,7 @@
 				\toprule
 				Parameters & Coefficient & S.E & t-satistics \\
 				\midrule
-				\textHighlight{LPG Model} & & & \\ [6pt]
+				\textPrimary{LPG Model} & & & \\ [6pt]
 				
 				\mathSubTT{Gasoline}{t-1} & 0.054 & 0.106 & 0.505 \\ [5pt]
 				\mathSubTT{Gasoil}{t-1} & -0.080 & 0.216 & -0.370 \\ [5pt]
@@ -694,7 +703,7 @@
 		\end{block}
 		
 		\begin{block}{Gasoline}
-			Looking at the coefficients, it is observed (Table \ref{table:gasoline_model}) that in the short-run, GASOLINE price \textHighlight{[3.65*]} is significant. This is an indication that GASOLINE price exhibits an increment of \textHighlight{69.1\%} by itself and \textHighlight{2.21\%} reduction by GASOIL price whiles the others are not significant.
+			Looking at the coefficients, it is observed (Table \ref{table:gasoline_model}) that in the short-run, GASOLINE price \textPrimary{[3.65*]} is significant. This is an indication that GASOLINE price exhibits an increment of \textPrimary{69.1\%} by itself and \textPrimary{2.21\%} reduction by GASOIL price whiles the others are not significant.
 		\end{block}
 		
 	\end{frame}
@@ -702,7 +711,7 @@
 	\begin{frame}{Short Run Relationship}
 		
 		\begin{block}{Gasoil}
-			Also, it is observed that GASOIL price \textHighlight{[4.17*]} is significant by Gasoline. This is an indication that GASOIL price exhibits an increment of \textHighlight{52.4\%} by GASOLINE price with a \textHighlight{78.3\%} reduction by itself. 
+			Also, it is observed that GASOIL price \textPrimary{[4.17*]} is significant by Gasoline. This is an indication that GASOIL price exhibits an increment of \textPrimary{52.4\%} by GASOLINE price with a \textPrimary{78.3\%} reduction by itself. 
 		\end{block}
 	
 		\begin{block}{}
