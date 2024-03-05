@@ -2,7 +2,7 @@
 \beamer@slide {plot:original_series}{9}
 \beamer@slide {table:stationarity_original}{11}
 \beamer@slide {plot:difference_series}{13}
-\beamer@slide {table:stationarity_first_diff}{14}
+\beamer@slide {table:stationary_first_diff}{14}
 \beamer@slide {plot:acf__diff_series}{15}
 \beamer@slide {plot:pacf__diff_series}{16}
 \beamer@slide {table:lls}{20}
