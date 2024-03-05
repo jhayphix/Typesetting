@@ -946,19 +946,54 @@
 	% --------------------------------------------------------------------
 	% Model Validation
 	% --------------------------------------------------------------------
-	% ------------- Model Diagnostics --------------
+	
+	% --------------- Model Diagnostics ---------------
 	\section{Model Validation}
 	\begin{frame}{Model Diagnostics}
 		\begin{block}{}
-			After modeling, some forecasts are normally estimated. But before the estimated model can be used to generate any forecast, it is imperative to undertake residual analysis or model diagnostics.
+			After modeling, some forecasts are normally estimated. But before the estimated model can be used to generate any forecast,\\
+			it is imperative to undertake residual analysis or model diagnostics.
 		\end{block}
 		
 		\begin{block}{}
 			The diagnostic test results include Q- statistics, residual portmanteau test, residual serial correlations, and white heteroscedasticity test. \\
-			Tables 10 to 12 provide information on the analysis of the residuals of the models.
+			Tables \ref{table:residual_port_test} to 13 provide information on the analysis of the residuals of the models.
 		\end{block}
 	\end{frame}
 	
+	% --------------- Residual Portmanteau Tests ---------------
+	\begin{frame}
+		
+		\begin{table}
+			\caption{ \ref{table:residual_port_test} VEC Residual Portmanteau Tests for Autocorrelations}
+			\label{table:residual_port_test}
+			\begin{tabular}{llllll}
+				\toprule
+				Lags & Q-Stat & Prob. & Adj Q-Stat & P-Value & df \\
+				\midrule
+				
+				1 & 7.6189 & NA* & 7.677 & NA* & NA* \\ [5pt]
+				2 &21.603 & 0.157 & 21.879 & 0.147 & 16 \\
+				3 & 29.843 & 0.576 & 30.312 & 0.552 & 32 \\
+				4 & 44.304 & 0.625 & 45.228 & 0.587 & 48 \\
+				5 & 50.472 & 0.891 & 51.641 & 0.867 & 64 \\
+				6 & 111.265 & 0.012 & 115.351 & 0.006 & 80 \\
+				7 & 131.458 & 0.010 & 136.684 & 0.004 & 96 \\
+				8 & 188.126 & 0.000 & 197.038 & 0.000 & 112 \\
+				9 & 197.007 & 0.000 & 206.575 & 0.000 & 128 \\
+				10 & 202.285 & 0.001 & 212.289 & 0.000 & 144 \\
+				11 & 216.121 & 0.002 & 227.393 & 0.000 & 160 \\
+				12 & 230.102 & 0.004 & 242.784 & 0.001 & 176 \\
+				
+				\bottomrule
+			\end{tabular}
+		\end{table}
+	\end{frame}
+	\begin{frame}
+		\begin{block}{}
+			The null hypothesis is that there are no residual autocorrelations up to lag h. \\ The test is valid only for lags larger than the selected lag order. \\ We observe that the residual passes the white noise test since no autocorrelation is left in the VEC model after lag 1.
+		\end{block}
+	\end{frame}
 	
 	
 	% --------------------------------------------------------------------
