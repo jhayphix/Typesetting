@@ -63,7 +63,8 @@
 \newcommand{\subTT}[2]{\text{#1}_{\text{#2}}}
 \newcommand{\subNT}[2]{#1_{\text{#2}}}
 \newcommand{\subTN}[2]{\text{#1}_{#2}}
-\newcommand{\mathSubTT}[2]{$(\text{#1})_{\text{#2}}$}
+\newcommand{\mathSubTT}[2]{$\text{#1}_{\text{#2}}$}
+\newcommand{\bmathSubTT}[2]{$(\text{#1})_{\text{#2}}$}
 \newcommand{\mathSup}[2]{$ \text{#1}^\text{#2} $}
 
 
@@ -243,12 +244,12 @@
 		For trend test, We have chosen to apply
 		
 		\begin{block}{ Mann-Kendall Test}
-			H0 : There is no monotonic trend in the dataset over time. \\
+			\mathSubTT{H}{0} : There is no monotonic trend in the dataset over time. \\
 			H1 : There is a monotonic trend in the dataset over time. \vspace{5pt}
 		\end{block}
 		
 		\begin{exampleblock}{Sen's Slope Test}
-			H0 : There is no tonic trend in the dataset over time. \\
+			\mathSubTT{H}{0} : There is no tonic trend in the dataset over time. \\
 			H1 : There is a tonic trend in the dataset over time. \vspace{5pt}
 		\end{exampleblock}
 	\end{frame}
@@ -259,17 +260,17 @@
 		We have chosen to apply
 		
 		\begin{block}{Augmented Dickey-Fuller Test}
-			H0 : The series is not stationary \\
+			\mathSubTT{H}{0} : The series is not stationary \\
 			H1 : The series is stationary. \vspace{5pt}
 		\end{block}
 	
 		\begin{exampleblock}{Phillips-Perron Unit Root Test}
-			H0 : The series is not stationary \\
+			\mathSubTT{H}{0} : The series is not stationary \\
 			H1 : The series is statrionary. \vspace{5pt}
 		\end{exampleblock}
 		
 		\begin{alertblock}{KPSS Test for Level Stationarity}
-			H0 : The series is stationary \\
+			\mathSubTT{H}{0} : The series is stationary \\
 			H1 : The series is not statrionary. \vspace{5pt}
 		\end{alertblock}
 	\end{frame}
@@ -511,7 +512,7 @@
 		Cointegration analysis is important because, if two or more non-stationary variables are cointegrated, a VAR model in the first difference is mis-specified due to the effects of a common trend. The cointegration test determines the type of the regression model to be applied i.e. VAR or VEC
 		
 		\begin{block}{ Cointegration Test}
-			H0 : There is no cointegration equation. \\
+			\mathSubTT{H}{0} : There is no cointegration equation. \\
 			H1 : There is a cointegration equation 
 		\end{block}
 		
@@ -612,10 +613,10 @@
 				\midrule
 				\textPrimary{GASOLINE Model} & & & \\ [6pt] 
 				
-				\mathSubTT{Gasoline}{t-1} & 0.691 & 0.189 & 3.650*  \\ [5pt]
-				\mathSubTT{Gasoil}{t-1} & -0.0221 & 0.386 & -1.561* \\ [5pt]
-				\mathSubTT{Kerosene}{t-1} & 0.027 & 0.091 & 0.294 \\ [5pt]
-				\mathSubTT{LPG}{t-1}     & -0.580 & 0.262 & -2.211 \\ [5pt]
+				\bmathSubTT{Gasoline}{t-1} & 0.691 & 0.189 & 3.650*  \\ [5pt]
+				\bmathSubTT{Gasoil}{t-1} & -0.0221 & 0.386 & -1.561* \\ [5pt]
+				\bmathSubTT{Kerosene}{t-1} & 0.027 & 0.091 & 0.294 \\ [5pt]
+				\bmathSubTT{LPG}{t-1}     & -0.580 & 0.262 & -2.211 \\ [5pt]
 				Constant        & 0.006  & 0.805 & 0.007    \\ [5pt]
 				ECT             & -0.613 & 0.145 & -11.118*  \\ 
 				\hline
@@ -643,10 +644,10 @@
 				 \midrule
 				 \textPrimary{GASOIL Model} & & & \\ [6pt]
 				
-				\mathSubTT{Gasoline}{t-1} & 0.524  & 0.126  & 4.165*  \\ [5pt]
-				\mathSubTT{Gasoil}{t-1}   & -0.783 & 0.256 & -3.059*  \\ [5pt]
-				\mathSubTT{Kerosene}{t-1} & -0.002 & 0.060 & -0.030   \\ [5pt]
-				\mathSubTT{LPG}{t-1}     & -0.214  & 0.174 & -1.227   \\ [5pt]
+				\bmathSubTT{Gasoline}{t-1} & 0.524  & 0.126  & 4.165*  \\ [5pt]
+				\bmathSubTT{Gasoil}{t-1}   & -0.783 & 0.256 & -3.059*  \\ [5pt]
+				\bmathSubTT{Kerosene}{t-1} & -0.002 & 0.060 & -0.030   \\ [5pt]
+				\bmathSubTT{LPG}{t-1}     & -0.214  & 0.174 & -1.227   \\ [5pt]
 				Constant  & 0.017   & 0.535 & 0.032    \\ [5pt]
 				ECT   & -0.695  & 0.096 & -7.215*  \\
 				\hline	    
@@ -673,10 +674,10 @@
 				\midrule
 				\textPrimary{KEROSENE Model} & & & \\ [6pt] 
 				
-				\mathSubTT{Gasoline}{t-1} & 0.058 & 0.163 & 0.359 \\ [5pt]
-				\mathSubTT{Gasoil}{t-1} & -0.002 & -0.085 & -0.256 \\ [5pt]
-				\mathSubTT{Kerosene}{t-1} & -0.518 & 0.078 & -6.652* \\ [5pt]
-				\mathSubTT{LPG}{t-1} & 0.059 & 0.225 & 0.263 \\ [5pt]
+				\bmathSubTT{Gasoline}{t-1} & 0.058 & 0.163 & 0.359 \\ [5pt]
+				\bmathSubTT{Gasoil}{t-1} & -0.002 & -0.085 & -0.256 \\ [5pt]
+				\bmathSubTT{Kerosene}{t-1} & -0.518 & 0.078 & -6.652* \\ [5pt]
+				\bmathSubTT{LPG}{t-1} & 0.059 & 0.225 & 0.263 \\ [5pt]
 				Constant & 0.001 & 0.692 & 0.002 \\ [5pt]
 				ECT & -0.039 & 0.125 & -0.313 \\
 				\bottomrule
@@ -703,10 +704,10 @@
 				\midrule
 				\textPrimary{LPG Model} & & & \\ [6pt]
 				
-				\mathSubTT{Gasoline}{t-1} & 0.054 & 0.106 & 0.505 \\ [5pt]
-				\mathSubTT{Gasoil}{t-1} & -0.080 & 0.216 & -0.370 \\ [5pt]
-				\mathSubTT{Kerosene}{t-1} & 0.010 & 0.051 & -0.197 \\ [5pt]
-				\mathSubTT{LPG}{t-1} & -0.450 & 0.147 & -3.058* \\ [5pt]
+				\bmathSubTT{Gasoline}{t-1} & 0.054 & 0.106 & 0.505 \\ [5pt]
+				\bmathSubTT{Gasoil}{t-1} & -0.080 & 0.216 & -0.370 \\ [5pt]
+				\bmathSubTT{Kerosene}{t-1} & 0.010 & 0.051 & -0.197 \\ [5pt]
+				\bmathSubTT{LPG}{t-1} & -0.450 & 0.147 & -3.058* \\ [5pt]
 				Constant & 0.020 & 0.452 & 0.044 \\ [5pt]
 				ECT & -0.036 & 0.081 & -0.437 \\
 				
@@ -1183,6 +1184,19 @@
 	% Granger Causality Test
 	% --------------------------------------------------------------------
 	\section{Granger Causality Test}
+	\begin{frame}{Granger Causality Test}
+		\begin{block}{}
+			Table \ref{table:granger_causality_1} and \ref{table:granger_causality_2} on page \pageref{table:granger_causality_1} presents the results of the Granger causality test conducted for various variables. \\
+			This test evaluates whether one variable has a causal influence on another.
+		\end{block}
+		\begin{block}{ \vspaceFive Granger Causality \vspaceFive}
+			\vspaceFive
+			 \mathSubTT{H}{0} : The potential causal variable(s) do not Granger cause the dependent variable \\ [5pt]
+			 \mathSubTT{H}{1} : The potential causal variable(s) do Granger cause the dependent variable
+			 \vspaceFive
+		\end{block}
+	\end{frame}
+
 	\begin{frame}
 		\begin{table}
 			\caption{ \ref{table:granger_causality_1} Granger Causality}
@@ -1220,30 +1234,54 @@
 	\end{frame}
 	\begin{frame}
 		\begin{table}
-			{\begin{tabular}{l cc}
-					\multicolumn{3}{c}{\textbf{Dependent variable: KEROSENE}} \\
-					\cmidrule{2-3}
-					Excluded & $\chi^2$ & p-value \\
-					\cmidrule{2-3}
-					GASOLINE & 0.129 & 0.720 \\
-					GASOIL & 0.065 & 0.798 \\
-					LPG & 0.069 & 0.793 \\
-					All & 0.241 & 3 \\
-			\end{tabular}}
+			\caption{ \ref{table:granger_causality_2} Granger Causality}
+			\label{table:granger_causality_2}
+			\begin{tabular}{lccc}
+				
+				\multicolumn{4}{c}{\textbf{Dependent variable: KEROSENE}} \\ [5pt]
+				\toprule
+				
+				Excluded & $\chi^2$ & df & p-value \\
+				\midrule
+				GASOLINE & 0.129 & 1 & 0.720 \\
+				GASOIL & 0.065 & 1& 0.798 \\
+				LPG & 0.069 & 1 & 0.793 \\
+				All & 0.241 & 3 & 0.973\\
+				
+				\bottomrule
+			\end{tabular} \vspace{20pt}
 			
-			{\begin{tabular}{l ccc}
-					\multicolumn{4}{c}{\textbf{Dependent variable: LPG}} \\
-					\cmidrule{2-4}
-					Excluded & $\chi^2$ & df & p-value \\
-					\cmidrule{2-4}
-					GASOLINE & 0.255 & 1 & 0.614 \\
-					GASOIL & 0.137 & 1 & 0.711 \\
-					KEROSENE & 0.039 & 1 & 0.844 \\
-					All & 0.349 & 3 & 0.951 \\
-			\end{tabular}}
+			\begin{tabular}{lccc}
+				\multicolumn{4}{c}{\textbf{Dependent variable: LPG}} \\ [5pt]
+				\toprule
+				
+				Excluded & $\chi^2$ & df & p-value \\
+				\midrule
+				GASOLINE & 0.255 & 1 & 0.614 \\
+				GASOIL & 0.137 & 1 & 0.711 \\
+				KEROSENE & 0.039 & 1 & 0.844 \\
+				All & 0.349 & 3 & 0.951 \\
+				
+				\bottomrule
+			\end{tabular}
 			
 		\end{table}
 	\end{frame}
+	\begin{frame}{Granger Causality}
+		\begin{block}{}
+			The findings reveal that GASOLINE price is Granger caused by at least one of the other products. Specifically, GASOIL price Granger causes GASOLINE price, indicating a causal relationship between them. However, KEROSENE and LPG do not exhibit a Granger causality with GASOLINE price.
+		\end{block}
+		
+		\begin{block}{}
+			Similarly, GASOLINE price Granger causes GASOIL price, suggesting a bidirectional relationship between them. However, none of the other product prices significantly Granger cause KEROSENE or LPG prices.
+		\end{block}
+	
+		\begin{block}{}
+			Although GASOLINE and GASOIL prices contribute to explaining the variability in KEROSENE and LPG prices to some extent, their contributions are not statistically significant. In summary, a bidirectional relationship is observed between GASOLINE and GASOIL prices, highlighting their mutual influence on each other's prices.
+		\end{block}
+	\end{frame}
+	
+	
 	
 	% --------------------------------------------------------------------
 	% Impurse Response Functions ( IRFs )
@@ -1252,9 +1290,46 @@
 	% --------------------------------------------------------------------
 	% Summary of Results
 	% --------------------------------------------------------------------
+	\section{Summary of Results}
+	\begin{frame}{Summary of Results}
+		In the previous section, we obtained a VEC model with a lag of 1. The model's performance indicates a close fit to the data, as confirmed by model validation. 
+		However, the model statistics reveal lower percentage variations in GASOLINE, GASOIL, KEROSENE, and LPG prices compared to expectations, with figures notably lower than depicted in the model fit graph.
+		
+		Surprisingly, the performance statistics are higher for a VAR model, as shown in Table \ref{table:summary_results} on Page \pageref{table:summary_results}. Particularly, the lowest R-square (90.3\%) is observed for GASOLINE prices in the VAR model. 
+		
+		Despite better fits obtained in the VEC graphs compared to those in the appendices, it's expected that the performance statistics for the VEC model should at least match those in Table 15, given that the VEC model is intended to improve upon VAR.
+	\end{frame}
+
+	\begin{frame}
+		\begin{table}
+			\caption{ \ref{table:summary_results} Summary Results of VAR Models}
+			\label{table:summary_results}
+			\begin{tabular}{lcccc}
+				\toprule
+				\textbf{Statistics/Products} & \textbf{GASOLINE} & \textbf{GASOIL} & \textbf{KEROSENE} & \textbf{LPG} \\
+				\midrule
+	
+				\textbf{F-statistic} & 294.988 & 763.646 & 379.972 & 497.413 \\
+				\textbf{p-value} & 0.000 & 0.000 & 0.000 & 0.000 \\
+				\textbf{S.E.} & 9.468 & 5.928 & 0.366 & 4.573 \\
+				\textbf{R-square} & 0.903 & 0.960 & 0.923 & 0.940 \\
+				
+				\bottomrule
+			\end{tabular}
+			
+		\end{table}
+	\end{frame}
+
+	\begin{frame}{Discussions and Findings}
+		
+	\end{frame}
 	
 	% --------------------------------------------------------------------
 	% Summary of Chapter
 	% --------------------------------------------------------------------
+	\section{Summary of Chapter}
+	\begin{frame}{Chapter Summary}
+	
+	\end{frame}
 	
 \end{document}

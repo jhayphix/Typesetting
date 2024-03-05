@@ -21,4 +21,6 @@
 \beamer@slide {table:residual_hetro}{42}
 \beamer@slide {plot:model_validation}{45}
 \beamer@slide {table:forecast}{47}
-\beamer@slide {table:granger_causality_1}{49}
+\beamer@slide {table:granger_causality_1}{50}
+\beamer@slide {table:granger_causality_2}{51}
+\beamer@slide {table:summary_results}{54}
