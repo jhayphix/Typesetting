@@ -57,6 +57,7 @@
 \newcommand{\subNT}[2]{#1_{\text{#2}}}
 \newcommand{\subTN}[2]{\text{#1}_{#2}}
 \newcommand{\mathSubTT}[2]{$(\text{#1})_{\text{#2}}$}
+\newcommand{\mathSup}[2]{$ \text{#1}^\text{#2} $}
 
 
 % Body
@@ -296,18 +297,19 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 		\begin{table}[]
 			\caption{ \ref{table:stationarity_first_diff} Univariate URTs of the Differenced Series}
 			\label{table:stationarity_first_diff}
+			
 			\begin{tabular}{llllll}
-	\hline
-	&  & \multicolumn{2}{l}{(Test Statistics)} & \multicolumn{2}{l}{(P-Values)} \\ \hline
-	SERIES   &LAG ORDER & ADF    & KPSS      & ADF    & KPSS           \\
+				\toprule
+				& & \mc{2}{l}{(Test Statistics)} & \mc{2}{l}{(P-Values)} \\
+				\midrule
+
+				Series & Lag Order & ADF  & KPSS  & ADF  & KPSS \\ [5pt]
 	
-	GASOLINE &5         & -7.781 & 0.031     & 0.010  & 0.10          \\
-	
-	GASOIL   &5         & -5.537 & 0.045     & 0.010  & 0.10          \\
-	
-	KEROSENE &5         & -4.493 & 0.263     & 0.010  & 0.10          \\
-	
-	LPG      &5         & -4.473 & 0.063     & 0.010  & 0.10          \\ \hline
+				GASOLINE &   5  & -7.781 & 0.031 & 0.010 & 0.10 \\
+				GASOIL   &   5  & -5.537 & 0.045 & 0.010 & 0.10 \\
+				KEROSENE &   5  & -4.493 & 0.263 & 0.010 & 0.10 \\
+				LPG      &   5  & -4.473 & 0.063 & 0.010 & 0.10 \\ 
+				\bottomrule
 			\end{tabular}
 		\end{table}
 	
@@ -426,7 +428,7 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 		\begin{table}[]
 			% Caption and Label
 			\caption{ \ref{table:lls} Lag Length Selection Criteria}
-			\label{table:lls} \vspaceFive
+			\label{table:lls}
 			
 			% Table Lag Length Selection
 			\begin{tabular}{llll}
@@ -434,19 +436,14 @@ LPG      & 5         & -1.975 & 1.497     & 0.587  & 0.010          \\ \hline
 			Lag & FPE & AIC & BIC \\
 			\midrule
 			
-			0              & 1.03 x $10^{9}$     & 32.107         & 32.192         \\
-			
-			1*             & 117944.1*      & 23.029*        & 23.454*        \\ 
-			
-			2              & 127300.7       & 23.105         & 23.869         \\ 
-			
-			3              & 142926.7       & 23.219         & 24.3224        \\
-			
-			4              & 149122.0       & 23.259         & 24.701          \\
-			
-			5              & 169942.3       & 23.385         & 25.167          \\
-			
-			6              & 156708.8       & 23.297         & 25.419          \\ \hline
+			0  & \mathSup{1.03 x 10}{9} & 32.107 & 32.192  \\ [2pt]
+			1* & 117944.1* & 23.029*  & 23.454* \\ [2pt]
+			2  & 127300.7  & 23.105   & 23.869  \\ [2pt]
+			3  & 142926.7  & 23.219   & 24.3224 \\ [2pt]
+			4  & 149122.0  & 23.259   & 24.701  \\ [2pt]
+			5  & 169942.3  & 23.385   & 25.167  \\ [2pt]
+			6  & 156708.8  & 23.297   & 25.419  \\
+			\bottomrule
 			\end{tabular}
 		\end{table}
 	
