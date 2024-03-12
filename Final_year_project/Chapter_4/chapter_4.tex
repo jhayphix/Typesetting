@@ -83,8 +83,8 @@
 % -------------------------------------------------------
 \newcommand{\VAR}{Vector Autocorelation }
 \newcommand{\VARHighlight}{\textPrimary{Vector Autocorelation }}
-\newcommand{\VEC}{Vector Error Correlation }
-\newcommand{\VECHighlight}{\textPrimary{Vector Error Correlation }}
+\newcommand{\VEC}{Vector Error Correction }
+\newcommand{\VECHighlight}{\textPrimary{Vector Error Correction }}
 
 \newcommand{\varGasoline}{w}
 \newcommand{\varGasoil}{x}
@@ -246,12 +246,12 @@
 		
 		\begin{block}{ Mann-Kendall Test}
 			\mathSubTT{H}{0} : There is no monotonic trend in the dataset over time. \\
-			H1 : There is a monotonic trend in the dataset over time. \vspace{5pt}
+			\mathSubTT{H}{1} : There is a monotonic trend in the dataset over time. \vspace{5pt}
 		\end{block}
 		
 		\begin{exampleblock}{Sen's Slope Test}
 			\mathSubTT{H}{0} : There is no tonic trend in the dataset over time. \\
-			H1 : There is a tonic trend in the dataset over time. \vspace{5pt}
+			\mathSubTT{H}{1} : There is a tonic trend in the dataset over time. \vspace{5pt}
 		\end{exampleblock}
 	\end{frame}
 	\end{comment}
@@ -262,17 +262,17 @@
 		
 		\begin{block}{Augmented Dickey-Fuller Test}
 			\mathSubTT{H}{0} : The series is not stationary \\
-			H1 : The series is stationary. \vspace{5pt}
+			\mathSubTT{H}{1} : The series is stationary. \vspace{5pt}
 		\end{block}
 	
 		\begin{exampleblock}{Phillips-Perron Unit Root Test}
 			\mathSubTT{H}{0} : The series is not stationary \\
-			H1 : The series is statrionary. \vspace{5pt}
+			\mathSubTT{H}{1} : The series is statrionary. \vspace{5pt}
 		\end{exampleblock}
 		
 		\begin{alertblock}{KPSS Test for Level Stationarity}
 			\mathSubTT{H}{0} : The series is stationary \\
-			H1 : The series is not statrionary. \vspace{5pt}
+			\mathSubTT{H}{1} : The series is not statrionary. \vspace{5pt}
 		\end{alertblock}
 	\end{frame}
 	
@@ -514,7 +514,7 @@
 		
 		\begin{block}{ Cointegration Test}
 			\mathSubTT{H}{0} : There is no cointegration equation. \\
-			H1 : There is a cointegration equation 
+			\mathSubTT{H}{1} : There is a cointegration equation 
 		\end{block}
 		
 	\end{frame}
