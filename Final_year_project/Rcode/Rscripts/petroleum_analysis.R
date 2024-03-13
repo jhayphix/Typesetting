@@ -6,6 +6,13 @@ library(forecast)
 library(seastest)
 
 # --------------------------------------------------
+# Root
+# --------------------------------------------------
+root_path <- ""
+
+source("//mac/Home/Documents/_Typesetting/Final_year_project/Rcode/Rscripts/module.R")
+
+# --------------------------------------------------
 # Read data
 # --------------------------------------------------
 
