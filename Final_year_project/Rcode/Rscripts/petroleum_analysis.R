@@ -14,7 +14,7 @@ source("//mac/Home/Documents/_Typesetting/Final_year_project/Rcode/Rscripts/modu
 # Read data
 # --------------------------------------------------
 
-data_path <- "//mac/Home/Documents/_Typesetting/Final_year_project/"
+data_path <- "//mac/Home/Documents/_Typesetting/Final_year_project/Rcode/Datasource/Petroleum.xlsx"
 data_frame <- read_excel(data_path)
 attach(data_frame)
 
@@ -32,7 +32,7 @@ plot(gasoline, main="Plot of Gasoline Series", ylab="Gasoline", xlab="Years", lw
 plot(gasoline, main="Plot of Gasoline Series", ylab="Gasoil", xlab="Years", lwd=2, col="maroon")
 
 # Check for stationarity
-testStationarity()
+URTest(gasoline)
 
 
 # --------------------------------------------------
