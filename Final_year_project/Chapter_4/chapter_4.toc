@@ -1,17 +1,17 @@
-\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
-\beamer@sectionintoc {2}{Overview}{5}{0}{2}
-\beamer@sectionintoc {3}{Descriptive Statistics}{7}{0}{3}
-\beamer@sectionintoc {4}{Stationarity Test}{10}{0}{4}
-\beamer@sectionintoc {5}{Differencing}{12}{0}{5}
-\beamer@sectionintoc {6}{Estimation of VAR/ VEC Models}{17}{0}{6}
-\beamer@sectionintoc {7}{LLS Criteria and Cointergration}{19}{0}{7}
-\beamer@sectionintoc {8}{Cointegration}{22}{0}{8}
-\beamer@sectionintoc {9}{Long And Short Run Equilibrium}{25}{0}{9}
-\beamer@sectionintoc {10}{Short Run Relationship}{31}{0}{10}
-\beamer@sectionintoc {11}{Estimation of VEC Model}{34}{0}{11}
-\beamer@sectionintoc {12}{Model Diagnostics}{38}{0}{12}
-\beamer@sectionintoc {13}{Model Validation}{44}{0}{13}
-\beamer@sectionintoc {14}{Forecast of Ex-Pump Prices of Products}{46}{0}{14}
-\beamer@sectionintoc {15}{Granger Causality Test}{49}{0}{15}
-\beamer@sectionintoc {16}{Summary of Results}{53}{0}{16}
-\beamer@sectionintoc {17}{Summary of Chapter}{58}{0}{17}
+\beamer@sectionintoc {1}{Introduction}{5}{0}{1}
+\beamer@sectionintoc {2}{Overview}{7}{0}{2}
+\beamer@sectionintoc {3}{Descriptive Statistics}{9}{0}{3}
+\beamer@sectionintoc {4}{Stationarity Test}{12}{0}{4}
+\beamer@sectionintoc {5}{Differencing}{14}{0}{5}
+\beamer@sectionintoc {6}{Estimation of VAR/ VEC Models}{19}{0}{6}
+\beamer@sectionintoc {7}{LLS Criteria and Cointergration}{21}{0}{7}
+\beamer@sectionintoc {8}{Cointegration}{24}{0}{8}
+\beamer@sectionintoc {9}{Long And Short Run Equilibrium}{27}{0}{9}
+\beamer@sectionintoc {10}{Short Run Relationship}{33}{0}{10}
+\beamer@sectionintoc {11}{Estimation of VEC Model}{36}{0}{11}
+\beamer@sectionintoc {12}{Model Diagnostics}{40}{0}{12}
+\beamer@sectionintoc {13}{Model Validation}{46}{0}{13}
+\beamer@sectionintoc {14}{Forecast of Ex-Pump Prices of Products}{48}{0}{14}
+\beamer@sectionintoc {15}{Granger Causality Test}{51}{0}{15}
+\beamer@sectionintoc {16}{Summary of Results}{55}{0}{16}
+\beamer@sectionintoc {17}{Summary of Chapter}{60}{0}{17}
