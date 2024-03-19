@@ -5,15 +5,26 @@ library(ggplot2)
 library(forecast)
 library(quantmod) # Package for volatility
 
+# --------------------------------------------------
+# Root
+# --------------------------------------------------
 # Define a list containing color groups
 colors <- list(
   blue = c("blue", "skyblue", "dodgerblue", "navy"),
   green = c("green", "forestgreen", "limegreen", "darkgreen"),
-  purple = c("purple", "darkorchid", "mediumorchid", "blueviolet"),
+  purple = c("purple", "darkorchid", 
+             "mediumorchid","blueviolet"),
   red = c("red","maroon", "firebrick", "indianred", "darkred"),
   orange = c("orange", "darkorange", "orangered"),
   yellow = c("yellow", "gold", "khaki")
 )
+colors_def <- list(
+  blue = colors$blue[3],
+  red = colors$red[2]
+)
+diesel_col <- colors_def$blue
+super_col <- colors_def$red
+lwd_def <- 3
 
   
 # --------------------------------------------------
@@ -35,8 +46,8 @@ diesel <- ts(Diesel, start=c(2018, 1), frequency=12)
 super <- ts(Super, start=c(2018, 1), frequency=12)
 
 # ... Visualize data
-plot(diesel, main="Time Series Plot of Diesel Prices", ylab="Price", xlab="Year", lwd=2.4, col="DarkOrchid")
-plot(super, main="Time Series Plot of Super Prices", ylab="Price", xlab="Year")
+plot(diesel, main="Time Series Plot of Diesel Prices", ylab="Price", xlab="Year", lwd=lwd_def, col=diesel_col)
+plot(super, main="Time Series Plot of Super Prices", ylab="Price", xlab="Year", lwd=lwd_def, col=super_col)
 
 # --------------------------------------------------
 # Splitting Data into Training and Testing Sets
