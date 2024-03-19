@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2024.1.31)  13 MAR 2024 10:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2024.1.31)  19 MAR 2024 17:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -959,7 +959,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 96--96
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 96--96
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 96--96
  [][][][]  
  []
 
@@ -969,7 +969,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 101--101
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 101--101
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 101--101
  [][][][]  
  []
 
@@ -984,7 +984,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -997,7 +997,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 107--107
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 107--107
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 107--107
  [][][][]  
  []
 
@@ -1012,7 +1012,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1024,7 +1024,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 122--122
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 122--122
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 122--122
  [][][][]  
  []
 
@@ -1038,7 +1038,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1050,7 +1050,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 137--137
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 137--137
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 137--137
  [][][][]  
  []
 
@@ -1064,7 +1064,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1076,7 +1076,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 154--154
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 154--154
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 154--154
  [][][][]  
  []
 
@@ -1108,7 +1108,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1120,7 +1120,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 172--172
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 172--172
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 172--172
  [][][][]  
  []
 
@@ -1134,7 +1134,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1146,7 +1146,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 194--194
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 194--194
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 194--194
  [][][][]  
  []
 
@@ -1160,7 +1160,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1172,7 +1172,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 221--221
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 221--221
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 221--221
  [][][][]  
  []
 
@@ -1191,7 +1191,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1203,7 +1203,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 236--236
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 236--236
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 236--236
  [][][][]  
  []
 
@@ -1252,7 +1252,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1267,7 +1267,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 277--277
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 277--277
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 277--277
  [][][][]  
  []
 
@@ -1281,7 +1281,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1293,7 +1293,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 304--304
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 304--304
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 304--304
  [][][][]  
  []
 
@@ -1307,7 +1307,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1319,7 +1319,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 319--319
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 319--319
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 319--319
  [][][][]  
  []
 
@@ -1333,7 +1333,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1345,7 +1345,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 334--334
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 334--334
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 334--334
  [][][][]  
  []
 
@@ -1390,7 +1390,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1404,7 +1404,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 362--362
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 362--362
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 362--362
  [][][][]  
  []
 
@@ -1418,7 +1418,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1430,7 +1430,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 377--377
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 377--377
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 377--377
  [][][][]  
  []
 
@@ -1475,7 +1475,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1489,7 +1489,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 392--392
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 392--392
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 392--392
  [][][][]  
  []
 
@@ -1534,7 +1534,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1548,7 +1548,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 415--415
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 415--415
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 415--415
  [][][][]  
  []
 
@@ -1562,7 +1562,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1574,7 +1574,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 440--440
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 440--440
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 440--440
  [][][][]  
  []
 
@@ -1588,7 +1588,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1600,7 +1600,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 464--464
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 464--464
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 464--464
  [][][][]  
  []
 
@@ -1614,7 +1614,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1626,7 +1626,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 496--496
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 496--496
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 496--496
  [][][][]  
  []
 
@@ -1640,7 +1640,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1652,7 +1652,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 506--506
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 506--506
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 506--506
  [][][][]  
  []
 
@@ -1666,7 +1666,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1678,7 +1678,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 520--520
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 520--520
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 520--520
  [][][][]  
  []
 
@@ -1692,7 +1692,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1704,7 +1704,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 549--549
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 549--549
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 549--549
  [][][][]  
  []
 
@@ -1718,7 +1718,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1730,7 +1730,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 563--563
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 563--563
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 563--563
  [][][][]  
  []
 
@@ -1744,7 +1744,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1756,7 +1756,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 587--587
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 587--587
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 587--587
  [][][][]  
  []
 
@@ -1770,7 +1770,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1782,7 +1782,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 601--601
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 601--601
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 601--601
  [][][][]  
  []
 
@@ -1796,7 +1796,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1808,7 +1808,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 633--633
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 633--633
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 633--633
  [][][][]  
  []
 
@@ -1822,7 +1822,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1834,7 +1834,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 664--664
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 664--664
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 664--664
  [][][][]  
  []
 
@@ -1848,7 +1848,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1860,7 +1860,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 694--694
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 694--694
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 694--694
  [][][][]  
  []
 
@@ -1874,7 +1874,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1886,7 +1886,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 725--725
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 725--725
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 725--725
  [][][][]  
  []
 
@@ -1900,7 +1900,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1912,7 +1912,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 738--738
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 738--738
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 738--738
  [][][][]  
  []
 
@@ -1926,7 +1926,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1938,7 +1938,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 753--753
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 753--753
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 753--753
  [][][][]  
  []
 
@@ -1952,7 +1952,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1964,7 +1964,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 763--763
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 763--763
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 763--763
  [][][][]  
  []
 
@@ -1978,7 +1978,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1990,7 +1990,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 842--842
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 842--842
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 842--842
  [][][][]  
  []
 
@@ -2004,7 +2004,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -2016,7 +2016,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 905--905
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 905--905
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 905--905
  [][][][]  
  []
 
@@ -2030,7 +2030,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -2042,7 +2042,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 943--943
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 943--943
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 943--943
  [][][][]  
  []
 
@@ -2056,7 +2056,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -2068,7 +2068,7 @@ Overfull \hbox (58.6327pt too wide) in paragraph at lines 966--966
  []
 
 
-Overfull \hbox (115.8125pt too wide) in paragraph at lines 966--966
+Overfull \hbox (56.06409pt too wide) in paragraph at lines 966--966
  [][][][]  
  []
 
@@ -2082,7 +2082,7 @@ Overfull \hbox (58.6327pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (115.8125pt too wide) has occurred while \output is active
+Overfull \hbox (56.06409pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -2103,10 +2103,10 @@ Package rerunfilecheck Info: File `chapter_4.out' has not changed.
 (rerunfilecheck)             Checksum: FA24E92AD8F7EAA0039B365F68AA6A74;1626.
  ) 
 Here is how much of TeX's memory you used:
- 24691 strings out of 478659
- 488773 string characters out of 2855762
- 739124 words of memory out of 3000000
- 42160 multiletter control sequences out of 15000+600000
+ 24683 strings out of 478659
+ 488602 string characters out of 2855762
+ 738200 words of memory out of 3000000
+ 42152 multiletter control sequences out of 15000+600000
  415678 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,438b,564s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2116,7 +2116,7 @@ eX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX/fonts/typ
 e1/public/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/am
 sfonts/cm/cmss8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cms
 s9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on chapter_4.pdf (37 pages, 768484 bytes).
+Output written on chapter_4.pdf (37 pages, 767532 bytes).
 PDF statistics:
  1707 PDF objects out of 1728 (max. 8388607)
  104 named destinations out of 1000 (max. 500000)
