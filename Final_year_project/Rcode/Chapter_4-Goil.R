@@ -66,8 +66,11 @@ super_test <- super_ts[test_index]
 # Exploratory Data Analysis (EDA)
 # --------------------------------------------------
 # ... Summary statistics
+summary(diesel_train)
+summary(super_train)
 
 # ... Stationarity
+adf.test(diesel_train)
 
 # ... Differencing
 
