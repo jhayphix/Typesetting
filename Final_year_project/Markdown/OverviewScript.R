@@ -33,21 +33,32 @@ acf(goil_ts_super, main = "Autocorrelation Plot of Super Prices")
 pacf(goil_ts_diesel, main = "Partial Autocorrelation Plot of Diesel Prices")
 pacf(goil_ts_super, main = "Partial Autocorrelation Plot of Super Prices")
 
-# Step 4: Model Selection
+# Step 4: Splitting Data into Training and Testing Sets
+# Example code to split the data into training and testing sets
+train_size <- 0.8  # 80% training data, 20% testing data
+num_obs <- length(goil_ts_diesel)
+train_index <- 1:round(train_size * num_obs)
+test_index <- (round(train_size * num_obs) + 1):num_obs
+
+train_diesel <- goil_ts_diesel[train_index]
+test_diesel <- goil_ts_diesel[test_index]
+train_super <- goil_ts_super[train_index]
+test_super <- goil_ts_super[test_index]
+
+# Step 5: Model Selection
 # Based on the characteristics observed in the EDA, select appropriate time series forecasting models.
 # Common models include ARIMA (AutoRegressive Integrated Moving Average), SARIMA (Seasonal ARIMA), or machine learning methods like LSTM (Long Short-Term Memory) networks.
 # Consider the seasonal nature of fuel prices when choosing the model.
 
-# Step 5: Model Fitting
-# Split the dataset into training and testing sets.
+# Step 6: Model Fitting
 # Fit the selected model(s) to the training data.
 
-# Step 6: Model Evaluation
+# Step 7: Model Evaluation
 # Validate the model using the testing dataset.
 # Measure the model's performance using appropriate metrics such as Mean Absolute Error (MAE), Mean Squared Error (MSE), or Root Mean Squared Error (RMSE).
 # Compare the model's predictions against actual prices to assess accuracy.
 
-# Step 7: Calculate Volatility
+# Step 8: Calculate Volatility
 # Calculate historical volatility using a rolling window approach
 window_size <- 30  # Adjust the window size as needed
 diesel_returns <- diff(log(goil_ts_diesel))
@@ -55,11 +66,11 @@ super_returns <- diff(log(goil_ts_super))
 diesel_volatility <- rollapply(diesel_returns, width = window_size, FUN = sd, align = "right", fill = NA)
 super_volatility <- rollapply(super_returns, width = window_size, FUN = sd, align = "right", fill = NA)
 
-# Step 8: Forecasting
+# Step 9: Forecasting
 # Once the model is validated, use it to forecast future prices of the Goil products.
 # Generate confidence intervals around the forecasts to provide a measure of uncertainty.
 
-# Step 9: Interpretation and Reporting
+# Step 10: Interpretation and Reporting
 # Interpret the results of the forecasting model(s) in the context of the objectives stated.
 # Discuss the implications of the forecasts for minimizing risks associated with oil price volatility, aiding potential investors, and understanding pricing patterns.
 # Present the findings in a clear and concise manner, possibly using visualizations to enhance understanding.
