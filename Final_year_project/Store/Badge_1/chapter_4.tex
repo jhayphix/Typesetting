@@ -1,0 +1,1369 @@
+% Document class
+\documentclass{beamer}
+\usecolortheme{default}
+\usetheme{Madrid}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{comment}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{caption} % For customizing captions
+\usepackage{booktabs} % For better-looking tables
+\usepackage{array} % For fixed-width columns
+\usepackage{apl} % For \APL minus
+
+% Preamble
+\title{Multivariate Time Series Modelling Of Ex-Pump Prices Of Petroleum Products In Ghana}
+\subtitle{Chapter 4: Results and Discussions}
+\author{Group 41}
+\institute{Kwame Nkrumah University of Science and Technology}
+\subject{Final Year Project}
+\logo{\includegraphics[width=20pt, height=20pt]{images/logo/logoKnust.png}}
+\date{\today}
+
+% -------------------------------------------------------
+
+% -------------------------------------------------------
+% Color
+% -------------------------------------------------------
+\newcommand{\colorPrimary}{blue}
+\newcommand{\colorWarning}{red}
+\newcommand{\colorSuccess}{green}
+\newcommand{\textPrimary}[1]{\textcolor{\colorPrimary}{#1}}
+\newcommand{\tPrim}[1]{\textcolor{\colorPrimary}{#1}}
+\newcommand{\textSuccess}[1]{\textcolor{\colorSuccess}{#1}}
+\newcommand{\tSuc}[1]{\textcolor{\colorSuccess}{#1}}
+\newcommand{\textWarning}[1]{\textcolor{\colorWarning}{#1}}
+\newcommand{\tWarn}[1]{\textcolor{\colorWarning}{#1}}
+
+% Customizing table of contents
+\setbeamertemplate{section in toc}[sections numbered]
+\setbeamertemplate{subsection in toc}[subsections numbered]
+\setbeamercolor{section in toc}{fg=blue}
+\setbeamercolor{subsection in toc}{fg=blue!70}
+
+% -------------------------------------------------------
+% Define variables
+% -------------------------------------------------------
+\newcommand{\startDate}{January, 2007 }
+\newcommand{\finishDate}{June, 2015 }
+\newcommand{\numOfObservations}{204 }
+
+% -------------------------------------------------------
+% Formating
+% -------------------------------------------------------
+\newcommand{\vspaceFive}{\vspace{5pt}}
+\newcommand{\vspaceTen}{\vspace{10pt}}
+\newcommand{\hspaceFive}{\hspace{5pt}}
+
+% -------------------------------------------------------
+% Math
+% -------------------------------------------------------
+\newcommand{\yLag}[1]{\text{y}_{\text{t}-#1}}
+\newcommand{\subTT}[2]{\text{#1}_{\text{#2}}}
+\newcommand{\subNT}[2]{#1_{\text{#2}}}
+\newcommand{\subTN}[2]{\text{#1}_{#2}}
+\newcommand{\mathSubTT}[2]{$\text{#1}_{\text{#2}}$}
+\newcommand{\bmathSubTT}[2]{$(\text{#1})_{\text{#2}}$}
+\newcommand{\mathSup}[2]{$ \text{#1}^\text{#2} $}
+
+
+% -------------------------------------------------------
+% Tables and Figures
+% -------------------------------------------------------
+\newcommand{\mc}[3]{\multicolumn{#1}{#2}{#3}}
+
+\newcommand{\dashRed}{\textcolor{red}{ ----- }}
+\newcommand{\dashBlue}{\textcolor{blue}{ ----- }}
+\newcommand{\subCaptionDash}[1]{{\tiny \dashBlue #1 (Estimate) \vspace{5pt} \dashRed #1}}
+
+
+% -------------------------------------------------------
+% Text Assignment
+% -------------------------------------------------------
+\newcommand{\VAR}{Vector Autocorelation }
+\newcommand{\VARHighlight}{\textPrimary{Vector Autocorelation }}
+\newcommand{\VEC}{Vector Error Correction }
+\newcommand{\VECHighlight}{\textPrimary{Vector Error Correction }}
+
+\newcommand{\varGasoline}{w}
+\newcommand{\varGasoil}{x}
+\newcommand{\varKerosene}{y}
+\newcommand{\varLpg}{z}
+
+
+% Body
+\begin{document}
+	
+	% Insert title here
+	\begin{frame}
+		\titlepage
+	\end{frame}
+
+	% Insert table of content
+	\begin{frame}{Table of Contents}
+		\tableofcontents
+		
+	\end{frame}
+	
+	% --------------------------------------------------------------------
+	% Introduction
+	% --------------------------------------------------------------------
+	\section{Introduction}
+	\begin{frame}{Introduction}
+		
+		\begin{block}{Objective}
+			The purpose of the study is to obtain a suitable model for the ex-pump prices of petroleum products in Ghana. 
+		\end{block} \vspace{5pt}
+		
+		 To examines how changes in the prices of one product cause changes in the price of others in both the short and long run. \par \vspace{5pt}
+		
+		Data spanning \startDate to \finishDate are obtained from the National Petroleum Authority of Ghana, covering four petroleum products; \textPrimary{Gasoline, Gasoil, Kerosene, and Liquefied Petroleum Gas (LPG) }. 
+	\end{frame}
+	
+	% --------------------------------------------------------------------
+	\begin{frame}{Chapter 4: Result And Discussion}
+		This chapter analyses and discusses the results. It presents results of the association between the prices of the products considered, namely;
+		 \vspace{5pt}
+		
+		\begin{itemize}
+			\item Gasoil
+			\item Gasolin
+			\item Kerosene 
+			\item Liquefied Petroleum Gas (LPG)
+		\end{itemize} \vspace{5pt}
+		
+		All associated tests and models are generated with R 
+	\end{frame}
+
+	% --------------------------------------------------------------------
+	% Overview
+	% --------------------------------------------------------------------
+	\section{Overview}
+	\begin{frame}{RoadMap}
+		\begin{block}{Start Up}
+			\vspaceFive
+			\begin{itemize}[label=$\diamond$, leftmargin=2em, itemsep=1em]
+				\item Plotting and Descriptive Statistics
+				\item Stationarity Test
+				\item Differencing If Not Stationary
+				\item Plotting of ACF and PACF
+			\end{itemize}
+			\vspaceFive
+		\end{block}
+	\end{frame}
+
+	% --------------------------------------------------------------------
+	\begin{frame}{RoadMap}
+		\begin{block}{Estimation Of Model}
+			\vspaceFive
+			\begin{itemize}[label=$\diamond$, leftmargin=2em, itemsep=1em]
+				\item Lag Length Selection (LLS)
+				\item Cointegration Test
+				\item Long Run Equilibrium
+				\item Short Run Equilibrium
+				\item Estimation of VEC Model (If There is cointegration)
+				\item Model Validation
+				\item Forecast of Ex-Pump prices of Products
+			\end{itemize}
+			\vspaceFive
+		\end{block}
+		
+	\end{frame}
+
+	
+	% --------------------------------------------------------------------
+	% Descriptive Statistics
+	% --------------------------------------------------------------------
+	\section{Descriptive Statistics}
+	\begin{frame}{Descriptive Statistics}
+		\begin{block}{}
+			\vspace{4pt}
+			In all, \numOfObservations observations are used (\startDate to \finishDate). \vspace{4pt}
+		\end{block} \vspace{5pt}
+		
+		\begin{block}{}
+		Training data of 144 observations (January 2007 to December 2012) for modelling \\ \vspace{5pt}
+		
+		Testing data of 60 data points (January 2013 to June 2015) for model validations.
+		\end{block} \vspace{5pt}
+	
+		\begin{block}{}
+			The descriptive statistics of the products are shown in Table \ref{table:description} on page \pageref{table:description}
+		\end{block}
+	\end{frame}
+	
+	% --------------------------------------------------------------------
+	\begin{frame}{Summary Statistics}
+		\begin{table}[]
+			\caption{ \ref{table:description} Summary Statistics}
+			\begin{tabular}{lllll}
+				\toprule
+				Statistics  & GASOIL  & GASOLINE & KEROSENE & LPG \\ 
+				\midrule
+				
+				Mean    & 122.445 & \tPrim{123.570} & \tWarn{82.989} & 94.766  \\ [5pt]
+				Maximum & 175.480 & \tPrim{177.090} & \tWarn{120.420} & 136.190 \\ [5pt]
+				Minimum & 11.600  & 49.170 & \tWarn{6.470} & \tPrim{58.500} \\ [5pt]
+		Standard Deviation & \tPrim{32.306} & 31.817 & 27.186 & \tWarn{20.609 }\\ [5pt]
+				Skewness & -0.201  & 0.1307   & -1.988   & 0.413   \\ [5pt]
+				Kurtosis & 3.374   & 2.123    & 6.293    & 2.292   \\ [5pt]
+				Number of Observations & 144     & 144      & 144      & 144 \\
+				\bottomrule
+			\end{tabular}
+			\label{table:description}
+		\end{table}
+		\begin{center}
+			{\LARGE $\textPrimary{\bullet}$ } Highest \hspace{20pt}
+			{\LARGE $ \textWarning{\bullet} $} Lowest
+		\end{center}
+		
+	\end{frame}
+
+	% -------------------------------------------------------------------
+	\begin{frame}{Plot of Original Series}
+		\begin{figure}
+			\subfigure[GASOLINE]{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/plots/plot_original/plot_original_gasoline}}
+			\subfigure[GASOIL]{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/plots/plot_original/plot_original_gasoil}}
+			\subfigure[KEROSENE]{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/plots/plot_original/plot_original_kerosene}}
+			\subfigure[LPG]{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/plots/plot_original/plot_original_lpg}}
+			
+			
+			\caption{ \ref{plot:original_series} Time Series Plot of the Original Series}
+			\label{plot:original_series}
+		\end{figure}
+		
+	\end{frame}
+	
+	% --------------------------------------------------------------------
+	% Trend and Stationarity Test
+	% --------------------------------------------------------------------
+	\section{Stationarity Test}
+	
+	\begin{comment}
+	\begin{frame}{Trend Test}
+		For trend test, We have chosen to apply
+		
+		\begin{block}{ Mann-Kendall Test}
+			\mathSubTT{H}{0} : There is no monotonic trend in the dataset over time. \\
+			\mathSubTT{H}{1} : There is a monotonic trend in the dataset over time. \vspace{5pt}
+		\end{block}
+		
+		\begin{exampleblock}{Sen's Slope Test}
+			\mathSubTT{H}{0} : There is no tonic trend in the dataset over time. \\
+			\mathSubTT{H}{1} : There is a tonic trend in the dataset over time. \vspace{5pt}
+		\end{exampleblock}
+	\end{frame}
+	\end{comment}
+
+	\begin{frame}{Staionarity Test}
+		We have numerous ways of testing for the presence of a unit root. 
+		We have chosen to apply
+		
+		\begin{block}{Augmented Dickey-Fuller Test}
+			\mathSubTT{H}{0} : The series is not stationary \\
+			\mathSubTT{H}{1} : The series is stationary. \vspace{5pt}
+		\end{block}
+	
+		\begin{exampleblock}{Phillips-Perron Unit Root Test}
+			\mathSubTT{H}{0} : The series is not stationary \\
+			\mathSubTT{H}{1} : The series is statrionary. \vspace{5pt}
+		\end{exampleblock}
+		
+		\begin{alertblock}{KPSS Test for Level Stationarity}
+			\mathSubTT{H}{0} : The series is stationary \\
+			\mathSubTT{H}{1} : The series is not statrionary. \vspace{5pt}
+		\end{alertblock}
+	\end{frame}
+	
+	% --------------------------------------------------------------------
+	\begin{frame}{Stationarity of Original Series}
+		\begin{table}[]
+			\caption{ \ref{table:stationary_original} Univariate URTs of the Original Series}
+			\label{table:stationary_original}
+			
+			\begin{tabular}{lcllll}
+				\toprule
+				& & \mc{2}{l}{(Test Statistics)} & \mc{2}{l}{(P-Values)} \\
+				\midrule
+				
+				Series & Lag Order & ADF  & KPSS  & ADF  & KPSS \\ [5pt]
+
+				GASOLINE & 5 & -2.738 & 2.370 & 0.269  & 0.010 \\
+				GASOIL   & 5 & -2.450 & 2.437 & 0.389  & 0.010 \\
+				KEROSENE & 5 & -3.106 & 0.709 & 0.166  & 0.010 \\
+				LPG      & 5 & -1.975 & 1.497 & 0.587  & 0.010 \\
+				\bottomrule
+			\end{tabular}
+		\end{table}
+	
+	\begin{alertblock}{Is Stationary ?}
+		\vspace{5pt}
+		It is observed that for ADF, all the p-values of the series are greater than 0.05 and this indicates non stationarity. The KPSS test also showed the same results. We now  difference the series since the series are not stationary.
+	\end{alertblock}
+	\end{frame}
+	
+	% --------------------------------------------------------------------
+	% Differencing
+	% --------------------------------------------------------------------
+	\section{Differencing}
+	\begin{frame}{Differencing}
+
+			\begin{alertblock}{First Difference}
+				\vspace{5pt}
+				Since all the series (Gasoline, Gasoil, Kerosene, LPG) are not stationary we perform 1st differencing in order to achieve stationarity;
+				The figure \ref{plot:difference_series} below is a plot after the first differencing .
+				\vspace{5pt}
+			\end{alertblock}
+		
+	\end{frame}
+	
+	% --------------------------------------------------------------------
+	\begin{frame}{Plot of First Differenced Series}
+		\begin{figure}
+			\subfigure[GASOLINE]{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/plots/plot_diff/plot_diff_gasoline}}
+			\subfigure[GASOIL]{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/plots/plot_diff/plot_diff_gasoil}}
+			\subfigure[KEROSENE]{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/plots/plot_diff/plot_diff_kerosene}}
+			\subfigure[LPG]{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/plots/plot_diff/plot_diff_lpg}}
+			
+			
+			\caption{ \ref{plot:difference_series} Time Series Plot of the Original Series}
+			\label{plot:difference_series}
+		\end{figure}
+		
+	\end{frame}
+
+	% --------------------------------------------------------------------
+	\begin{frame}{Stationarity of First Differenced Series}
+		\begin{table}[]
+			\caption{ \ref{table:stationary_first_diff} Univariate URTs of the Differenced Series}
+			\label{table:stationary_first_diff}
+			
+			\begin{tabular}{lcllll}
+				\toprule
+				& & \mc{2}{l}{(Test Statistics)} & \mc{2}{l}{(P-Values)} \\
+				\midrule
+
+				Series & Lag Order & ADF  & KPSS  & ADF  & KPSS \\ [5pt]
+	
+				GASOLINE &   5  & -7.781 & 0.031 & 0.010 & 0.10 \\
+				GASOIL   &   5  & -5.537 & 0.045 & 0.010 & 0.10 \\
+				KEROSENE &   5  & -4.493 & 0.263 & 0.010 & 0.10 \\
+				LPG      &   5  & -4.473 & 0.063 & 0.010 & 0.10 \\ 
+				\bottomrule
+			\end{tabular}
+		\end{table}
+	
+		\begin{exampleblock}{Is Stationary ?}
+			\vspace{5pt}
+			It is observed that for ADF, all the p-values of the series are less than 0.05 and this
+			indicates the stationarity. The KPSS test also showed the same results. We now estimate the models since the series have attained stationarity.
+		\end{exampleblock}
+	\end{frame}
+
+	% --------------------------------------------------------------------
+	\begin{frame}{ACF Plot of First Differenced Series}
+		\begin{figure}
+			\subfigure{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/acf_pacf/acf_pacf_diff/acf_diff_gasoline}}
+			\subfigure{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/acf_pacf/acf_pacf_diff/acf_diff_gasoil}}
+			\subfigure{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/acf_pacf/acf_pacf_diff/acf_diff_kerosene}}
+			\subfigure{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/acf_pacf/acf_pacf_diff/acf_diff_lpg}}
+			
+			
+			\caption{ \ref{plot:acf__diff_series} ACF of the Differenced Series}
+			\label{plot:acf__diff_series}
+		\end{figure}
+		
+	\end{frame}
+	
+	% --------------------------------------------------------------------
+	\begin{frame}{PACF Plot of First Differenced Series}
+		\begin{figure}
+			\subfigure{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/acf_pacf/acf_pacf_diff/pacf_diff_gasoline}}
+			\subfigure{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/acf_pacf/acf_pacf_diff/pacf_diff_gasoil}}
+			\subfigure{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/acf_pacf/acf_pacf_diff/pacf_diff_kerosene}}
+			\subfigure{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/acf_pacf/acf_pacf_diff/pacf_diff_lpg}}
+			
+			
+			\caption{ \ref{plot:pacf__diff_series} PACF of the Differenced Series}
+			\label{plot:pacf__diff_series}
+		\end{figure}
+		
+	\end{frame}	
+	
+	
+	% --------------------------------------------------------------------
+	% Estimation of VAR or VEC Models
+	% --------------------------------------------------------------------
+	\section{Estimation of VAR/ VEC Models}
+	\begin{frame}{What Next After Series is Stationary ?}
+		
+		\begin{block}{Estimation of VAR/ VEC Models}
+			\vspaceFive
+			\begin{itemize}[label=$\diamond$, leftmargin=2em, itemsep=1em]
+				\item Lag Length Selection (LLS)
+				\item Cointegration Test
+				\item Long Run Equilibrium
+				\item Short Run Equilibrium
+				\item Estimation of VEC Model (If There is cointegration)
+				\item Model Validation
+				\item Forecast of Ex-Pump prices of Products
+			\end{itemize}
+			\vspaceFive
+		\end{block}
+		
+	\end{frame}
+	
+	
+	
+	% --------------------------------------------------------------------
+	\begin{frame}{Estimation of VAR/ VEC Models}
+		\begin{block}{}
+			Estimating parameters of \VARHighlight (VAR) or \VECHighlight (VEC) models require that variables are 
+			covariance stationary \vspaceFive
+		\end{block} \vspaceFive
+		
+		\begin{block}{}
+			VAR for instance cannot be used if the variables are not stationary. \\
+			Also, if the data is non-stationary, the forecast cannot be done because \textPrimary{VAR assumes stationarity}
+		\end{block}
+		
+		\begin{block}{}
+			We then test for the long run relationship using \textPrimary{Johansen’s cointegration test}.  \\
+			That is if the result confirms that there is a long-run relationship among the variables, 
+			we can proceed to the VEC model. 
+		\end{block}
+		
+		\begin{exampleblock}{}
+			The first step involved in estimating is to first determine the lag Length or order. 
+		\end{exampleblock}
+	\end{frame}
+	
+	
+	% --------------------------------------------------------------------
+	% LLS Criteria
+	% --------------------------------------------------------------------
+	\section{LLS Criteria and Cointergration}
+	\begin{frame}{Lag Length Selection (LLS) Criteria}
+		\begin{block}{}
+			LLS is significant for VAR/VEC models since selecting too few intervals to result in a cointegrated error and selecting too many intervals may lead to unnecessary loss of degrees of freedom
+		\end{block}
+	
+		\begin{exampleblock}{Three of the LLS criteria are used, namely ;}
+			\begin{itemize}
+				\item FPE (Final Prediction Error)
+				\item AIC (Akaike Information Criterion)
+				\item BIC (Bayesian Information Criterion), aka SC (Schwarz Criterion)
+			\end{itemize} 
+		\end{exampleblock}
+		
+		
+		\begin{block}{}
+			FPE, AIC, and BIC support the inclusion of lag 1 as italicized, and starred in Table \ref{table:lls}. 
+		\end{block}
+	\end{frame}
+
+	% --------------------------------------------------------------------
+	\begin{frame}
+
+		\begin{table}[]
+			% Caption and Label
+			\caption{ \ref{table:lls} Lag Length Selection Criteria}
+			\label{table:lls}
+			
+			% Table Lag Length Selection
+			\begin{tabular}{cccc}
+			\toprule
+			Lag & FPE & AIC & BIC \\
+			\midrule
+			
+			0  & \mathSup{1.03 x 10}{9} & 32.107 & 32.192  \\ [2pt]
+			1* & 117944.1* & 23.029*  & 23.454* \\ [2pt]
+			2  & 127300.7  & 23.105   & 23.869  \\ [2pt]
+			3  & 142926.7  & 23.219   & 24.3224 \\ [2pt]
+			4  & 149122.0  & 23.259   & 24.701  \\ [2pt]
+			5  & 169942.3  & 23.385   & 25.167  \\ [2pt]
+			6  & 156708.8  & 23.297   & 25.419  \\
+			\bottomrule
+			\end{tabular}
+		\end{table}
+	
+		% Description of table
+		\begin{block}{}
+			From Table \ref{table:lls}, we can rely on information criteria as only one of these three tests; FPE, AIC, and BIC obtained minimum values at the indicated lag.  \\
+			The test displays \textPrimary{lag 1} as the optimum. Thus, the lag length for the estimation is 1. 
+		\end{block}
+	\end{frame}
+
+	% --------------------------------------------------------------------
+	\begin{frame}{What Next After Lag Length Selection}
+		\begin{block}{}
+			\vspaceTen
+			Once the unit roots and lag length selections are determined for a time series data, the next step is to inspect whether there exists a \\
+			\textPrimary{Cointegration (Long run relationship)} among the variables or not.
+			\vspaceTen
+		\end{block}
+	\end{frame}
+
+	% --------------------------------------------------------------------
+	% Cointergration
+	% --------------------------------------------------------------------
+	\section{Cointegration}
+	\begin{frame}{Cointegration : Long Run Relationship}
+		Cointegration analysis is important because, if two or more non-stationary variables are cointegrated, a VAR model in the first difference is mis-specified due to the effects of a common trend. The cointegration test determines the type of the regression model to be applied i.e. VAR or VEC
+		
+		\begin{block}{ Cointegration Test}
+			\mathSubTT{H}{0} : There is no cointegration equation. \\
+			\mathSubTT{H}{1} : There is a cointegration equation 
+		\end{block}
+		
+	\end{frame}
+	
+	% --------------------------------------------------------------------
+	\begin{frame}
+		
+		% Table
+		\begin{table}[]
+			\caption{ \ref{table:cointegration} Determining the Number of Cointegrated Equations}
+			\label{table:cointegration}
+			\begin{tabular}{llllll}
+				\toprule
+				Number & & Trace &  & Max-Eigen  & \\
+				of EC & Eigenvalues & Statictics & P-Value & Staticstics & P-Value \\
+				\midrule
+				
+			   None*     & 0.358 & 79.102 & 0.000 & 62.959 & 0.000 \\ [5pt]	
+			   At most 1 & 0.070 & 16.143 & 0.702 & 10.258 & 0.720 \\ [5pt]
+			   At most 2 & 0.033 & 5.885  & 0.709 & 4.778  & 0.769 \\ [5pt]
+			   At most 3 & 0.008 & 1.107  & 0.293 & 1.107  & 0.293 \\ [5pt]
+				\bottomrule
+			\end{tabular}
+		\end{table}
+	
+		% Description
+		\begin{exampleblock}{Conclusion}
+			Remarkably, the Trace test and max-Eigen statistics suggest the existence of a cointegrated equation (CE). \\ 
+			We shall take into account this fact at the next step. \\
+			Since all the series are I(1) and cointegrated, the products ought to be modelled as a VEC model 
+		\end{exampleblock}
+	\end{frame}
+
+	% --------------------------------------------------------------------
+	\begin{frame}
+		\begin{block}{}
+			As a result, a cointegration relationship is obtained. \\ 
+			This throws more light on the long run relationships among the products.\\
+			 Consequently, the products; \textPrimary{GASOLINE, GASOIL, KEROSENE, and LPG} prices are linked by a 
+			long run equation. 
+		\end{block}
+	
+		\begin{block}{}
+			Once the unit roots and lag length selections are determined for a time series data, the next step is to inspect whether there exists a long-run equilibrium relationship among the variables or not.
+		\end{block}
+	\end{frame}
+		
+	% --------------------------------------------------------------------
+	% Long and Short Run Equilibrium
+	% --------------------------------------------------------------------
+	
+	\section{Long And Short Run Equilibrium}
+	\begin{frame}{Long Run Relationship}
+		\begin{block}{The cointegrating (long-run) relationship is estimated to be;}
+			\vspaceFive
+			\begin{math}
+				\textPrimary{\text{GASOLINE}} = 
+				- 0.0221 \textPrimary{\text{ GASOIL}} + 
+				0.027 \textPrimary{\text{ KEROSENE}} - 
+				0.580 \textPrimary{\text{ LPG}}
+			\end{math}
+			
+			\vspaceFive 
+		\end{block} 
+		\vspaceFive
+		
+		Thus, with GASOLINE price as the endogenous variable, the long-run relationship indicates that the ex-pump prices of the other products have long run effects. \\ \vspaceTen
+		
+		Specifically, the results indicate that the other products have a negative relation with GASOLINE price in the long run (except KEROSENE), all things being equal.
+	\end{frame}
+
+	% --------------------------------------------------------------------
+	\begin{frame}{Log Run Equilibrium}
+		\begin{block}{}
+			\vspaceFive
+			The coefficients of the error correction terms (ECT) [Table \ref{table:gasoline_model}, \ref{table:gasoil_model}, \ref{table:kerosene_model}, \ref{table:LPG_model}] \\ show the speed of adjustments of disequilibrium in the period under study.
+			\vspaceFive
+		\end{block}.
+		\begin{block}{}
+			\vspaceFive
+			The negative sign associated with the error term is simply a departure in one direction. These are satisfying as they imply convergence in the long run. That is, deviation from the long run is corrected
+			\vspaceFive
+		\end{block}.
+	\end{frame}
+
+	% -------------------------------------------------------------------
+	\begin{frame}
+		% Table
+
+		\begin{table}[]		
+			% Gasoline table
+			\caption{ \ref{table:gasoline_model} Gasoline Model}
+			\label{table:gasoline_model}
+			\begin{tabular}{lccc}
+				\toprule
+				Parameters & Coefficient & S.E & t-satistics \\
+				\midrule
+				\textPrimary{GASOLINE Model} & & & \\ [6pt] 
+				
+				\bmathSubTT{Gasoline}{t-1} & 0.691 & 0.189 & 3.650*  \\ [5pt]
+				\bmathSubTT{Gasoil}{t-1} & -0.0221 & 0.386 & -1.561* \\ [5pt]
+				\bmathSubTT{Kerosene}{t-1} & 0.027 & 0.091 & 0.294 \\ [5pt]
+				\bmathSubTT{LPG}{t-1}     & -0.580 & 0.262 & -2.211 \\ [5pt]
+				Constant        & 0.006  & 0.805 & 0.007    \\ [5pt]
+				ECT             & -0.613 & 0.145 & -11.118*  \\ 
+				\hline
+			\end{tabular}
+		\end{table}
+	
+		% Description
+		\begin{block}{}
+			 The negative coefficients of the error term for GASOLINE prices indicate dynamic stability, suggesting rapid adjustment speeds.
+			 \\ The magnitude of the correction of the imbalances suggest that , \textPrimary{61.3\%} of the imbalances in GASOLINE prices are corrected.
+		\end{block}
+		
+	\end{frame}
+	
+	% -------------------------------------------------------------------	
+	\begin{frame}
+		\begin{table}[]
+			
+			% Gasoline table
+			\caption{ \ref{table:gasoil_model} Gasoil Model}
+			\label{table:gasoil_model}
+			\begin{tabular}{lccc}
+				 \toprule
+				 Parameters & Coefficient & S.E & t-satistics \\
+				 \midrule
+				 \textPrimary{GASOIL Model} & & & \\ [6pt]
+				
+				\bmathSubTT{Gasoline}{t-1} & 0.524  & 0.126  & 4.165*  \\ [5pt]
+				\bmathSubTT{Gasoil}{t-1}   & -0.783 & 0.256 & -3.059*  \\ [5pt]
+				\bmathSubTT{Kerosene}{t-1} & -0.002 & 0.060 & -0.030   \\ [5pt]
+				\bmathSubTT{LPG}{t-1}     & -0.214  & 0.174 & -1.227   \\ [5pt]
+				Constant  & 0.017   & 0.535 & 0.032    \\ [5pt]
+				ECT   & -0.695  & 0.096 & -7.215*  \\
+				\hline	    
+				  
+			\end{tabular}
+		\end{table}
+	
+		% Description
+		\begin{block}{}
+			Concerning GASOIL prices, it indicates 69.5\% of shocks in its prices (imbalance) are corrected every two weeks.
+		\end{block}
+		
+	\end{frame}
+
+	\begin{frame}
+		\begin{table}[]
+			
+			% Gasoline table
+			\caption{ \ref{table:kerosene_model} Kerosene Model}
+			\label{table:kerosene_model}
+			\begin{tabular}{lccc}
+				\toprule
+				Parameters & Coefficient & S.E & t-satistics \\
+				\midrule
+				\textPrimary{KEROSENE Model} & & & \\ [6pt] 
+				
+				\bmathSubTT{Gasoline}{t-1} & 0.058 & 0.163 & 0.359 \\ [5pt]
+				\bmathSubTT{Gasoil}{t-1} & -0.002 & -0.085 & -0.256 \\ [5pt]
+				\bmathSubTT{Kerosene}{t-1} & -0.518 & 0.078 & -6.652* \\ [5pt]
+				\bmathSubTT{LPG}{t-1} & 0.059 & 0.225 & 0.263 \\ [5pt]
+				Constant & 0.001 & 0.692 & 0.002 \\ [5pt]
+				ECT & -0.039 & 0.125 & -0.313 \\
+				\bottomrule
+
+			\end{tabular}
+		\end{table}
+	
+		% Description
+		\begin{block}{}
+			For the KEROSENE price, 3.9\% of such imbalances are corrected every two weeks
+		\end{block}
+		
+	\end{frame}
+
+	\begin{frame}
+		\begin{table}
+			
+			% LPG table
+			\caption{ \ref{table:LPG_model} LPG Model}
+			\label{table:LPG_model}
+			\begin{tabular}{lccc}
+				\toprule
+				Parameters & Coefficient & S.E & t-satistics \\
+				\midrule
+				\textPrimary{LPG Model} & & & \\ [6pt]
+				
+				\bmathSubTT{Gasoline}{t-1} & 0.054 & 0.106 & 0.505 \\ [5pt]
+				\bmathSubTT{Gasoil}{t-1} & -0.080 & 0.216 & -0.370 \\ [5pt]
+				\bmathSubTT{Kerosene}{t-1} & 0.010 & 0.051 & -0.197 \\ [5pt]
+				\bmathSubTT{LPG}{t-1} & -0.450 & 0.147 & -3.058* \\ [5pt]
+				Constant & 0.020 & 0.452 & 0.044 \\ [5pt]
+				ECT & -0.036 & 0.081 & -0.437 \\
+				
+				\bottomrule	    
+				
+			\end{tabular}
+		\end{table}
+	
+		% Description
+		\begin{block}{}
+			In the case of LPG price, only 3.6\% of such imbalances are corrected.
+		\end{block}
+		
+	\end{frame}
+
+	\section{Short Run Relationship}
+	\begin{frame}{Short Run Relationship}
+			
+		\begin{block}{}
+			The short run relationships of the models are explained by the VEC model coefficients as presented in Table \ref{table:gasoline_model}, \ref{table:gasoil_model}, \ref{table:kerosene_model}, \ref{table:LPG_model}
+		\end{block}
+		
+		\begin{block}{Gasoline}
+			Looking at the coefficients, it is observed (Table \ref{table:gasoline_model}) that in the short-run, GASOLINE price \textPrimary{[3.65*]} is significant. This is an indication that GASOLINE price exhibits an increment of \textPrimary{69.1\%} by itself and \textPrimary{2.21\%} reduction by GASOIL price whiles the others are not significant.
+		\end{block}
+		
+	\end{frame}
+
+	\begin{frame}{Short Run Relationship}
+		
+		\begin{block}{Gasoil}
+			Also, it is observed that GASOIL price \textPrimary{[4.17*]} is significant by Gasoline. This is an indication that GASOIL price exhibits an increment of \textPrimary{52.4\%} by GASOLINE price with a \textPrimary{78.3\%} reduction by itself. 
+		\end{block}
+	
+		\begin{block}{}
+			The other products also exhibit both increment and reduction by themselves and/or other products. This is because the coefficients of these products are significant. The short-run results also indicate that the variables influence each other.
+		\end{block}
+		\begin{block}{}
+			 Considering GASOLINE price as the dependent variable, it appears the ex- pump prices of the other products influence it. The consequence of this result is that increase ex-pump prices of one or more products are likely to influence others
+		\end{block}
+		
+	\end{frame}
+	
+	\begin{frame}{Long And Short Run Relationship}
+		\begin{block}{}
+			\vspaceTen
+			Now, having analyzed both the short and long-run relationships \\ existing among the variables, \\
+			the VEC models are estimated, diagnosed, and validated, and
+			finally, forecasts are generated.
+			\vspaceTen
+		\end{block}
+	\end{frame}
+	
+	% --------------------------------------------------------------------
+	% Estimation of VEC Model
+	% --------------------------------------------------------------------
+	\section{Estimation of VEC Model}
+	
+	% Commented out
+	\begin{comment}
+	\begin{frame}{Estimation of VEC Model}
+		The VEC models are estimated using these equations,
+		
+		\begin{equation}
+			\subTT{w}{t} = \text{c} 
+			 + \subNT{\phi}{11}\subTT{w}{t-1}
+			 + \subNT{\phi}{12}\subTT{x}{t-1} 
+			 + \subNT{\phi}{13}\subTT{y}{t-1} 
+			 + \subNT{\phi}{14}\subTT{z}{t-1} 
+			 + \subNT{\epsilon}{wt} 
+			\label{model:model_wt}
+		\end{equation}
+	
+		\begin{equation}
+			\subTT{x}{t} = \text{c} 
+			+ \subNT{\phi}{21}\subTT{w}{t-1}
+			+ \subNT{\phi}{22}\subTT{x}{t-1} 
+			+ \subNT{\phi}{23}\subTT{y}{t-1} 
+			+ \subNT{\phi}{24}\subTT{z}{t-1} 
+			+ \subNT{\epsilon}{xt}
+			\label{model:model_xt} 
+		\end{equation}
+	
+		\begin{equation}
+			\subTT{y}{t} = \text{c}
+			+ \subNT{\phi}{31}\subTT{w}{t-1}
+			+ \subNT{\phi}{32}\subTT{x}{t-1} 
+			+ \subNT{\phi}{33}\subTT{y}{t-1} 
+			+ \subNT{\phi}{44}\subTT{z}{t-1} 
+			+ \subNT{\epsilon}{yt} 
+			\label{model:model_yt} 
+		\end{equation}
+	
+		\begin{equation}
+			\subTT{z}{t} = \text{c}
+			+ \subNT{\phi}{41}\subTT{w}{t-1}
+			+ \subNT{\phi}{42}\subTT{x}{t-1} 
+			+ \subNT{\phi}{43}\subTT{y}{t-1} 
+			+ \subNT{\phi}{44}\subTT{z}{t-1} 
+			+ \subNT{\epsilon}{zt}
+			\label{model:model_zt} 
+		\end{equation}
+	\end{frame}
+	\end{comment}
+	% --------------------------------------------------------------------
+	
+	% --------------------------------------------------------------------
+	% Model Equations
+	\begin{frame}{Estimation of VEC Model}
+		The VEC models are estimated using these equations,
+		
+		\begin{equation}
+			\subTT{\varGasoline}{t} = \text{c} + \subNT{\phi}{11}\subTT{\varGasoline}{t-1} + \subNT{\phi}{12}\subTT{\varGasoil}{t-1} + \subNT{\phi}{13}\subTT{\varKerosene}{t-1} + \subNT{\phi}{14}\subTT{\varLpg}{t-1} + \subNT{\epsilon}{t} 
+			\label{model:model_gasoline}
+		\end{equation}
+		
+		\begin{equation}
+			\subTT{\varGasoil}{t} = \text{c} + \subNT{\phi}{21}\subTT{\varGasoline}{t-1} + \subNT{\phi}{22}\subTT{\varGasoil}{t-1} + \subNT{\phi}{23}\subTT{\varKerosene}{t-1} + \subNT{\phi}{24}\subTT{\varLpg}{t-1} + \subNT{\epsilon}{t} 
+			\label{model:model_gasoil}
+		\end{equation}
+		
+		\begin{equation}
+			\subTT{\varKerosene}{t} = \text{c} + \subNT{\phi}{31}\subTT{\varGasoline}{t-1} + \subNT{\phi}{32}\subTT{\varGasoil}{t-1} + \subNT{\phi}{33}\subTT{\varKerosene}{t-1} + \subNT{\phi}{34}\subTT{\varLpg}{t-1} + \subNT{\epsilon}{t} 
+			\label{model:model_kerosene}
+		\end{equation}
+	
+		\begin{equation}
+			\subTT{\varLpg}{t} = \text{c} + \subNT{\phi}{1}\subTT{\varGasoline}{t-1} + \subNT{\phi}{2}\subTT{\varGasoil}{t-1} + \subNT{\phi}{3}\subTT{\varKerosene}{t-1} + \subNT{\phi}{4}\subTT{\varLpg}{t-1} + \subNT{\epsilon}{t} 
+			\label{model:model_lpg}
+		\end{equation}
+	\end{frame}
+
+	% --------------------------------------------------------------------
+	% VEC Model Equations
+	\begin{frame}
+		\begin{block}{}
+			The results of VAR are reported by the 4 equations below. The VEC models are computed with one lag. The models relating the products to their lags and that of others may best be described as;
+		\end{block} \vspaceFive
+		
+			\begin{math}
+				\begin{bmatrix}
+					\subTT{\varGasoline}{t} \\
+					\subTT{\varGasoil}{t} \\
+					\subTT{\varKerosene}{t} \\
+					\subTT{\varLpg}{t}
+				\end{bmatrix}
+			\end{math}
+			=
+			\begin{math}
+				\begin{bmatrix}
+					0.006 \\
+					0.017 \\
+					0.001 \\
+					0.020
+				\end{bmatrix}
+			\end{math}
+			+
+			
+			\begin{math}
+				\begin{bmatrix}
+					0.691 & 0.0221 & 0.027 & -0.580 \\
+					0.524 & -0.783 & -0.002 & -0.214 \\
+					0.058 & -0.002 & -0.518 & 0.059 \\
+					0.054 & -0.080 & 0.010 & -0.450
+				\end{bmatrix}
+			\end{math}
+			\begin{math}
+				\begin{bmatrix}
+					\subTT{\varGasoline}{t-1} \\
+					\subTT{\varGasoil}{t-1} \\
+					\subTT{\varKerosene}{t-1} \\
+					\subTT{\varLpg}{t-1}
+				\end{bmatrix}
+			\end{math}
+			+
+			
+			\begin{math}
+				\begin{bmatrix}
+					\subTT{ECT}{pg} & 0 & 0 & 0 \\
+					0 & \subTT{ECT}{g} & 0 & 0 \\
+					0 & 0 & \subTT{ECT}{k} & 0 \\
+					0 & 0 & 0 & \subTT{ECT}{l}
+				\end{bmatrix}
+			\end{math}
+			\begin{math}
+				\begin{bmatrix}
+					-1.613 \\
+					-0.695 \\
+					-0.039 \\
+					-0.036
+				\end{bmatrix}
+			\end{math}	
+	
+	\end{frame}
+	
+	% --------------------------------------------------------------------
+	\begin{frame}
+		where, 
+		\begin{math}
+			\begin{bmatrix}
+				\subTT{\varGasoline}{t} \\
+				\subTT{\varGasoil}{t} \\
+				\subTT{\varKerosene}{t} \\
+				\subTT{\varLpg}{t}
+			\end{bmatrix}
+		\end{math},
+		represents the projects GASOLINE, GASOIL, KEROSENE, LPG prices at the time t,
+		\begin{math}
+			\begin{bmatrix}
+				\subTT{ECT}{pg} & 0 & 0 & 0 \\
+				0 & \subTT{ECT}{g} & 0 & 0 \\
+				0 & 0 & \subTT{ECT}{k} & 0 \\
+				0 & 0 & 0 & \subTT{ECT}{l}
+			\end{bmatrix}
+		\end{math}
+		\vspaceFive
+		
+		refers to the error corrected terms (ECT) for each model,
+		(pg, g, k, and L respectively representing GASOLINE, GASOIL, KEROSENE, and LPG prices), and
+		\begin{math}
+			\begin{bmatrix}
+				\subTT{\varGasoline}{t-1} \\
+				\subTT{\varGasoil}{t-1} \\
+				\subTT{\varKerosene}{t-1} \\
+				\subTT{\varLpg}{t-1}
+			\end{bmatrix}
+		\end{math} 
+		referring to the lags of the products (i.e. lag 1). \\
+		\vspaceFive
+		The summary of the results of the VEC models is presented in Table \ref{table:model_summary}		
+		
+	\end{frame}
+	
+	% --------------------------------------------------------------------
+	\begin{frame}
+		\begin{table}
+			\caption{ \ref{table:model_summary} Summary Results of the Models}
+			\label{table:model_summary}
+			\begin{tabular}{lcccc}
+				\toprule
+				Statistics/Products & GASOLINE & GASOIL & KEROSENE & LPG \\
+				\midrule
+				
+				F-statistic         & 31.515 & 18.810 & 9.884 & 8.133 \\ [10pt]
+				Prob (F-statistic)  & 0.000 & 0.000 & 0.000 & 0.000   \\ [10pt]
+				S.E.                & 9.562 & 6.351 & 8.218 & 5.367   \\ [10pt]
+				R-squared           & 53.9\% & 41.1\% & 26.8\% & 23.1\% \\ [10pt]
+				\bottomrule
+			\end{tabular}
+		\end{table}
+	
+		\begin{exampleblock}{}
+			Table \ref{table:model_summary} is a summary of the statistics of the VEC models. The results indicate that the models perform creditably well. GASOIL appears to be the best in terms of the variability accounted for.
+		\end{exampleblock}
+	\end{frame}
+
+	% --------------------------------------------------------------------
+	% Model Diagnostics
+	% --------------------------------------------------------------------
+	
+	% --------------- Model Diagnostics ---------------
+	\begin{comment}
+	\section{Model Diagnostics}
+	\begin{frame}{Model Diagnostics}
+		\begin{block}{}
+			After modeling, some forecasts are normally estimated. But before the estimated model can be used to generate any forecast,\\
+			it is imperative to undertake residual analysis or model diagnostics.
+		\end{block}
+		
+		\begin{block}{}
+			The diagnostic test results include Q- statistics, residual portmanteau test, residual serial correlations, and white heteroscedasticity test. \\
+			Tables \ref{table:residual_port_test} to 13 provide information on the analysis of the residuals of the models.
+		\end{block}
+	\end{frame}
+	
+	% --------------- Residual Portmanteau Tests ---------------
+	\begin{frame}
+		
+		\begin{table}
+			\caption{ \ref{table:residual_port_test} VEC Residual Portmanteau Tests for Autocorrelations}
+			\label{table:residual_port_test}
+			\begin{tabular}{cccccc}
+				\toprule
+				Lags & Q-Stat & Prob. & Adj Q-Stat & P-Value & df \\
+				\midrule
+				
+				1 & 7.6189 & NA* & 7.677 & NA* & NA* \\ [5pt]
+				2 &21.603 & 0.157 & 21.879 & 0.147 & 16 \\
+				3 & 29.843 & 0.576 & 30.312 & 0.552 & 32 \\
+				4 & 44.304 & 0.625 & 45.228 & 0.587 & 48 \\
+				5 & 50.472 & 0.891 & 51.641 & 0.867 & 64 \\
+				6 & 111.265 & 0.012 & 115.351 & 0.006 & 80 \\
+				7 & 131.458 & 0.010 & 136.684 & 0.004 & 96 \\
+				8 & 188.126 & 0.000 & 197.038 & 0.000 & 112 \\
+				9 & 197.007 & 0.000 & 206.575 & 0.000 & 128 \\
+				10 & 202.285 & 0.001 & 212.289 & 0.000 & 144 \\
+				11 & 216.121 & 0.002 & 227.393 & 0.000 & 160 \\
+				12 & 230.102 & 0.004 & 242.784 & 0.001 & 176 \\
+				
+				\bottomrule
+			\end{tabular}
+		\end{table}
+	\end{frame}
+	\begin{frame}{VEC Residual Portmanteau Tests for Autocorrelations}
+		\begin{block}{}
+			The null hypothesis is that there are no residual autocorrelations up to lag h. The test is valid only for lags larger than the selected lag order. \\
+			We observe that the residual passes the white noise test since no autocorrelation is left in the VEC model after lag 1.
+		\end{block}
+	
+		\begin{block}{Lagrange Multiplier Test}
+			The LM (Lagrange Multiplier) test is a statistical test used to access the goodness of fit of a model. It is also know as the Lagrange Multiplier(LM) test for model specification
+		\end{block}
+	\end{frame}
+	
+	% --------------- Lagrange Multiplier Test ---------------
+	\begin{frame}
+		\begin{table}
+			\caption{ \ref{table:residual_corr_test} VECM Residual Serial Correlation LM Tests}
+			\label{table:residual_corr_test}
+			
+			\begin{tabular}{ccc}
+				\toprule
+				Lags & LM-Stat  & P-values \\
+				\midrule
+				
+				1     & 18.022   & 0.323 \\
+				2     & 18.924   & 0.273 \\
+				3     & 8.073    & 0.947 \\
+				4     & 14.278   & 0.578 \\
+				5     & 6.001    & 0.988 \\
+				6     & 66.795   & 0.000 \\
+				7     & 20.731   & 0.189 \\
+				8     & 69.676   & 0.000 \\
+				9     & 8.623    & 0.928 \\
+				10    & 5.030    & 0.996 \\
+				11    & 14.290   & 0.577 \\
+				12    & 14.019   & 0.597 \\
+				
+				\bottomrule
+			\end{tabular}
+		\end{table}
+		
+		
+	\end{frame}
+
+	% --------------- Residual Heteroskedasticity ---------------
+	\begin{frame}
+		\begin{table}
+			\caption{ \ref{table:residual_hetro} VEC Residual Heteroskedasticity}
+			\label{table:residual_hetro}
+			
+			\begin{tabular}{cccccc}
+				\toprule
+			 	Dependent & R-squared & F (34,163) & P-value & Chi-square (34) & P-Value \\
+			 	\midrule
+			 	res1*res1 & 0.292 & 3.415 & 0.001 & 38.236 & 0.290 \\
+			 	res2*res2 & 0.093 & 0.850 & 0.615 & 12.184 & 0.093 \\
+			 	res3*res3 & 0.216 & 2.280 & 0.009 & 28.266 & 0.216 \\
+			 	res4*res4 & 0.065 & 0.573 & 0.881 & 8.474 & 0.065 \\
+			 	res2*res1 & 0.215 & 2.273 & 0.009 & 28.198 & 0.215 \\
+			 	res3*res1 & 0.155 & 1.516 & 0.116 & 20.262 & 0.155 \\
+			 	res3*res2 & 0.181 & 1.835 & 0.041 & 23.753 & 0.181 \\
+			 	res4*res1 & 0.064 & 0.569 & 0.884 & 8.414 & 0.064 \\
+			 	res4*res2 & 0.049 & 0.425 & 0.964 & 6.387 & 0.049 \\
+			 	res4*res3 & 0.265 & 2.980 & 0.001 & 34.654 & 0.264 \\
+				
+				\bottomrule
+			\end{tabular}
+		\end{table}
+		
+	\end{frame}
+	\begin{frame}{ VEC Residual Heteroskedasticity}
+		\begin{block}{}
+			\vspaceFive
+			Table \ref{table:residual_hetro} presents the results of a Heteroscedasticity test, which assesses whether the variances of the error terms in a linear regression model are consistent. The test assumes normal distribution of error terms and aims to verify if variances across the series remain constant.
+			\vspaceFive
+		\end{block}
+		
+		\begin{block}{}
+			\vspaceFive
+			The findings indicate that the variances are indeed constant, as evidenced by the Chi-Square test's p-value exceeding 0.05. This conclusion is further supported by the p-values from both the F and Chi-square tests.
+			\vspaceFive
+		\end{block}
+	\end{frame}
+
+	% --------------------------------------------------------------------
+	% Model Validation
+	% --------------------------------------------------------------------
+	\section{Model Validation}
+	\begin{frame}{Model Validation}
+		
+		\begin{block}{}
+			Model validation and certification are crucial in the modeling process, aiding stakeholders in reducing costs, time, and risks associated with extensive product testing. These procedures are essential for establishing trust in statistical models. 
+		\end{block}
+		
+		\begin{block}{}
+			Data was divided into training and validation sets, with 70\% of data points used for modeling (2007 to 2012) and the remaining for validation (2013 to 2015). Out-of-sample forecasts for 2013 to 2015 were employed for model validation, comparing predicted product prices to actual prices. 
+		\end{block}
+		
+		\begin{block}{}
+			\vspaceFive
+			The forecasts closely resembled the original prices, demonstrating the models' effectiveness and accuracy.
+			\vspaceFive
+		\end{block}
+		
+		
+	\end{frame}
+	
+	\begin{frame}{Model Validation}
+		\begin{figure}
+			\subfigure[\subCaptionDash{GASOLINE}]{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/plots/plot_validation/plot_validation_gasoline}}
+			\subfigure[\subCaptionDash{GASOIL}]{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/plots/plot_validation/plot_validation_gasoil}}
+			\subfigure[\subCaptionDash{KEROSENE}]{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/plots/plot_validation/plot_validation_kerosene}}
+			\subfigure[\subCaptionDash{LPG}]{\includegraphics[height=0.3\textheight, width=0.4\textwidth]{images/plots/plot_validation/plot_validation_lpg}}
+			
+			
+			\caption{ \ref{plot:model_validation} Model Validation}
+			\label{plot:model_validation}
+		\end{figure}
+	\end{frame}
+	
+	% --------------------------------------------------------------------
+	% Forecast of Ex-Pump Prices of Products
+	% --------------------------------------------------------------------
+	\section{Forecast of Ex-Pump Prices of Products}
+	\begin{frame}{Forecast of Ex-Pump Prices of Products}
+		\begin{block}{}
+			\vspaceTen
+			After model diagnostics and validation, we, therefore, forecast the prices of the products for the next 12 period as shown in Table \ref{table:forecast} on page \pageref{table:forecast}
+			\vspaceTen
+		\end{block}
+	\end{frame}
+	\begin{frame}
+		\begin{table}
+			\caption{ \ref{table:forecast} Forecasts of Ex-pump Prices for the four Products}
+			\label{table:forecast}
+			
+			\begin{tabular}{ccccc}
+				\toprule
+				Period & Premium Gasoline & Gas Oil & Kerosene & LPG \\
+				\midrule
+				
+				1 & 172.037 & 172.360 & 91.401 & 130.290 \\
+				2 & 173.121 & 172.360 & 91.887 & 130.693 \\
+				3 & 173.962 & 172.360 & 92.475 & 131.114 \\
+				4 & 174.684 & 172.360 & 93.115 & 131.548 \\
+				5 & 175.392 & 206.830 & 93.765 & 131.985 \\
+				6 & 176.123 & 206.830 & 94.406 & 132.420 \\
+				7 & 176.874 & 206.830 & 95.038 & 132.854 \\
+				8 & 177.631 & 206.830 & 95.667 & 133.287 \\
+				9 & 178.389 & 206.830 & 96.296 & 133.720 \\
+				10 & 179.144 & 206.830 & 96.926 & 134.153 \\
+				11 & 179.897 & 211.110 & 97.557 & 134.586 \\
+				12 & 180.650 & 211.110 & 98.188 & 135.019 \\
+				
+				\bottomrule
+			\end{tabular}
+		\end{table}
+		
+	\end{frame}
+	\begin{frame}
+		\begin{exampleblock}{ \vspaceFive Do forecasted petroleum prices follow the same trend as historical data? \vspaceFive}
+			It was noticed that the forecasts for the series consistently rise as time progresses. \\
+			This aligns with the trend seen in the original products (Figure 1). \\ Therefore, the prices of petroleum products have consistently increased over the years, as expected. \vspaceFive
+		\end{exampleblock} \vspaceTen
+	
+		\begin{exampleblock}{}
+			Next, we look at causality among the products, hereafter referred to as
+			Granger causality.
+		\end{exampleblock}
+	\end{frame}
+	
+	
+	% --------------------------------------------------------------------
+	% Granger Causality Test
+	% --------------------------------------------------------------------
+	\section{Granger Causality Test}
+	\begin{frame}{Granger Causality Test}
+		\begin{block}{}
+			Table \ref{table:granger_causality_1} and \ref{table:granger_causality_2} on page \pageref{table:granger_causality_1} presents the results of the Granger causality test conducted for various variables. \\
+			This test evaluates whether one variable has a causal influence on another.
+		\end{block}
+		\begin{block}{ \vspaceFive Granger Causality \vspaceFive}
+			\vspaceFive
+			 \mathSubTT{H}{0} : The potential causal variable(s) do not Granger cause the dependent variable \\ [5pt]
+			 \mathSubTT{H}{1} : The potential causal variable(s) do Granger cause the dependent variable
+			 \vspaceFive
+		\end{block}
+	\end{frame}
+
+	\begin{frame}
+		\begin{table}
+			\caption{ \ref{table:granger_causality_1} Granger Causality}
+			\label{table:granger_causality_1}
+			\begin{tabular}{lccc}
+
+					\multicolumn{4}{c}{\textbf{Dependent variable: GASOLINE}} \\ [5pt]
+					\toprule
+					
+					Excluded & $\chi^2$ & df & p-value \\
+					\midrule
+					GASOIL & 4.889 & 1 & 0.027 \\
+					KEROSENE & 0.086 & 1 & 0.769 \\
+					LPG & 2.436 & 1 & 0.119 \\
+					All & 32.268 & 3 & 0.000 \\
+					
+					\bottomrule
+			\end{tabular} \vspace{20pt}
+			
+			\begin{tabular}{lccc}
+					\multicolumn{4}{c}{\textbf{Dependent variable: GASOIL}} \\ [5pt]
+					\toprule
+
+					Excluded & $\chi^2$ & df & p-value \\
+					\midrule
+					GASOLINE & 17.345 & 1 & 0.000 \\
+					KEROSENE & 0.001 & 1 & 0.976 \\
+					LPG & 1.506 & 1 & 0.220 \\
+					All & 33.009 & 3 & 0.000 \\
+					
+					\bottomrule
+			\end{tabular}
+			
+		\end{table}
+	\end{frame}
+	\begin{frame}
+		\begin{table}
+			\caption{ \ref{table:granger_causality_2} Granger Causality}
+			\label{table:granger_causality_2}
+			\begin{tabular}{lccc}
+				
+				\multicolumn{4}{c}{\textbf{Dependent variable: KEROSENE}} \\ [5pt]
+				\toprule
+				
+				Excluded & $\chi^2$ & df & p-value \\
+				\midrule
+				GASOLINE & 0.129 & 1 & 0.720 \\
+				GASOIL & 0.065 & 1& 0.798 \\
+				LPG & 0.069 & 1 & 0.793 \\
+				All & 0.241 & 3 & 0.973\\
+				
+				\bottomrule
+			\end{tabular} \vspace{20pt}
+			
+			\begin{tabular}{lccc}
+				\multicolumn{4}{c}{\textbf{Dependent variable: LPG}} \\ [5pt]
+				\toprule
+				
+				Excluded & $\chi^2$ & df & p-value \\
+				\midrule
+				GASOLINE & 0.255 & 1 & 0.614 \\
+				GASOIL & 0.137 & 1 & 0.711 \\
+				KEROSENE & 0.039 & 1 & 0.844 \\
+				All & 0.349 & 3 & 0.951 \\
+				
+				\bottomrule
+			\end{tabular}
+			
+		\end{table}
+	\end{frame}
+	\begin{frame}{Granger Causality}
+		\begin{block}{}
+			The findings reveal that GASOLINE price is Granger caused by at least one of the other products. Specifically, GASOIL price Granger causes GASOLINE price, indicating a causal relationship between them. However, KEROSENE and LPG do not exhibit a Granger causality with GASOLINE price.
+		\end{block}
+		
+		\begin{block}{}
+			Similarly, GASOLINE price Granger causes GASOIL price, suggesting a bidirectional relationship between them. However, none of the other product prices significantly Granger cause KEROSENE or LPG prices.
+		\end{block}
+	
+		\begin{block}{}
+			Although GASOLINE and GASOIL prices contribute to explaining the variability in KEROSENE and LPG prices to some extent, their contributions are not statistically significant. In summary, a bidirectional relationship is observed between GASOLINE and GASOIL prices, highlighting their mutual influence on each other's prices.
+		\end{block}
+	\end{frame}
+	
+	
+	
+	% --------------------------------------------------------------------
+	% Impurse Response Functions ( IRFs )
+	% --------------------------------------------------------------------
+	
+	% --------------------------------------------------------------------
+	% Summary of Results
+	% --------------------------------------------------------------------
+	\section{Summary of Results}
+	\begin{frame}{Summary of Results}
+		\begin{block}{}
+			In the previous section, we obtained a VEC model with a lag of 1. The model's performance indicates a close fit to the data, as confirmed by model validation.
+		\end{block} 
+	
+		\begin{block}{}
+			However, the model statistics reveal lower percentage variations in GASOLINE, GASOIL, KEROSENE, and LPG prices compared to expectations, with figures notably lower than depicted in the model fit graph.
+		\end{block}
+	\end{frame}
+	
+	\begin{frame}{Summary of Results}
+		\begin{block}{}
+			Surprisingly, the performance statistics are higher for a VAR model, as shown in Table \ref{table:summary_results} on Page \pageref{table:summary_results}. Particularly, the lowest R-square (90.3\%) is observed for GASOLINE prices in the VAR model. 
+		\end{block}
+		
+		\begin{block}{}
+			Despite better fits obtained in the VEC graphs compared to those in the appendices, it's expected that the performance statistics for the VEC model should at least match those in Table 15, given that the VEC model is intended to improve upon VAR.
+		\end{block}
+	\end{frame}
+	
+	\begin{frame}
+		\begin{table}
+			\caption{ \ref{table:summary_results} Summary Results of VAR Models}
+			\label{table:summary_results}
+			\begin{tabular}{lcccc}
+				\toprule
+				\textbf{Statistics/Products} & \textbf{GASOLINE} & \textbf{GASOIL} & \textbf{KEROSENE} & \textbf{LPG} \\
+				\midrule
+	
+				\textbf{F-statistic} & 294.988 & 763.646 & 379.972 & 497.413 \\ [10pt]
+				\textbf{p-value} & 0.000 & 0.000 & 0.000 & 0.000 \\ [10pt]
+				\textbf{S.E.} & 9.468 & 5.928 & 0.366 & 4.573 \\ [10pt]
+				\textbf{R-square} & 0.903 & 0.960 & 0.923 & 0.940 \\
+				
+				\bottomrule
+			\end{tabular}
+			
+		\end{table}
+	\end{frame}
+
+	% --------------------------------------------------------------------
+	% Discussions and Findings
+	\begin{frame}{Discussions and Findings}
+		\begin{exampleblock}{}
+			The study findings reveal dynamic relationships among ex-pump prices of petroleum products in the long run, indicating dynamically stable models. Short-term results suggest mutual influence of prices, particularly GASOLINE and GASOIL. 
+		\end{exampleblock}
+		
+		\begin{exampleblock}{}
+			Analysis including  granger causality supports these relationships, showing direct effects on prices. Forecasts demonstrate increasing trends over time, reflecting historical patterns. 
+			Petroleum product prices have consistently risen over years, impacting economic policies due to their significance in energy supply. 
+		\end{exampleblock}
+	\end{frame}
+	\begin{frame}{Discussions and Findings}
+		\begin{exampleblock}{}
+			Literature highlights various effects of oil price shocks on economic variables, though some studies present conflicting views. The model's fitness, as depicted in model fit graphs, differs from model statistics, which were anticipated to explain over 90\% variation, a result observed in corresponding VAR models.
+		\end{exampleblock}
+	\end{frame}
+	
+	% --------------------------------------------------------------------
+	% Summary of Chapter
+	% --------------------------------------------------------------------
+	\section{Summary of Chapter}
+	\begin{frame}{Chapter Summary}
+		\begin{block}{}
+			In this chapter, it is evident that ex-pump prices of petroleum products exhibit a consistent upward trend over the observed period. Short-term fluctuations indicate interdependence among product prices, while stability prevails in the medium to long term, with Premium Gasoline and Gas Oil prices playing pivotal roles. 
+		\end{block}
+		
+		\begin{block}{}
+			Analysis through Granger causality confirms these findings. A VEC model of order 1 emerges as suitable, outperforming the VAR model with varying R-square values. Notably, Premium Gasoline and Gas Oil prices demonstrate competitive dynamics, reflecting their interchangeable usage patterns.
+		\end{block}
+	\end{frame}
+	\end{comment}
+	
+\end{document}
