@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2024.1.31)  19 MAR 2024 17:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2024.1.31)  19 MAR 2024 17:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2105,7 +2105,7 @@ Package rerunfilecheck Info: File `chapter_4.out' has not changed.
 Here is how much of TeX's memory you used:
  24683 strings out of 478659
  488602 string characters out of 2855762
- 738200 words of memory out of 3000000
+ 738199 words of memory out of 3000000
  42152 multiletter control sequences out of 15000+600000
  415678 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2116,7 +2116,7 @@ eX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX/fonts/typ
 e1/public/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/am
 sfonts/cm/cmss8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cms
 s9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on chapter_4.pdf (37 pages, 767532 bytes).
+Output written on chapter_4.pdf (37 pages, 767549 bytes).
 PDF statistics:
  1707 PDF objects out of 1728 (max. 8388607)
  104 named destinations out of 1000 (max. 500000)
