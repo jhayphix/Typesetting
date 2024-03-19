@@ -42,17 +42,25 @@ attach(goil_data)
 missing_values <- sum(is.na(goil_data$Diesel)) + sum(is.na(goil_data$Super))
 
 # ... Convert data to time series object
-diesel <- ts(Diesel, start=c(2018, 1), frequency=12)
-super <- ts(Super, start=c(2018, 1), frequency=12)
+diesel_ts <- ts(Diesel, start=c(2018, 1), frequency=12)
+super_ts <- ts(Super, start=c(2018, 1), frequency=12)
 
 # ... Visualize data
-plot(diesel, main="Time Series Plot of Diesel Prices", ylab="Price", xlab="Year", lwd=lwd_def, col=diesel_col)
-plot(super, main="Time Series Plot of Super Prices", ylab="Price", xlab="Year", lwd=lwd_def, col=super_col)
+plot(diesel_ts, main="Time Series Plot of Diesel Prices", ylab="Price", xlab="Year", lwd=lwd_def, col=diesel_col)
+plot(super_ts, main="Time Series Plot of Super Prices", ylab="Price", xlab="Year", lwd=lwd_def, col=super_col)
 
 # --------------------------------------------------
 # Splitting Data into Training and Testing Sets
 # --------------------------------------------------
-# ... Splitting Data into Training and Testing Sets
+train_size <- 0.8  # 80% training data, 20% testing data
+num_obs <- length(diesel_ts)
+train_index <- 1:round(train_size * num_obs)
+test_index <- (round(train_size * num_obs) + 1):num_obs
+
+diesel_train <- diesel_ts[train_index]
+diesel_test <- diesel_ts[test_index]
+super_train <- super_ts[train_index]
+super_test <- super_ts[test_index]
 
 # --------------------------------------------------
 # Exploratory Data Analysis (EDA)
