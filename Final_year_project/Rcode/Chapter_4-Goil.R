@@ -5,13 +5,24 @@ library(ggplot2)
 library(forecast)
 library(quantmod) # Package for volatility
 
+# Define a list containing color groups
+colors <- list(
+  blue = c("blue", "skyblue", "dodgerblue", "navy"),
+  green = c("green", "forestgreen", "limegreen", "darkgreen"),
+  purple = c("purple", "darkorchid", "mediumorchid", "blueviolet"),
+  red = c("red","maroon", "firebrick", "indianred", "darkred"),
+  orange = c("orange", "darkorange", "orangered"),
+  yellow = c("yellow", "gold", "khaki")
+)
+
+  
 # --------------------------------------------------
 # Data collection
 # --------------------------------------------------
 # Read data
 data_path <- "//mac/Home/Documents/_Typesetting/Final_year_project/Rcode/Datasource/Goil.xlsx"
 goil_data <- read_excel(data_path)
-attach(dataframe)
+attach(goil_data)
 
 
 # --------------------------------------------------
@@ -20,9 +31,12 @@ attach(dataframe)
 missing_values <- sum(is.na(goil_data$Diesel)) + sum(is.na(goil_data$Super))
 
 # ... Convert data to time series object
+diesel <- ts(Diesel, start=c(2018, 1), frequency=12)
+super <- ts(Super, start=c(2018, 1), frequency=12)
 
 # ... Visualize data
-
+plot(diesel, main="Time Series Plot of Diesel Prices", ylab="Price", xlab="Year", lwd=2.4, col="DarkOrchid")
+plot(super, main="Time Series Plot of Super Prices", ylab="Price", xlab="Year")
 
 # --------------------------------------------------
 # Splitting Data into Training and Testing Sets
