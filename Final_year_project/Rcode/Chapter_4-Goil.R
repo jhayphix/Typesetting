@@ -162,7 +162,7 @@ md_13 <- Arima(diesel_train, order=c(4,2,2), method="ML")
 md_14 <- Arima(diesel_train, order=c(2,2,5), method="ML")
 md_15 <- Arima(diesel_train, order=c(5,2,2), method="ML")
 
-diesel_model <- md_12
+diesel_fit <- md_12
 
 md_models <- list(md_auto, md_1, md_2, md_3, md_4, md_5, md_6, md_7, md_8, md_9, md_10, md_11, md_12, md_13, md_14, md_15)
 md_low_AIC <- calculate_criterion(md_models, criterion = "AIC")
@@ -186,7 +186,7 @@ ms_13 <- arima(super_train, order=c(3,1,2), method="ML")
 ms_14 <- arima(super_train, order=c(2,1,3), method="ML")
 ms_15 <- arima(super_train, order=c(3,1,3), method="ML")
 
-super_model <- ms_12
+super_fit <- ms_12
 
 ms_models <- list(ms_auto, ms_1, ms_2, ms_3, ms_4, ms_5, ms_6, ms_7, ms_8, ms_9, ms_10, ms_11, ms_12, ms_13, ms_14, ms_15)
 ms_low_AIC <- calculate_criterion(ms_models, criterion = "AIC")
@@ -196,12 +196,12 @@ ms_low_BIC <- calculate_criterion(ms_models, criterion = "BIC")
 # Model Diagnostics
 # --------------------------------------------------
 # Residuals check
-checkresiduals(diesel_model)
-checkresiduals(super_model)
+checkresiduals(diesel_fit)
+checkresiduals(super_fit)
 
 # Normality test
-# diesel_residuals <- residuals(diesel_model)
-# super_residuals <- residuals(super_model)
+# diesel_residuals <- residuals(diesel_fit)
+# super_residuals <- residuals(super_fit)
 # 
 # shapiro.test(diesel_residuals)
 # ad.test(diesel_residuals)
@@ -216,6 +216,13 @@ checkresiduals(super_model)
 # --------------------------------------------------
 # Forecasting
 # --------------------------------------------------
+
+# ... Diesel forecast
+diesel_forecast_values <- forecast(diesel_fit, h=length(diesel_test))
+
+plot(diesel_forecast_values, main = "Forecast of Diesel Prices", xlab = "Time", ylab = "Price", col=diesel_col, lwd=2.5)
+lines(diesel_ts, col="maroon", lwd=1.2) 
+legend("topleft", legend = c("Forecast price", "Diesel price"), col = c(diesel_col, "maroon"), lty = c(1, 2))
 
 
 # --------------------------------------------------
