@@ -5,6 +5,7 @@ library(ggplot2)
 library(forecast)
 library(quantmod) # Package for volatility
 library(trend)
+library(nortest)
 
 # --------------------------------------------------
 # Root
@@ -198,13 +199,18 @@ ms_low_BIC <- calculate_criterion(ms_models, criterion = "BIC")
 checkresiduals(diesel_model)
 checkresiduals(super_model)
 
+# Normality test
+# diesel_residuals <- residuals(diesel_model)
+# super_residuals <- residuals(super_model)
+# 
+# shapiro.test(diesel_residuals)
+# ad.test(diesel_residuals)
+
+
+
 # --------------------------------------------------
 # Model Evaluation
 # --------------------------------------------------
-
-# ... Assess model accuracy
-
-# ... Evaluate prediction accuracy.
 
 
 # --------------------------------------------------
