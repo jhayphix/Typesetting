@@ -4,6 +4,7 @@ library(tseries)
 library(ggplot2)
 library(forecast)
 library(quantmod) # Package for volatility
+library(trend)
 
 # --------------------------------------------------
 # Root
@@ -77,6 +78,10 @@ lines(super_train, lwd=lwd_def, col=super_col)
 summary(diesel_train)
 summary(super_train)
 
+# ... Trend analysis test
+mk.test(diesel_train)
+sens.slope(diesel_train)
+
 # ... Stationarity
 stationaryTest <- function(data, title=""){
   line = "\n ---------- ***** ----------- \n"
@@ -101,7 +106,6 @@ plot(super_train_diff, main="Time Series Plot of Differenced Super Prices", ylab
 stationaryTest(diesel_train_diff)
 stationaryTest(super_train_diff)
 
-
 # --------------------------------------------------
 # Calculate Volatility
 # --------------------------------------------------
@@ -124,11 +128,9 @@ pacf(super_train_diff, main="ACF plot of Super Prices Series", lwd=lwd_def, col=
 # --------------------------------------------------
 #  Model Selection
 # --------------------------------------------------
-# Auto model
-md_auto <- auto.arima(diesel_train); md_auto
-ms_auto <- auto.arima(super_train); ms_auto
 
-# Competting models
+# Competing models for diesel
+md_auto <- auto.arima(diesel_train)
 md_1 <- Arima(diesel_train, order=c(2,2,2))
 md_2 <- Arima(diesel_train, order=c(3,2,1))
 md_3 <- Arima(diesel_train, order=c(0,2,1))
@@ -137,6 +139,33 @@ md_5 <- Arima(diesel_train, order=c(2,2,1))
 md_6 <- Arima(diesel_train, order=c(1,2,2))
 md_7 <- Arima(diesel_train, order=c(2,2,0))
 md_8 <- Arima(diesel_train, order=c(0,2,2))
+md_9 <- Arima(diesel_train, order=c(1,2,1))
+md_10 <- Arima(diesel_train, order=c(2,2,3))
+md_11 <- Arima(diesel_train, order=c(3,2,2))
+md_12 <- Arima(diesel_train, order=c(2,2,4))
+md_13 <- Arima(diesel_train, order=c(4,2,2))
+md_14 <- Arima(diesel_train, order=c(2,2,5))
+md_15 <- Arima(diesel_train, order=c(5,2,2))
+
+
+# Competing models for Super
+ms_auto <- auto.arima(super_train); ms_auto
+ms_1 <- arima(super_train, order=c(1,1,0))
+ms_2 <- arima(super_train, order=c(0,1,1))
+ms_3 <- arima(super_train, order=c(1,1,1))
+ms_4 <- arima(super_train, order=c(2,1,0))
+ms_5 <- arima(super_train, order=c(0,1,2))
+ms_6 <- arima(super_train, order=c(2,1,1))
+ms_7 <- arima(super_train, order=c(1,1,2))
+ms_8 <- arima(super_train, order=c(2,1,2))
+ms_9 <- arima(super_train, order=c(3,1,0))
+ms_10 <- arima(super_train, order=c(0,1,3))
+ms_11 <- arima(super_train, order=c(3,1,1))
+ms_12 <- arima(super_train, order=c(1,1,3))
+ms_13 <- arima(super_train, order=c(3,1,2))
+ms_14 <- arima(super_train, order=c(2,1,3))
+ms_15 <- arima(super_train, order=c(3,1,3))
+
 
 # --------------------------------------------------
 # Model Fitting
@@ -161,7 +190,11 @@ md_8 <- Arima(diesel_train, order=c(0,2,2))
 # --------------------------------------------------
 # 
 # --------------------------------------------------
+# Perform Seasonal Mann-Kendall Test
+result <- seasonal_test(diesel_train)
 
+# Print the test result
+print(result)
 
 
 
