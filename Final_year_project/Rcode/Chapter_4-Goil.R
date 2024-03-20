@@ -91,31 +91,35 @@ stationaryTest(super_train, "Super Training")
 # ... Differencing
 ndiffs(diesel_train)
 ndiffs(super_train)
-diesel_train_diff <- diff(diesel_train)
+diesel_train_diff <- diff(diff(diesel_train))
 super_train_diff <- diff(super_train)
 
 # ... Visualize differenced data
-plot(diesel_train_diff, main="Time Series Plot of Diesel Prices", ylab="Price", xlab="Year", lwd=lwd_def, col=diesel_col)
-plot(super_train_diff, main="Time Series Plot of Super Prices", ylab="Price", xlab="Year", lwd=lwd_def, col=super_col)
+plot(diesel_train_diff, main="Time Series Plot of Differenced Diesel Prices", ylab="Price", xlab="Year", lwd=lwd_def, col=diesel_col)
+plot(super_train_diff, main="Time Series Plot of Differenced Super Prices", ylab="Price", xlab="Year", lwd=lwd_def, col=super_col)
 
 stationaryTest(diesel_train_diff)
 stationaryTest(super_train_diff)
 
+
 # --------------------------------------------------
 # Calculate Volatility
 # --------------------------------------------------
+diesel_volatility <- sd(diesel_train)
+super_volatility <- sd(super_train)
 
 
 # --------------------------------------------------
 # Correlation
 # --------------------------------------------------
+acf(diesel_train_diff, main="ACF plot of Diesel Prices Series", lwd=lwd_def, col="black")
 
-# ... Acf plot
-
-
-# ... Pacf plot
+pacf(diesel_train_diff, main="PACF plot of Diesel Prices Series", lwd=lwd_def, col="black")
 
 
+acf(super_train_diff, main="ACF plot of Super Prices Series", lwd=lwd_def, col=super_col)
+
+pacf(super_train_diff, main="ACF plot of Super Prices Series", lwd=lwd_def, col=super_col)
 # --------------------------------------------------
 #  Model Selection
 # --------------------------------------------------
