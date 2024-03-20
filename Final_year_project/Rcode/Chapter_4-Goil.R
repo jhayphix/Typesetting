@@ -120,10 +120,23 @@ pacf(diesel_train_diff, main="PACF plot of Diesel Prices Series", lwd=lwd_def, c
 acf(super_train_diff, main="ACF plot of Super Prices Series", lwd=lwd_def, col=super_col)
 
 pacf(super_train_diff, main="ACF plot of Super Prices Series", lwd=lwd_def, col=super_col)
+
 # --------------------------------------------------
 #  Model Selection
 # --------------------------------------------------
+# Auto model
+md_auto <- auto.arima(diesel_train); md_auto
+ms_auto <- auto.arima(super_train); ms_auto
 
+# Competting models
+md_1 <- Arima(diesel_train, order=c(2,2,2))
+md_2 <- Arima(diesel_train, order=c(3,2,1))
+md_3 <- Arima(diesel_train, order=c(0,2,1))
+md_4 <- Arima(diesel_train, order=c(1,2,0))
+md_5 <- Arima(diesel_train, order=c(2,2,1))
+md_6 <- Arima(diesel_train, order=c(1,2,2))
+md_7 <- Arima(diesel_train, order=c(2,2,0))
+md_8 <- Arima(diesel_train, order=c(0,2,2))
 
 # --------------------------------------------------
 # Model Fitting
