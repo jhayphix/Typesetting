@@ -49,8 +49,8 @@ attach(goil_data)
 missing_values <- sum(is.na(goil_data$Diesel)) + sum(is.na(goil_data$Super))
 
 # ... Convert data to time series object
-diesel_ts <- ts(Diesel, start=year_start, frequency=feq)
-super_ts <- ts(Super, start=year_start, frequency=feq)
+diesel_ts <- ts(Diesel, start=year_start, frequency=freq)
+super_ts <- ts(Super, start=year_start, frequency=freq)
 
 # ... Splitting Data into Training and Testing Sets
 train_size <- 0.8  # 80% training data, 20% testing data
@@ -129,49 +129,74 @@ pacf(super_train_diff, main="ACF plot of Super Prices Series", lwd=lwd_def, col=
 #  Model Selection
 # --------------------------------------------------
 
+calculate_criterion <- function(models, criterion = "AIC") {
+  min_criterion <- Inf; best_model <- NULL
+  
+  for (i in seq_along(models)) {
+    # Extract criterion value
+    crit_value <- if (criterion == "AIC") AIC(models[[i]]) else BIC(models[[i]])
+    # Update minimum criterion value and best model
+    if (crit_value < min_criterion) {
+      min_criterion <- crit_value; best_model <- models[[i]]
+    }
+  }
+  return(best_model)
+}
+
 # Competing models for diesel
 md_auto <- auto.arima(diesel_train)
-md_1 <- Arima(diesel_train, order=c(2,2,2))
-md_2 <- Arima(diesel_train, order=c(3,2,1))
-md_3 <- Arima(diesel_train, order=c(0,2,1))
-md_4 <- Arima(diesel_train, order=c(1,2,0))
-md_5 <- Arima(diesel_train, order=c(2,2,1))
-md_6 <- Arima(diesel_train, order=c(1,2,2))
-md_7 <- Arima(diesel_train, order=c(2,2,0))
-md_8 <- Arima(diesel_train, order=c(0,2,2))
-md_9 <- Arima(diesel_train, order=c(1,2,1))
-md_10 <- Arima(diesel_train, order=c(2,2,3))
-md_11 <- Arima(diesel_train, order=c(3,2,2))
-md_12 <- Arima(diesel_train, order=c(2,2,4))
-md_13 <- Arima(diesel_train, order=c(4,2,2))
-md_14 <- Arima(diesel_train, order=c(2,2,5))
-md_15 <- Arima(diesel_train, order=c(5,2,2))
+md_1 <- Arima(diesel_train, order=c(2,2,2), method="ML")
+md_2 <- Arima(diesel_train, order=c(3,2,1), method="ML")
+md_3 <- Arima(diesel_train, order=c(0,2,1), method="ML")
+md_4 <- Arima(diesel_train, order=c(1,2,0), method="ML")
+md_5 <- Arima(diesel_train, order=c(2,2,1), method="ML")
+md_6 <- Arima(diesel_train, order=c(1,2,2), method="ML")
+md_7 <- Arima(diesel_train, order=c(2,2,0), method="ML")
+md_8 <- Arima(diesel_train, order=c(0,2,2), method="ML")
+md_9 <- Arima(diesel_train, order=c(1,2,1), method="ML")
+md_10 <- Arima(diesel_train, order=c(2,2,3), method="ML")
+md_11 <- Arima(diesel_train, order=c(3,2,2), method="ML")
+md_12 <- Arima(diesel_train, order=c(2,2,4), method="ML") # Best
+md_13 <- Arima(diesel_train, order=c(4,2,2), method="ML")
+md_14 <- Arima(diesel_train, order=c(2,2,5), method="ML")
+md_15 <- Arima(diesel_train, order=c(5,2,2), method="ML")
 
+diesel_model <- md_12
+
+md_models <- list(md_auto, md_1, md_2, md_3, md_4, md_5, md_6, md_7, md_8, md_9, md_10, md_11, md_12, md_13, md_14, md_15)
+md_low_AIC <- calculate_criterion(md_models, criterion = "AIC")
+md_low_BIC <- calculate_criterion(md_models, criterion = "BIC")
 
 # Competing models for Super
 ms_auto <- auto.arima(super_train); ms_auto
-ms_1 <- arima(super_train, order=c(1,1,0))
-ms_2 <- arima(super_train, order=c(0,1,1))
-ms_3 <- arima(super_train, order=c(1,1,1))
-ms_4 <- arima(super_train, order=c(2,1,0))
-ms_5 <- arima(super_train, order=c(0,1,2))
-ms_6 <- arima(super_train, order=c(2,1,1))
-ms_7 <- arima(super_train, order=c(1,1,2))
-ms_8 <- arima(super_train, order=c(2,1,2))
-ms_9 <- arima(super_train, order=c(3,1,0))
-ms_10 <- arima(super_train, order=c(0,1,3))
-ms_11 <- arima(super_train, order=c(3,1,1))
-ms_12 <- arima(super_train, order=c(1,1,3))
-ms_13 <- arima(super_train, order=c(3,1,2))
-ms_14 <- arima(super_train, order=c(2,1,3))
-ms_15 <- arima(super_train, order=c(3,1,3))
+ms_1 <- arima(super_train, order=c(1,1,0), method="ML")
+ms_2 <- arima(super_train, order=c(0,1,1), method="ML")
+ms_3 <- arima(super_train, order=c(1,1,1), method="ML")
+ms_4 <- arima(super_train, order=c(2,1,0), method="ML")
+ms_5 <- arima(super_train, order=c(0,1,2), method="ML")
+ms_6 <- arima(super_train, order=c(2,1,1), method="ML")
+ms_7 <- arima(super_train, order=c(1,1,2), method="ML")
+ms_8 <- arima(super_train, order=c(2,1,2), method="ML")
+ms_9 <- arima(super_train, order=c(3,1,0), method="ML")
+ms_10 <- arima(super_train, order=c(0,1,3), method="ML")
+ms_11 <- arima(super_train, order=c(3,1,1), method="ML")
+ms_12 <- arima(super_train, order=c(1,1,3), method="ML") # best
+ms_13 <- arima(super_train, order=c(3,1,2), method="ML")
+ms_14 <- arima(super_train, order=c(2,1,3), method="ML")
+ms_15 <- arima(super_train, order=c(3,1,3), method="ML")
 
+super_model <- ms_12
+
+ms_models <- list(ms_auto, ms_1, ms_2, ms_3, ms_4, ms_5, ms_6, ms_7, ms_8, ms_9, ms_10, ms_11, ms_12, ms_13, ms_14, ms_15)
+ms_low_AIC <- calculate_criterion(ms_models, criterion = "AIC")
+ms_low_BIC <- calculate_criterion(ms_models, criterion = "BIC")
 
 # --------------------------------------------------
-# Model Fitting
+# Model Diagnostics
 # --------------------------------------------------
-# ... Fit the selected model(s) to the training data.
-
+# Residuals check
+checkresiduals(diesel_model)
+checkresiduals(super_model)
 
 # --------------------------------------------------
 # Model Evaluation
@@ -190,11 +215,10 @@ ms_15 <- arima(super_train, order=c(3,1,3))
 # --------------------------------------------------
 # 
 # --------------------------------------------------
-# Perform Seasonal Mann-Kendall Test
-result <- seasonal_test(diesel_train)
 
-# Print the test result
-print(result)
+
+
+
 
 
 
