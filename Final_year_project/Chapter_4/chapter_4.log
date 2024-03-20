@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2024.1.31)  19 MAR 2024 18:29
+=======
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2024.1.31)  13 MAR 2024 12:17
+>>>>>>> main
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1349,6 +1353,7 @@ Overfull \hbox (56.06409pt too wide) in paragraph at lines 336--336
  [][][][]  
  []
 
+<<<<<<< HEAD
 <images/plots/plot_diff/plot_diff_gasoline.png, id=576, 271.0125pt x 141.52875p
 t>
 File: images/plots/plot_diff/plot_diff_gasoline.png Graphic file (type png)
@@ -1378,6 +1383,36 @@ t line 336.
 (pdftex.def)             Requested size: 136.91571pt x 78.14346pt.
 
 Overfull \vbox (8.92154pt too high) detected at line 336
+=======
+<images/plots/plot_diff/plot_diff_gasoline.png, id=576, 268.00125pt x 144.54pt>
+
+File: images/plots/plot_diff/plot_diff_gasoline.png Graphic file (type png)
+<use images/plots/plot_diff/plot_diff_gasoline.png>
+Package pdftex.def Info: images/plots/plot_diff/plot_diff_gasoline.png  used on
+ input line 334.
+(pdftex.def)             Requested size: 136.916pt x 78.14305pt.
+<images/plots/plot_diff/plot_diff_gasoil.png, id=577, 248.93pt x 139.52126pt>
+File: images/plots/plot_diff/plot_diff_gasoil.png Graphic file (type png)
+<use images/plots/plot_diff/plot_diff_gasoil.png>
+Package pdftex.def Info: images/plots/plot_diff/plot_diff_gasoil.png  used on i
+nput line 334.
+(pdftex.def)             Requested size: 136.91951pt x 78.14626pt.
+<images/plots/plot_diff/plot_diff_kerosene.png, id=578, 272.01625pt x 158.5925p
+t>
+File: images/plots/plot_diff/plot_diff_kerosene.png Graphic file (type png)
+<use images/plots/plot_diff/plot_diff_kerosene.png>
+Package pdftex.def Info: images/plots/plot_diff/plot_diff_kerosene.png  used on
+ input line 334.
+(pdftex.def)             Requested size: 136.92091pt x 78.14658pt.
+<images/plots/plot_diff/plot_diff_lpg.png, id=579, 278.03876pt x 160.6pt>
+File: images/plots/plot_diff/plot_diff_lpg.png Graphic file (type png)
+<use images/plots/plot_diff/plot_diff_lpg.png>
+Package pdftex.def Info: images/plots/plot_diff/plot_diff_lpg.png  used on inpu
+t line 334.
+(pdftex.def)             Requested size: 136.91898pt x 78.14575pt.
+
+Overfull \vbox (8.91905pt too high) detected at line 334
+>>>>>>> main
  []
 
 File: images/logo/logoKnust.png Graphic file (type png)
@@ -2116,7 +2151,11 @@ eX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX/fonts/typ
 e1/public/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/am
 sfonts/cm/cmss8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cms
 s9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+<<<<<<< HEAD
 Output written on chapter_4.pdf (37 pages, 768492 bytes).
+=======
+Output written on chapter_4.pdf (37 pages, 769310 bytes).
+>>>>>>> main
 PDF statistics:
  1710 PDF objects out of 1728 (max. 8388607)
  104 named destinations out of 1000 (max. 500000)
