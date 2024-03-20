@@ -224,6 +224,7 @@ plot(diesel_forecast_values, main = "Forecast of Diesel Prices", xlab = "Time", 
 lines(diesel_ts, col="maroon", lwd=1.2) 
 legend("topleft", legend = c("Forecast price", "Diesel price"), col = c(diesel_col, "maroon"), lty = c(1, 2))
 
+# Here
 
 # --------------------------------------------------
 # 
