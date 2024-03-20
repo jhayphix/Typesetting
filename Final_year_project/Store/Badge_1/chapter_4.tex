@@ -13,8 +13,8 @@
 \usepackage{apl} % For \APL minus
 
 % Preamble
-\title{GHANA OIL COMPANY LIMITED STOCK PRICE PREDICTION}
-%\subtitle{Chapter 4: Results and Discussions}
+\title{Multivariate Time Series Modelling Of Ex-Pump Prices Of Petroleum Products In Ghana}
+\subtitle{Chapter 4: Results and Discussions}
 \author{Group 41}
 \institute{Kwame Nkrumah University of Science and Technology}
 \subject{Final Year Project}
@@ -45,12 +45,9 @@
 % -------------------------------------------------------
 % Define variables
 % -------------------------------------------------------
-\newcommand{\companyName}{Ghana Oil Company Limited}
-\newcommand{\productOne}{Super}
-\newcommand{\productTwo}{Di}
-\newcommand{\startDate}{January, 2018 }
-\newcommand{\finishDate}{March, 2024 }
-\newcommand{\numOfObservations}{75}
+\newcommand{\startDate}{January, 2007 }
+\newcommand{\finishDate}{June, 2015 }
+\newcommand{\numOfObservations}{204 }
 
 % -------------------------------------------------------
 % Formating
@@ -114,20 +111,19 @@
 	% --------------------------------------------------------------------
 	\section{Introduction}
 	\begin{frame}{Introduction}
-			\begin{block}{\vspace{5pt} \hspace{5pt} Objective \vspace{5pt}}
-				\vspace{5pt}
-				\begin{enumerate}[label=\arabic*., leftmargin=2em, itemsep=1em]
-					\item Reduce the dangers linked to oil price changes.
-					\item Help investors understand their investments better.
-					\item Analyze past pricing trends of Ghana Oil products and their influencing factors.
-					\item Create a model to predict future product prices based on historical data patterns.
-				\end{enumerate}
-			\end{block} \vspace{5pt}
+		
+		\begin{block}{Objective}
+			The purpose of the study is to obtain a suitable model for the ex-pump prices of petroleum products in Ghana. 
+		\end{block} \vspace{5pt}
+		
+		 To examines how changes in the prices of one product cause changes in the price of others in both the short and long run. \par \vspace{5pt}
+		
+		Data spanning \startDate to \finishDate are obtained from the National Petroleum Authority of Ghana, covering four petroleum products; \textPrimary{Gasoline, Gasoil, Kerosene, and Liquefied Petroleum Gas (LPG) }. 
 	\end{frame}
+	
 	% --------------------------------------------------------------------
 	\begin{frame}{Chapter 4: Result And Discussion}
-		This chapter analyses and discusses the results. \\
-		Data spanning \textPrimary{\startDate} to \textPrimary{\finishDate} are obtained from the \companyName, covering two products; 
+		This chapter analyses and discusses the results. It presents results of the association between the prices of the products considered, namely;
 		 \vspace{5pt}
 		
 		\begin{itemize}
